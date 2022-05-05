@@ -27,7 +27,7 @@ AI Development in Evolving Policy [AI DEP]
 
 의료 3 medical 3 신진우 교수님
 
-의료 4 medical 4 
+의료 4 medical 4 정교민 교수님
 
 채용 1 recruitment 1 유창동 교수님
 
