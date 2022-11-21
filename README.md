@@ -38,7 +38,3 @@ AI Development in Evolving Policy [AI DEP]
 광고 advertising 정교민 교수님
 
 법률 law 정교민 교수님
-
-문화 culture 코난테크놀로지
-
-방송 broadcast 코난테크놀로지
