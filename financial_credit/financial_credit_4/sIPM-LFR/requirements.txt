@@ -1,0 +1,5 @@
+torch==1.11.0+cu102
+numpy==1.22.2
+sklearn==1.1.0
+argparse==1.1
+yaml==6.0
