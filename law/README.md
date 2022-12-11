@@ -6,10 +6,13 @@
 
   - Legal Text를 입력받아 언어 모델 내 편향성을 제거하기 위한 프로그램
 
- <debias_text>
+  Main:
 
-  - 입력) input_text: 편향성을 제거할 텍스트, label: 해당 텍스트에 대한 label, model_path: 학습된 모델을 load하기 위한 path
-  - 출력) masked entities: 편향성이 포함된 단어, masked_text: 편향성이 제거된 텍스트
+    <debias_text>
+
+      - 입력) input_text: 편향성을 제거할 텍스트, label: 해당 텍스트에 대한 label, model_path: 학습된 모델을 load하기 위한 path
+      - 출력) masked entities: 편향성이 포함된 단어, masked_text: 편향성이 제거된 텍스트
+
 
  (2) attribution.py
   - 모델의 출력 값 도출에 있어서 중요하게 작용한 단어를 색출하는 프로그램
