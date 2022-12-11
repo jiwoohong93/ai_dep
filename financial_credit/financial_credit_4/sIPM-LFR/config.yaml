@@ -1,0 +1,20 @@
+run_five: 1 # random five experiments (1 == True, 0 == False)
+
+dataset: "adult" # dataset
+scaling: 1 # scaling input vectors if reconstruct (1 == True, 0 == False)
+batch_size: 512 # training batch size
+epochs: 300 # training epochs
+opt: 'Adam' # encoder + (decoder, classifier) optimizer
+aud_opt: 'Adam' # discriminator optimizer
+model_lr: 0.02 # encoder + (decoder, classifier) learning rate
+aud_lr: 0.02 # discriminator learning rate
+aud_steps: 2 # the no. of discriminator update per one encoder update
+acti: "leakyrelu" # activation inside encoder network
+num_layer: 1 # the no. of layer in encoder network
+head_net: "linear" # classifier network
+aud_dim: 0 # discriminator hidden dimension
+eval_freq: 10 # frequency (epochs) of evaluation
+
+lmda: 0.0 # cross entropy hyperparameter (set 1 if sup, 0 if unsup)
+lmdaF: 0.0 # fair hyperparameter
+lmdaR: 1.0 # reconstruction hyperparameter (set 1 if unsup, 0 if sup)

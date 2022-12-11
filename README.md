@@ -1,32 +1,40 @@
-1. 프로그램명: 법률 텍스트 내 편향성 제거기 (Debias Module on Legal Text)
+# 점차 강화되고 있는 윤리 정책에 발맞춰 유연하게 진화하는 인공지능 기술 개발 연구
+Development and Study of AI Technologies to Inexpensively Conform to Evolving Policy on Ethics
 
-2. 파일목록:
- (1) debias_legalText.py
-  - Legal Text를 입력받아 언어 모델 내 편향성을 제거하기 위한 프로그램
+AI Development in Evolving Policy [AI DEP]
 
-  * debias_text
-  - 입력) input_text: 편향성을 제거할 텍스트, label: 해당 텍스트에 대한 label, model_path: 학습된 모델을 load하기 위한 path 
-  - 출력) masked entities: 편향성이 포함된 단어, masked_text: 편향성이 제거된 텍스트
+음성 speech_recognition 유창동 교수님 연구실
 
- (2) attribution.py
-  - 모델의 출력 값 도출에 있어서 중요하게 작용한 단어를 색출하는 프로그램
+언어 language 오혜연 교수님 연구실
 
-  Class: ImportanceGetter
-    * get_layers_importance
-    - Explainability Method를 활용하여 모델의 입력 텍스트에 대한 단어 중요도 점수 산출
+금융/신용 1 financial_credit 1 서창호 교수님 연구실
 
-    * get_word_pieces_importance
-    - get_layers_importance 함수를 통해 도출된 단어 별 중요도 점수를 토대로 모델의 예측에 중요하게 작용한 단어를 입력 텍스트 내에서 색출
+금융/신용 2 financial_credit 2 신진우 교수님 연구실
 
-    * cluster_word_importance
-    - word-piece 단어들을 하나의 단어로 응집하고, 응집된 하나의 단어에 대한 중요도 점수를 계산
+금융/신용 3 financial_credit 3 최재식 교수님 연구실
 
-  (3) ner.py
-  - 입력 텍스트 중 집단 및 사람에 해당하는 단어만을 색출하고, 해당 단어들을 masking하여 debiasing
+금융/신용 4 financial_credit 4 김용대 교수님 연구실
 
-  Class: NER
-    * get_target_entities
-    - ImportanceGetter의 함수들을 활용하여 도출된 중요 단어들에 한해서, 입력 텍스트 중 집단 및 사람에 해당하는 단어만을 색출
+추천시스템 1 recommendation 1 서창호 교수님 연구실
 
-    * mask_original_text
-    - get_target_entities 함수를 통해 도출된 집단 및 사람 단어들을 masking하여 Legal 텍스트를 debiasing
+추천시스템 2 recommendation 2 김용대 교수님 연구실
+
+추천시스템 3 recommendation 3 코난테크놀로지
+
+의료 1 medical 1 유창동 교수님 연구실
+
+의료 2 medical 2 서창호 교수님 연구실
+
+의료 3 medical 3 신진우 교수님 연구실
+
+의료 4 medical 4 정교민 교수님 연구실
+
+채용 1 recruitment 1 유창동 교수님 연구실
+
+채용 2 recruitment 2 신진우 교수님 연구실
+
+치안 public_safety 김용대 교수님 연구실
+
+광고 advertising 정교민 교수님 연구실
+
+법률 law 정교민 교수님 연구실

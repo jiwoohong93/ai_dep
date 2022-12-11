@@ -1,0 +1,16 @@
+choice: 1
+
+dataset: "toy"
+result_path: "results/"
+opt: "adam"
+epochs: 2000
+batch_size: 50000
+lr: 5.0e-1
+seed: 2021
+device: 1
+
+model_type: "dnn"
+mode: "slide"
+
+lmda: 0.0
+tau: 0.1
