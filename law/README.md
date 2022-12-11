@@ -1,3 +1,5 @@
+법률 도메인
+
 1. 프로그램명: 법률 텍스트 내 편향성 제거기 (Debias Module on Legal Text)
 
 2. 파일목록:
