@@ -25,7 +25,7 @@ ex) 부당광고
 
 ## 2. 부당광고 검출 모델
 한국어 기반 사전학습모델 KE-T5 를 수집한 데이터셋에 fine-tuning 하는 방식으로 진행
-![arch](./pics/arch.jpg)
+<img src="./pics/arch.jpg" width="500" height="250">
 
 ## 3. 사용방법
 데이터셋만 필요한 경우 filtered_data.csv 및 filtered_data_test.csv 활용
