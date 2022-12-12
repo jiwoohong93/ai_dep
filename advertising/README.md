@@ -6,7 +6,7 @@
 
 ex) 부당광고
 
-<img src="./pics/abnormal.jpg"/>
+<img src="./pics/abnormal2.jpg"/>
 
 #### 분류기준
 모든 광고데이터의 품목은 일반식품에 한함.
