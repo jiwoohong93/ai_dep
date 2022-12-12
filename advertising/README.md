@@ -43,10 +43,19 @@ fine-tune KE-T5 model
 python model.py
 ```
 
+
 ## 4. 결과
 
+이상광고 분류
 성능 | precision | recall | acc
 :--- | :---: | :---: | :---:
 train | 0.98 | 0.76 | 0.88
 valid | 0.88 | 0.94 | 0.90
+
+이상광고 카테고리 분류(5 positive + 1 negative)
+성능 | acc
+:--- | :---:
+train | 0.97
+valid | 0.80
+
 
