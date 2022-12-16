@@ -1,0 +1,41 @@
+use_gpu: true
+
+model:
+    name: DeepSpeech2
+    rnn_hidden_size: 768
+    nb_layers: 5
+    rnn_type: nn.LSTM
+    bidirectional: true
+    context: 20
+train:
+    dataset: CORAALTranscriptionDatasetSattrIndex
+    meta_data: data/trans_train_africa_american_seen_info.csv
+    weight_decay: 0.0
+    mom: 0.9
+dev:
+    dataset: CORAALTranscriptionDatasetSattrIndex
+    meta_data: data/trans_dev_africa_american_seen_info.csv
+test:
+    dataset: CORAALTranscriptionDatasetSattrIndex
+    meta_data: data/trans_test_africa_american_seen_info.csv
+feature:
+    stft_dir: data/stft
+    sample_rate: 8000
+    input_dim: 161
+    window_size: 25
+    stride: 5
+    cmvn: true
+    type: melspectrogram
+data:
+    label_dir: labels.json
+    sample_size: 20000
+    min_duration: 1
+    PAD_token: 0
+    SOS_token: 1
+    EOS_token: 2
+    vocab_size: 29
+    attr_name: dialect
+    attrid_name: dialect_int
+    num_dialect: 7
+    dialect: [africa_american, afrikaan, american, british, indian, spanish_central_south_america, xhosa_zulu_sotho]
+
