@@ -2,6 +2,10 @@
 
 # 음성 인식 모델
 
+'''bash
+echo 1
+'''
+
 
 ## 사전준비
 1) speech_recognition 디렉토리로 이동
