@@ -1,9 +1,6 @@
-유창동 교수님
-
 # 음성 인식 모델
 
-
-## 사전준비
+## 1. 사전 준비
 1) speech_recognition 디렉토리로 이동
 2) 터미널상에서 아래의 명령어 순차 실행
 ```
@@ -14,7 +11,7 @@ sh merge_audio.sh
 python extract_stft.py
 ```
 
-## 모델 학습
+## 2. 모델 학습
 speech_recognition 디렉토리내에서
 ```
 train.sh
