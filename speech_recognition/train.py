@@ -26,14 +26,13 @@ def get_logger(logfile_path):
 
     formatter = logging.Formatter('%(levelname)s %(asctime)s %(filename)s: %(lineno)d] %(message)s', '%Y-%m-%d %H:%M:%S')
 
-    file_handler = logging.FileHandler(logfile_path)
     stream_handler = logging.StreamHandler()
-
-    file_handler.setFormatter(formatter)
     stream_handler.setFormatter(formatter)
-
-    logger.addHandler(file_handler)
     logger.addHandler(stream_handler)
+
+    file_handler = logging.FileHandler(logfile_path)
+    file_handler.setFormatter(formatter)
+    logger.addHandler(file_handler)
 
     return logger
     
@@ -200,6 +199,30 @@ def train(conf):
                 save_model(conf, model, "best")
                 min_CER = CER
                 conf.logger.info(f"Model saved: best.pt")
+                
+                
+def evaluate(conf):
+    # load model
+    if conf.model_name == 'rnnctc':
+        model = RNNCTC(conf)
+    elif conf.model_name == 'deepspeech2':
+        model = DeepSpeech2(conf)
+    conf.logger.info(f"Model checkpoint: {conf.checkpoint}")
+    model.load_state_dict(torch.load(conf.checkpoint))
+    model = model.cuda()
+    conf.logger.info("Model loading complete")
+
+    # dataloader
+    TestDataset = eval(conf.train.dataset)('test', conf)
+    test_loader = make_dataloader(conf, TestDataset)
+    conf.logger.info("Data loading complete")
+
+    with open(conf.data.label_dir, 'r') as f:
+        label_set = json.load(f)
+
+    conf.logger.info("Evaluation Start")
+    CER, losses = validate(conf, model, None, test_loader, torch.device("cuda"), label_set)
+    conf.logger.info(f"Evaluation done, Loss = {losses.val:.4f} ({losses.avg:.4f}), CER = {100.0*CER:.2f}%")
 
 
 def main():
@@ -209,6 +232,7 @@ def main():
     parser.add_argument('--seed', type=int, default=42, help='random seed')
     parser.add_argument('--model_name', type=str, default='rnnctc', help='ASR model [rnnctc, deepspeech2]')
     parser.add_argument('--config_file', type=str, help='configuration file name')
+    parser.add_argument("--saved_dir", type=str, default='runs', help='directory to save logs and models')
 
     parser.add_argument('--val_freq', type=int, default=2, help='validation frequency')
     parser.add_argument('--epochs', type=int, default=100, help='maximum epochs for training')
@@ -220,10 +244,8 @@ def main():
     parser.add_argument('--grad_clip', type=float, default=5.0, help='gradient clipping')
     parser.add_argument('--beam_width', type=int, default=10, help='CTC beam decoder width')
 
-    parser.add_argument("--saved_dir", type=str, default='runs', help='directory to save logs and models')
-    parser.add_argument('--checkpoint', type=str, default=None, help='model checkpoint (when evaluating)')
-
-    parser.add_argument('--data_split', type=str, default='dev', help='data used for testing')
+    parser.add_argument('--checkpoint', type=str, default=None, help='path to saved model')
+    parser.add_argument('--eval', action='store_true', help='evaluation flag')
 
     args = parser.parse_args()
 
@@ -232,9 +254,9 @@ def main():
     conf = edict(yaml.load(open(conf_path), Loader=yaml.SafeLoader))
     for k, v in vars(args).items():
         conf[k] = v
-    conf.test['data_split'] = args.data_split
 
     # make directories
+    conf.saved_dir = os.path.join(conf.saved_dir, "eval" if conf.eval else "train")
     os.makedirs(conf.saved_dir, exist_ok=True)
     previous_runs = os.listdir(conf.saved_dir) + ['0']
     new_run = str(int(max(previous_runs)) + 1)
@@ -243,7 +265,7 @@ def main():
     with open(f'{conf.saved_dir}/config.json', 'w') as f:
         json.dump(conf, f, indent=4)
 
-    conf.logger = get_logger(os.path.join(conf.saved_dir, "train.log"))
+    conf.logger = get_logger(os.path.join(conf.saved_dir, "log.txt"))
 
     # seed
     conf.logger.info(f'Seed {conf.seed}')
@@ -251,10 +273,13 @@ def main():
     np.random.seed(conf.seed)
 
     # Train
-    train(conf)
-    conf.logger.info('-' * 60)
-    conf.logger.info('Training complete')
-
+    if conf.eval == False:
+        train(conf)
+        conf.logger.info('-' * 60)
+        conf.logger.info('Training complete')
+    else:
+        evaluate(conf)
+        
 
 if __name__ == '__main__':
     main()
