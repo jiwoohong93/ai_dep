@@ -15,6 +15,7 @@ python extract_stft.py
 ```
 
 ## 모델 학습
+speech_recognition 디렉토리내에서
 ```
 train.sh
 ```
@@ -23,4 +24,5 @@ train.sh
 python train.py --config_file {yml 파일이름} --model_name {모델이름} --lr {학습률} --batch_size {배치사이즈}
 ```
 
-원본 코드: https://github.com/Hertin/Equal-Accuracy-Ratio
+## 원본 코드
+https://github.com/Hertin/Equal-Accuracy-Ratio
