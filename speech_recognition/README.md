@@ -1,8 +1,7 @@
 # 음성 인식 모델
 
 ## 1. 사전 준비
-1) speech_recognition 디렉토리로 이동
-2) 터미널상에서 아래의 명령어 순차 실행
+speech_recognition 디렉토리 내에서 아래의 명령어 순차 실행
 ```
 git clone --recursive https://github.com/parlance/ctcdecode.git
 cd ctcdecode && pip install .
