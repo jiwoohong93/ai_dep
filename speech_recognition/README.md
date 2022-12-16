@@ -2,7 +2,7 @@
 
 # 음성 인식 모델
 '''console
-echo 1;
+$ echo 1;
 '''
 
 
