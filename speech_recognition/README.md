@@ -1,7 +1,7 @@
 유창동 교수님
 
 # 음성 인식 모델
-CORAAL dataset
+
 
 # 사전준비
 1) speech_recognition 디렉토리로 이동
