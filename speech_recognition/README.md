@@ -1,6 +1,6 @@
 # 음성 인식 모델
 
-anaconda 가상환경 사용 권장, pytorch 설치 필수
+Anaconda 가상환경 사용 권장, PyTorch 설치 필수
 
 ## 1. 사전 준비
 1. speech_recognition 디렉토리로 이동 <br/>
