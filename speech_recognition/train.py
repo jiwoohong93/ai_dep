@@ -213,7 +213,7 @@ def main():
     parser.add_argument('--val_freq', type=int, default=2, help='validation frequency')
     parser.add_argument('--epochs', type=int, default=100, help='maximum epochs for training')
     parser.add_argument('--print_freq', type=int, default=50, help='print frequency (in batches)')
-    parser.add_argument('--saved_freq', type=int, default=5000, help='checkpoint save frequency.')
+    parser.add_argument('--saved_freq', type=int, default=2, help='checkpoint save frequency.')
     parser.add_argument('--batch_size', type=int, default=64, help='batch size')
     parser.add_argument('--lr', type=float, default=1e-3, help='learning rate.')
     parser.add_argument('--num_workers', type=int, default=4, help='dataloader num_workers')
