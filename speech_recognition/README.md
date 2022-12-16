@@ -5,7 +5,7 @@
 # 사전준비
 1) speech_recognition 디렉토리로 이동
 2) 디렉토리 내 ctcdecode 패키지 설치 (https://github.com/parlance/ctcdecode 참조)
-3) 아래의 쉘 스크립트 순서대로 실행
+3) 아래의 쉘 스크립트 순서대로 실행 <br/>
 $ sh audio_download.sh
 $ sh merge_audio.sh
 4) 다음을 실행
