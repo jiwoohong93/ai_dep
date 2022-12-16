@@ -30,5 +30,15 @@ sh train.sh
 python train.py --config_file {yml 파일이름} --model_name {모델이름} --lr {학습률} --batch_size {배치사이즈}
 ```
 
+## 3. 모델 평가
+모델 학습 후, speech_recognition 디렉토리내에서
+```
+sh evaluate.sh
+```
+혹은
+```
+python train.py --config_file {yml 파일이름} --model_name {모델이름} --checkpoint {모델파일(.pt) 경로} --eval
+```
+
 ## 원본 코드
 https://github.com/Hertin/Equal-Accuracy-Ratio
