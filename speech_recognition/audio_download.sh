@@ -1,3 +1,4 @@
+mkdir -p data/audio
 cd data/audio
 
 wget http://lingtools.uoregon.edu/coraal/dca/2018.10.06/DCA_audio_part01_2018.10.06.tar.gz
