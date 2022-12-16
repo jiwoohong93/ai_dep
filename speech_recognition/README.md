@@ -23,7 +23,7 @@ python extract_stft.py
 ## 2. 모델 학습
 speech_recognition 디렉토리내에서
 ```
-train.sh
+sh train.sh
 ```
 혹은
 ```
