@@ -12,7 +12,10 @@ $ sh merge_audio.sh
 $ python extract_stft.py
 
 # 모델 학습
+1) 다음 쉘 스크립트를 실행하거나
 $ train.sh
+2) 명령어 직접 입력
+$ python train.py --config_file {yml 파일이름} --model_name {모델이름} --lr {학습률} --batch_size {배치사이즈}
 
 
 원본 코드: https://github.com/Hertin/Equal-Accuracy-Ratio
