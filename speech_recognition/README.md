@@ -1,12 +1,20 @@
 # 음성 인식 모델
 
 ## 1. 사전 준비
-speech_recognition 디렉토리 내에서 아래의 명령어 순차 실행
+1. speech_recognition 디렉토리로 이동 <br/>
+2. ctcdecode 패키지 설치
 ```
 git clone --recursive https://github.com/parlance/ctcdecode.git
 cd ctcdecode && pip install .
+cd ..
+```
+3. CORAAL 데이터셋 다운로드 및 압축해제
+```
 sh audio_download.sh 
 sh merge_audio.sh
+```
+4. stft 추출
+```
 python extract_stft.py
 ```
 
