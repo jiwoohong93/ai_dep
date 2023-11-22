@@ -1,0 +1,11 @@
+INFO:__main__:loss = tensor(5.9005e-05, device='cuda:0')
+
+INFO:__main__:train_loss = tensor(5.9005e-05, device='cuda:0')
+
+INFO:__main__:val_acc = 0.925
+
+INFO:__main__:val_loss = tensor(0.2245, device='cuda:0')
+
+INFO:__main__:val_precision = 0.9354838709677419
+
+INFO:__main__:val_recall = 0.90625
