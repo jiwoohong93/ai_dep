@@ -20,13 +20,6 @@ This project implements Named Entity Recognition for the KLUE (Korean Language U
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/jhpark-kaist/KLUE-NER-SNRoberta
-cd KLUE-NER-SNRoberta
-```
-
-2. Install required packages:
 ```bash
 conda env create -f environment.yaml
 conda activate kllm-fairness
@@ -75,7 +68,7 @@ chmod +x eval.sh
 Name : Joonhyeong Park <br/>
 E-mail : jhpark.kaist@gmail.com <br/>
 Affiliation : Statistical Inference and Machine Learning Lab @ KAIST <br/>
-
+Original Github Repository : https://github.com/jhpark-kaist/KLUE-NER-SNRoberta
 
 
 
