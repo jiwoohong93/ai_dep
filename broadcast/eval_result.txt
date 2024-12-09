@@ -1,0 +1,290 @@
+
+Evaluating models in seed=1
+--------------------------------------------------------------------------------
+
+Loading model from: saved/seed=1/klue/roberta-base_seed=1_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-base_seed=1_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.33
+Char F1: 93.81
+
+Loading model from: saved/seed=1/klue/roberta-large_seed=1_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-large_seed=1_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 88.70
+Char F1: 93.71
+
+Performing ensemble evaluation...
+Ensemble Results:
+Entity F1: 89.34
+Char F1: 93.91
+
+Evaluating models in seed=2
+--------------------------------------------------------------------------------
+
+Loading model from: saved/seed=2/klue/roberta-base_seed=2_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-base_seed=2_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.04
+Char F1: 93.58
+
+Loading model from: saved/seed=2/klue/roberta-large_seed=2_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-large_seed=2_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.68
+Char F1: 94.01
+
+Performing ensemble evaluation...
+Ensemble Results:
+Entity F1: 89.80
+Char F1: 94.06
+
+Evaluating models in seed=3
+--------------------------------------------------------------------------------
+
+Loading model from: saved/seed=3/klue/roberta-base_seed=3_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-base_seed=3_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 88.79
+Char F1: 93.64
+
+Loading model from: saved/seed=3/klue/roberta-large_seed=3_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-large_seed=3_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.19
+Char F1: 93.58
+
+Performing ensemble evaluation...
+Ensemble Results:
+Entity F1: 89.41
+Char F1: 93.95
+
+Evaluating models in seed=4
+--------------------------------------------------------------------------------
+
+Loading model from: saved/seed=4/klue/roberta-base_seed=4_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-base_seed=4_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.28
+Char F1: 93.71
+
+Loading model from: saved/seed=4/klue/roberta-large_seed=4_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-large_seed=4_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.05
+Char F1: 93.61
+
+Performing ensemble evaluation...
+Ensemble Results:
+Entity F1: 89.55
+Char F1: 93.93
+
+Evaluating models in seed=5
+--------------------------------------------------------------------------------
+
+Loading model from: saved/seed=5/klue/roberta-base_seed=5_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-base_seed=5_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 88.91
+Char F1: 93.62
+
+Loading model from: saved/seed=5/klue/roberta-large_seed=5_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-large_seed=5_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.47
+Char F1: 93.88
+
+Performing ensemble evaluation...
+Ensemble Results:
+Entity F1: 89.79
+Char F1: 94.10
+
+Evaluating models in seed=6
+--------------------------------------------------------------------------------
+
+Loading model from: saved/seed=6/klue/roberta-base_seed=6_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-base_seed=6_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 88.63
+Char F1: 93.75
+
+Loading model from: saved/seed=6/klue/roberta-large_seed=6_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-large_seed=6_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 88.98
+Char F1: 93.86
+
+Performing ensemble evaluation...
+Ensemble Results:
+Entity F1: 89.23
+Char F1: 94.02
+
+Evaluating models in seed=7
+--------------------------------------------------------------------------------
+
+Loading model from: saved/seed=7/klue/roberta-base_seed=7_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-base_seed=7_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.09
+Char F1: 93.78
+
+Loading model from: saved/seed=7/klue/roberta-large_seed=7_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-large_seed=7_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.05
+Char F1: 93.83
+
+Performing ensemble evaluation...
+Ensemble Results:
+Entity F1: 89.53
+Char F1: 94.03
+
+Evaluating models in seed=8
+--------------------------------------------------------------------------------
+
+Loading model from: saved/seed=8/klue/roberta-base_seed=8_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-base_seed=8_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 88.77
+Char F1: 93.72
+
+Loading model from: saved/seed=8/klue/roberta-large_seed=8_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa
+Model architecture: RobertaForTokenClassification
+Number of labels: 13
+Loading datasets from local files...
+
+Results for roberta-large_seed=8_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa:
+Entity F1: 89.46
+Char F1: 93.86
+
+Performing ensemble evaluation...
+Ensemble Results:
+Entity F1: 89.43
+Char F1: 94.03
+
+Final Summary:
+========================================================================================================================
+
+seed=1:
+------------------------------------------------------------------------------------------------------------------------
+Model                                                                  | Entity F1  | Char F1    | Status
+------------------------------------------------------------------------------------------------------------------------
+roberta-base_seed=1_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa   |      89.33 |      93.81 | OK
+roberta-large_seed=1_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa  |      88.70 |      93.71 | OK
+ENSEMBLE                                                               |      89.34 |      93.91 | OK
+
+seed=2:
+------------------------------------------------------------------------------------------------------------------------
+Model                                                                  | Entity F1  | Char F1    | Status
+------------------------------------------------------------------------------------------------------------------------
+roberta-base_seed=2_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa   |      89.04 |      93.58 | OK
+roberta-large_seed=2_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa  |      89.68 |      94.01 | OK
+ENSEMBLE                                                               |      89.80 |      94.06 | OK
+
+seed=3:
+------------------------------------------------------------------------------------------------------------------------
+Model                                                                  | Entity F1  | Char F1    | Status
+------------------------------------------------------------------------------------------------------------------------
+roberta-base_seed=3_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa   |      88.79 |      93.64 | OK
+roberta-large_seed=3_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa  |      89.19 |      93.58 | OK
+ENSEMBLE                                                               |      89.41 |      93.95 | OK
+
+seed=4:
+------------------------------------------------------------------------------------------------------------------------
+Model                                                                  | Entity F1  | Char F1    | Status
+------------------------------------------------------------------------------------------------------------------------
+roberta-base_seed=4_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa   |      89.28 |      93.71 | OK
+roberta-large_seed=4_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa  |      89.05 |      93.61 | OK
+ENSEMBLE                                                               |      89.55 |      93.93 | OK
+
+seed=5:
+------------------------------------------------------------------------------------------------------------------------
+Model                                                                  | Entity F1  | Char F1    | Status
+------------------------------------------------------------------------------------------------------------------------
+roberta-base_seed=5_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa   |      88.91 |      93.62 | OK
+roberta-large_seed=5_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa  |      89.47 |      93.88 | OK
+ENSEMBLE                                                               |      89.79 |      94.10 | OK
+
+seed=6:
+------------------------------------------------------------------------------------------------------------------------
+Model                                                                  | Entity F1  | Char F1    | Status
+------------------------------------------------------------------------------------------------------------------------
+roberta-base_seed=6_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa   |      88.63 |      93.75 | OK
+roberta-large_seed=6_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa  |      88.98 |      93.86 | OK
+ENSEMBLE                                                               |      89.23 |      94.02 | OK
+
+seed=7:
+------------------------------------------------------------------------------------------------------------------------
+Model                                                                  | Entity F1  | Char F1    | Status
+------------------------------------------------------------------------------------------------------------------------
+roberta-base_seed=7_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa   |      89.09 |      93.78 | OK
+roberta-large_seed=7_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa  |      89.05 |      93.83 | OK
+ENSEMBLE                                                               |      89.53 |      94.03 | OK
+
+seed=8:
+------------------------------------------------------------------------------------------------------------------------
+Model                                                                  | Entity F1  | Char F1    | Status
+------------------------------------------------------------------------------------------------------------------------
+roberta-base_seed=8_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa   |      88.77 |      93.72 | OK
+roberta-large_seed=8_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa  |      89.46 |      93.86 | OK
+ENSEMBLE                                                               |      89.43 |      94.03 | OK
+
+Best Results:
+========================================================================================================================
+Individual Models:
+Best Entity F1: 89.68 (Seed: seed=2, Model: roberta-large_seed=2_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa)
+Best Char F1: 94.01 (Seed: seed=2, Model: roberta-large_seed=2_lr=5e-05_batch=32_outweight=1.0_freeze=False_swa)
+
+Ensemble Models:
+Best Entity F1: 89.80 (Seed: seed=2)
+Best Char F1: 94.10 (Seed: seed=5)
+
+Average Ensemble Performance:
+========================================================================================================================
+Entity F1: 89.51 ± 0.19
+Char F1: 94.00 ± 0.06
