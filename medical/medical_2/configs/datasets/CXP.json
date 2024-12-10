@@ -1,0 +1,10 @@
+{
+    "train_meta_path": "./data/CXP/split/new_train.csv",
+    "test_sex_meta_path": "./data/CXP/split/new_test.csv",
+    "test_age_meta_path": "./data/CXP/split/test_age.csv",
+    "test_race_meta_path": "./data/CXP/split/test_race.csv",
+    "image_train_path": "../DataSets/",
+    "image_test_path": "../DataSets/",
+    "text_template": "a chest X-ray of a {}",
+    "class_names": ["diseased", "normal"]
+}

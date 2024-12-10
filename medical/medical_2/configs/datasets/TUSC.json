@@ -1,0 +1,8 @@
+{
+    "train_sex_meta_path": "./data/TUSC/metadata.csv",
+    "train_meta_path": "./data/TUSC/metadata.csv",
+    "test_sex_meta_path": "./data/TUSC/metadata.csv",
+    "image_train_path": "./data/TUSC/image",
+    "image_test_path": "./data/TUSC/image",
+    "data_path": "./data/TUSC/"
+}
