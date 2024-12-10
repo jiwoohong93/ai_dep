@@ -1,4 +1,4 @@
-## FairFundusNet
+# FairFundusNet
 
 This project aims to develop fair and reliable AI for healthcare. An AI model for glaucoma diagnosis was developed based on the PAPILA dataset of fundus images. To address age-related biases, the model was fine-tuned using fair batch and loss reweighting techniques. The resulting model, FairFundusNet, achieved a high diagnostic accuracy of 94.64% while enhancing fairness.
 
