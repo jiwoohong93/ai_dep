@@ -10,7 +10,7 @@ This study developed an AI model for glaucoma diagnosis using the PAPILA dataset
 .
 ├── configs
 │   ├── datasets
-│   │   ├── PAPILA.json
+│   │   └── PAPILA.json
 │   └── models
 │       ├── BiomedCLIP.json
 │       ├── BLIP2.json
