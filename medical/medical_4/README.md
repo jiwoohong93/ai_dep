@@ -52,7 +52,4 @@ semantic_group.sh
 |                     | **METEOR ↑**   | 12.80₀.₃₆        | 13.35₀.₁₀        | 13.23₀.₄₁        | 18.15₀.₃₂       | 16.80₀.₆₀        | 18.81₀.₈₂        |
 |                     | **ROUGE-1 ↑**  | 18.23₀.₃₉        | 19.61₀.₃₂        | 20.93₀.₁₅        | 27.38₀.₃₅       | 28.02₀.₄₈        | 28.98₀.₈₆        |
 
-SGA (top-$k$) denotes our method $k$ candiates and SGA (top-$1$) denotes direct selection method skipping the stage.  
-
-## Acknowledgements 
-This repository is adapted from Tang's work. 
+SGA (top-$k$) denotes our method $k$ candiates and SGA (top-$1$) denotes direct selection method skipping the stage.   
