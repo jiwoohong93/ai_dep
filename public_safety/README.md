@@ -10,8 +10,8 @@
 0. 패키지 설치
    pip install -r requirements.txt
 1. CSIPM.py 실행 : final_data_interventions_max_frac.csv와 w_SIPM.npy 생성
-   python3 CSIPM.py
+   python3 codes/CSIPM.py
 2. train_schools_SIPM_root.py 실행 : school_weights_linear_mse_sim5_max1_frac_sIPM_root_res.npz 생성
-   python3 train_schools_SIPM_root.py
+   python3 codes/train_schools_SIPM_root.py
 3. intervention_sIPM_root.py 실행 : 자원배분 최적의 해를 찾고 결과를 csv 파일로 저장
-   python3 
+   python3 codes/intervention_sIPM_root.py
