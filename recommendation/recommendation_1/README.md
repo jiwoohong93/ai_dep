@@ -59,10 +59,21 @@ python infer_fair.py
 Only RMSE (RMSE): 0.8237496
 
 RMSE considering DEE: 0.83420455
+
 DEE: 0.009363348093259893
 
 Performance degrade: 1.26919%
 
 
+## Contact
+
+- Name: Geonhui Yoo
+- E-mail: jrguyyoo@kaist.ac.kr
+- Affiliation: OptiML Lab @ KAIST (Professor: Chulhee Yun)
+
+
+## References
+
 [1] Jaewoong Cho, Moonseok Choi, & Changho Suh. (2022). Equal Experience in Recommender Systems.
+
 [2] Han, S. C., Lim, T., Long, S., Burgstaller, B., & Poon, J. (2021, October). Glocal-k: Global and local kernels for recommender systems. In Proceedings of the 30th ACM International Conference on Information & Knowledge Management (pp. 3063-3067).
