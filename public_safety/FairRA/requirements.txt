@@ -1,0 +1,5 @@
+pandas == 1.5.3
+numpy == 1.23.5
+gnureadline == 8.2.10
+torch == 2.0.0
+gurobipy == 11.0.3
