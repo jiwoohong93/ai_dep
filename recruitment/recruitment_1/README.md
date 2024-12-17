@@ -29,6 +29,7 @@
 ```bash
   python feature_extract.py
   python ent_labeling.py
+  python app_labeling.py
 ```
 
 ## 3. Train model
