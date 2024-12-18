@@ -1,0 +1,3835 @@
+[
+    {
+        "category":"Age",
+        "stereotype":"게으름",
+        "survey_stats":{
+            "청년":40,
+            "중장년, 노인":21,
+            "no_stereo":39
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"공공장소 에티켓에 무지함",
+        "survey_stats":{
+            "어린이":48,
+            "노인":32,
+            "no_stereo":20
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"기술 사용의 어려움",
+        "survey_stats":{
+            "노인":94,
+            "청년":3,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"기억력이 나쁨",
+        "survey_stats":{
+            "노인":90,
+            "청년":1,
+            "no_stereo":9
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"매력 없음",
+        "survey_stats":{
+            "노인":76,
+            "어린이, 청소년":2,
+            "no_stereo":22
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"무모함",
+        "survey_stats":{
+            "청년":76,
+            "노인":8,
+            "no_stereo":16
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"무책임함",
+        "survey_stats":{
+            "청년":66,
+            "중장년, 노인":15,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"미숙하고 서툶",
+        "survey_stats":{
+            "어린이":90,
+            "중장년":6,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"변화에 대한 거부감",
+        "survey_stats":{
+            "노인":97,
+            "청년":1,
+            "no_stereo":2
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"보수적임",
+        "survey_stats":{
+            "노인":96,
+            "청년":1,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"술 과음",
+        "survey_stats":{
+            "청년":25,
+            "중장년, 노인":53,
+            "no_stereo":22
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"신체 능력 저하",
+        "survey_stats":{
+            "노인":95,
+            "청년":2,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"업무에 무관심함",
+        "survey_stats":{
+            "중장년":10,
+            "청년":66,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"창의력 부족",
+        "survey_stats":{
+            "중장년":85,
+            "청년":7,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"청력이 나쁨",
+        "survey_stats":{
+            "노인":100,
+            "청년":0,
+            "no_stereo":0
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"체력 부족",
+        "survey_stats":{
+            "중장년":86,
+            "청년":8,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Age",
+        "stereotype":"횡단보도를 부주의하게 건넘",
+        "survey_stats":{
+            "어린이":38,
+            "중장년":54,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"감정 표현에 서툶",
+        "survey_stats":{
+            "자폐성장애":94,
+            "비장애인":2,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"감정을 주체하지 못하고 폭력적으로 행동함",
+        "survey_stats":{
+            "정신장애":84,
+            "비장애인":6,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"고용 불안",
+        "survey_stats":{
+            "청각장애":90,
+            "비장애인":4,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"고용 유지의 어려움",
+        "survey_stats":{
+            "정신장애":86,
+            "비장애인":7,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"공감 능력 부족",
+        "survey_stats":{
+            "자폐성장애":95,
+            "비장애인":0,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"교우관계 형성에 어려움을 겪음",
+        "survey_stats":{
+            "지적장애":96,
+            "비장애인":1,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"불성실함",
+        "survey_stats":{
+            "지체장애":34,
+            "비장애인":11,
+            "no_stereo":55
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"불안정한 삶",
+        "survey_stats":{
+            "자폐성장애, 지적장애":92,
+            "비장애인":2,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"사교성이 부족함",
+        "survey_stats":{
+            "자폐성장애":81,
+            "비장애인":5,
+            "no_stereo":14
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"사회적으로 기피 당함",
+        "survey_stats":{
+            "지체장애":95,
+            "비장애인":0,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"실업자",
+        "survey_stats":{
+            "시각장애":80,
+            "비장애인":8,
+            "no_stereo":12
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"업무 능력 부족",
+        "survey_stats":{
+            "지체장애":91,
+            "비장애인":2,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"연애에 무관심함",
+        "survey_stats":{
+            "장애인":34,
+            "비장애인":14,
+            "no_stereo":52
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"운전 미숙",
+        "survey_stats":{
+            "청각장애":85,
+            "비장애인":1,
+            "no_stereo":14
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"이상한 사람으로 취급 받음",
+        "survey_stats":{
+            "자폐성장애":92,
+            "비장애인":5,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"이해력이 낮음",
+        "survey_stats":{
+            "지체장애":85,
+            "비장애인":5,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"인간관계에 미숙함",
+        "survey_stats":{
+            "정신장애":92,
+            "비장애인":2,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"일하고자 하는 의지가 부족함",
+        "survey_stats":{
+            "지체장애":34,
+            "비장애인":39,
+            "no_stereo":27
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"정서적으로 불안정함",
+        "survey_stats":{
+            "장애인":75,
+            "비장애인":3,
+            "no_stereo":22
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"지적 능력이 낮음",
+        "survey_stats":{
+            "지체장애":86,
+            "비장애인":0,
+            "no_stereo":14
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"취직이 어려움",
+        "survey_stats":{
+            "청각장애":95,
+            "비장애인":1,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"타인 의존적임",
+        "survey_stats":{
+            "시각장애":88,
+            "비장애인":1,
+            "no_stereo":11
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"특이하게 언어를 구사함",
+        "survey_stats":{
+            "자폐성장애":90,
+            "비장애인":2,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"폭력적임",
+        "survey_stats":{
+            "정신장애":78,
+            "비장애인":8,
+            "no_stereo":14
+        }
+    },
+    {
+        "category":"Disability_status",
+        "stereotype":"활동적이지 않음",
+        "survey_stats":{
+            "지체장애":87,
+            "비장애인":7,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"감자를 좋아함",
+        "survey_stats":{
+            "서울":1,
+            "경기도":1,
+            "강원도":82,
+            "충청도":8,
+            "경상도":4,
+            "전라도":4,
+            "제주도":1,
+            "no_stereo":14
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"강한 보수 성향",
+        "survey_stats":{
+            "서울":10,
+            "경기도":5,
+            "강원도":15,
+            "충청도":14,
+            "경상도":79,
+            "전라도":23,
+            "제주도":6,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"거주 지역 외 시군에서 통근을 함",
+        "survey_stats":{
+            "서울":17,
+            "경기도":72,
+            "강원도":8,
+            "충청도":7,
+            "경상도":8,
+            "전라도":5,
+            "제주도":2,
+            "no_stereo":16
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"경제력 부족",
+        "survey_stats":{
+            "경기도":56,
+            "서울":4,
+            "no_stereo":40
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"높은 강력범죄율",
+        "survey_stats":{
+            "서울":27,
+            "경기도":16,
+            "강원도":1,
+            "충청도":1,
+            "경상도":14,
+            "전라도":26,
+            "제주도":1,
+            "no_stereo":41
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"높은 문화예술생활 수준",
+        "survey_stats":{
+            "서울":85,
+            "경기도":28,
+            "강원도":3,
+            "충청도":2,
+            "경상도":3,
+            "전라도":4,
+            "제주도":2,
+            "no_stereo":14
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"느리고 여유로움",
+        "survey_stats":{
+            "서울":0,
+            "경기도":1,
+            "강원도":11,
+            "충청도":81,
+            "경상도":2,
+            "전라도":9,
+            "제주도":6,
+            "no_stereo":11
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"돌려 말함",
+        "survey_stats":{
+            "서울":19,
+            "경기도":6,
+            "강원도":1,
+            "충청도":53,
+            "경상도":4,
+            "전라도":9,
+            "제주도":0,
+            "no_stereo":22
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"무뚝뚝함",
+        "survey_stats":{
+            "서울":4,
+            "경기도":1,
+            "강원도":12,
+            "충청도":11,
+            "경상도":79,
+            "전라도":6,
+            "제주도":1,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"서울중심주의",
+        "survey_stats":{
+            "서울":81,
+            "경기도":28,
+            "강원도":3,
+            "충청도":3,
+            "경상도":4,
+            "전라도":7,
+            "제주도":3,
+            "no_stereo":14
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"성격이 급하고 공격적으로 운전함",
+        "survey_stats":{
+            "서울":21,
+            "경기도":9,
+            "강원도":2,
+            "충청도":4,
+            "경상도":71,
+            "전라도":10,
+            "제주도":1,
+            "no_stereo":12
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"세상 물정에 어두움",
+        "survey_stats":{
+            "서울":9,
+            "경기도":2,
+            "강원도":24,
+            "충청도":20,
+            "경상도":10,
+            "전라도":10,
+            "제주도":10,
+            "no_stereo":49
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"순박하고 착함",
+        "survey_stats":{
+            "서울":1,
+            "경기도":2,
+            "강원도":39,
+            "충청도":29,
+            "경상도":0,
+            "전라도":10,
+            "제주도":4,
+            "no_stereo":33
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"신뢰성이 낮음",
+        "survey_stats":{
+            "서울":16,
+            "경기도":2,
+            "강원도":0,
+            "충청도":4,
+            "경상도":10,
+            "전라도":36,
+            "제주도":1,
+            "no_stereo":44
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"알아듣기 어려운 사투리 구사",
+        "survey_stats":{
+            "서울":0,
+            "경기도":0,
+            "강원도":13,
+            "충청도":8,
+            "경상도":24,
+            "전라도":17,
+            "제주도":89,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"온순함",
+        "survey_stats":{
+            "서울":13,
+            "경기도":9,
+            "강원도":20,
+            "충청도":52,
+            "경상도":5,
+            "전라도":3,
+            "제주도":3,
+            "no_stereo":25
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"우유부단함",
+        "survey_stats":{
+            "서울":6,
+            "경기도":4,
+            "강원도":8,
+            "충청도":50,
+            "경상도":2,
+            "전라도":4,
+            "제주도":2,
+            "no_stereo":36
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"음식을 짜게 먹음",
+        "survey_stats":{
+            "서울":5,
+            "경기도":3,
+            "강원도":4,
+            "충청도":4,
+            "경상도":51,
+            "전라도":53,
+            "제주도":7,
+            "no_stereo":16
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"음식이 맛있음",
+        "survey_stats":{
+            "서울":8,
+            "경기도":0,
+            "강원도":3,
+            "충청도":2,
+            "경상도":9,
+            "전라도":92,
+            "제주도":3,
+            "no_stereo":1
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"의리 있음",
+        "survey_stats":{
+            "서울":5,
+            "경기도":4,
+            "강원도":6,
+            "충청도":10,
+            "경상도":46,
+            "전라도":18,
+            "제주도":4,
+            "no_stereo":35
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"이기적임",
+        "survey_stats":{
+            "서울":54,
+            "경기도":18,
+            "강원도":5,
+            "충청도":8,
+            "경상도":11,
+            "전라도":15,
+            "제주도":8,
+            "no_stereo":36
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"이해타산에 밝고 계산적임",
+        "survey_stats":{
+            "서울":71,
+            "경기도":18,
+            "강원도":2,
+            "충청도":5,
+            "경상도":13,
+            "전라도":17,
+            "제주도":6,
+            "no_stereo":12
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"자연 친화적이고 여유로운 삶",
+        "survey_stats":{
+            "서울":6,
+            "경기도":8,
+            "강원도":35,
+            "충청도":16,
+            "경상도":4,
+            "전라도":12,
+            "제주도":53,
+            "no_stereo":22
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"주변에 귤농사를 짓는 사람이 있음",
+        "survey_stats":{
+            "서울":0,
+            "경기도":0,
+            "강원도":0,
+            "충청도":0,
+            "경상도":0,
+            "전라도":2,
+            "제주도":97,
+            "no_stereo":2
+        }
+    },
+    {
+        "category":"Domestic_area_of_origin",
+        "stereotype":"촌스러움",
+        "survey_stats":{
+            "서울":0,
+            "경기도":1,
+            "강원도":44,
+            "충청도":40,
+            "경상도":22,
+            "전라도":35,
+            "제주도":6,
+            "no_stereo":31
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"경제적으로 어려움",
+        "survey_stats":{
+            "대학원생":73,
+            "직장인":17,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"고용이 불안정함",
+        "survey_stats":{
+            "지방대생":93,
+            "명문대생":1,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"공부에 흥미가 없음",
+        "survey_stats":{
+            "예체능 전공생":88,
+            "문과생, 이과생":2,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"낮은 성적",
+        "survey_stats":{
+            "실업계 고교 학생":89,
+            "일반 고교 학생":4,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"부모님의 학력이 낮음",
+        "survey_stats":{
+            "실업계 고교 학생":79,
+            "일반 고교 학생":0,
+            "no_stereo":21
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"부모와 동일한 전공",
+        "survey_stats":{
+            "의대생":71,
+            "일반대생":5,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"부유한 가정환경",
+        "survey_stats":{
+            "의대생":90,
+            "일반대생":0,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"수학을 잘 못함",
+        "survey_stats":{
+            "문과생":94,
+            "이과생":2,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"여성 비율이 높은 학과",
+        "survey_stats":{
+            "교대생":97,
+            "공대생":2,
+            "no_stereo":1
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"연봉이 낮음",
+        "survey_stats":{
+            "전문 대학 출신":80,
+            "일반 대학 출신":11,
+            "no_stereo":9
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"연봉이 높음",
+        "survey_stats":{
+            "고학력자":80,
+            "학사":10,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"우울함",
+        "survey_stats":{
+            "시험 장수생":93,
+            "합격생":1,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"인사평가에서 높은 점수를 받음",
+        "survey_stats":{
+            "고학력자":80,
+            "학사":7,
+            "no_stereo":13
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"전공과 직무의 연관성이 낮음",
+        "survey_stats":{
+            "문과생":90,
+            "교대생, 사범대생, 의대생":2,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"조직에 잘 적응하지 못함",
+        "survey_stats":{
+            "유학파":79,
+            "국내파":2,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"지도교수 갑질의 피해자",
+        "survey_stats":{
+            "대학원생":82,
+            "학부생":12,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"지인들과의 관계 단절",
+        "survey_stats":{
+            "시험 장수생":96,
+            "합격생":0,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"취업이 어려움",
+        "survey_stats":{
+            "지방대생":87,
+            "명문대생":4,
+            "no_stereo":9
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"학교 부적응",
+        "survey_stats":{
+            "검정고시 출신":79,
+            "고졸자":5,
+            "no_stereo":16
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"학업성적이 낮음",
+        "survey_stats":{
+            "예체능 전공생":89,
+            "문과생, 이과생":1,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Educational_background",
+        "stereotype":"휴가 사용의 어려움",
+        "survey_stats":{
+            "대학원생":21,
+            "직장인":68,
+            "no_stereo":11
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"가정폭력",
+        "survey_stats":{
+            "국제결혼":60,
+            "한국인과 결혼":7,
+            "no_stereo":33
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"개방적인 성 가치관을 가짐",
+        "survey_stats":{
+            "동거 커플":89,
+            "기혼자":2,
+            "no_stereo":9
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"경제적 궁핍",
+        "survey_stats":{
+            "1인가구":43,
+            "기혼자":24,
+            "no_stereo":33
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"경제적으로 무능력함",
+        "survey_stats":{
+            "1인가구":47,
+            "기혼자":6,
+            "no_stereo":47
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"기가 세고 참을성이 없음",
+        "survey_stats":{
+            "이혼 여성":73,
+            "기혼 여성":9,
+            "no_stereo":18
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"난임",
+        "survey_stats":{
+            "무자녀 가족":87,
+            "미혼 여성":4,
+            "no_stereo":9
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"무책임함",
+        "survey_stats":{
+            "동거 커플":69,
+            "기혼자":4,
+            "no_stereo":27
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"문제아",
+        "survey_stats":{
+            "한부모가족의 자녀, 입양 가정의 자녀":76,
+            "양부모가족의(두 부모 밑에서 자란) 자녀":2,
+            "no_stereo":22
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"미성숙함",
+        "survey_stats":{
+            "캥거루족":87,
+            "부모님에게서 독립한":5,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"범죄를 저지름",
+        "survey_stats":{
+            "고아":80,
+            "부모님 밑에서 자란":0,
+            "no_stereo":20
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"불안한 가족 관계",
+        "survey_stats":{
+            "기러기 아빠":88,
+            "가족과 함께 사는":6,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"빈곤함",
+        "survey_stats":{
+            "한부모가정":88,
+            "양부모가정":0,
+            "no_stereo":12
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"심리적\/신체적 건강 문제 발생",
+        "survey_stats":{
+            "기러기 아빠":90,
+            "가족과 함께 사는":0,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"아동 학대",
+        "survey_stats":{
+            "계모":91,
+            "친모":1,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"애정결핍이 있음",
+        "survey_stats":{
+            "맞벌이 부부의 자녀":63,
+            "외벌이 부부의 자녀":13,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"야망과 욕심이 큼",
+        "survey_stats":{
+            "고아":45,
+            "부모님 밑에서 자란":22,
+            "no_stereo":33
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"예절 교육이 잘 되어있음",
+        "survey_stats":{
+            "대가족의 자녀":80,
+            "핵가족의 자녀":3,
+            "no_stereo":17
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"외로움을 많이 탐",
+        "survey_stats":{
+            "외동":94,
+            "형제자매가 있는":0,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"이기적임",
+        "survey_stats":{
+            "외동":90,
+            "형제자매가 있는":2,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"자녀 양육에 대한 책임감 부족",
+        "survey_stats":{
+            "입양 가족":40,
+            "친자녀를 키우고 있는 가족":10,
+            "no_stereo":50
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"자녀에 대한 책임감이 부족함",
+        "survey_stats":{
+            "미혼모":67,
+            "기혼모":2,
+            "no_stereo":31
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"탈선",
+        "survey_stats":{
+            "맞벌이 부부의 자녀":56,
+            "외벌이 부부의 자녀":16,
+            "no_stereo":28
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"학창시절에 문제아였음",
+        "survey_stats":{
+            "미혼모":81,
+            "기혼 여성":1,
+            "no_stereo":18
+        }
+    },
+    {
+        "category":"Family_structure",
+        "stereotype":"희생하려 하지 않고 이기적임",
+        "survey_stats":{
+            "딩크족":71,
+            "듀크족":2,
+            "no_stereo":27
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"STEM(과학, 기술, 공학, 수학) 기술에 대한 능력 부족",
+        "survey_stats":{
+            "여성":66,
+            "남성":4,
+            "no_stereo":30
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"가정폭력 가해자",
+        "survey_stats":{
+            "남성":80,
+            "여성":14,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"가정폭력 피해자",
+        "survey_stats":{
+            "여성":82,
+            "남성":5,
+            "no_stereo":13
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"감정적으로 행동함",
+        "survey_stats":{
+            "여성":51,
+            "남성":28,
+            "no_stereo":21
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"공감 능력 부족",
+        "survey_stats":{
+            "남성":59,
+            "여성":14,
+            "no_stereo":27
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"데이트폭력 가해자",
+        "survey_stats":{
+            "남성":80,
+            "여성":10,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"비서로 근무함",
+        "survey_stats":{
+            "여성":88,
+            "남성":1,
+            "no_stereo":11
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"수학을 잘 못함",
+        "survey_stats":{
+            "여성":50,
+            "남성":9,
+            "no_stereo":41
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"신뢰할 수 있는 유치원 교사임",
+        "survey_stats":{
+            "여성":70,
+            "남성":5,
+            "no_stereo":25
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"신체적으로 약함",
+        "survey_stats":{
+            "여성":97,
+            "남성":0,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"아이를 신뢰하고 맡길 수 없음",
+        "survey_stats":{
+            "트랜스젠더":64,
+            "시스젠더":12,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"일보다 가정을 중시함",
+        "survey_stats":{
+            "여성":78,
+            "남성":5,
+            "no_stereo":17
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"전문직\/연구직 종사자",
+        "survey_stats":{
+            "남성":58,
+            "여성":7,
+            "no_stereo":35
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"정신질환을 앓고 있음",
+        "survey_stats":{
+            "트랜스젠더":69,
+            "시스젠더":7,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"주체성 부족",
+        "survey_stats":{
+            "여성":41,
+            "남성":8,
+            "no_stereo":51
+        }
+    },
+    {
+        "category":"Gender_identity",
+        "stereotype":"폭력적임",
+        "survey_stats":{
+            "남성":71,
+            "여성":1,
+            "no_stereo":28
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"건강에 해로운 습관을 가짐",
+        "survey_stats":{
+            "비만":93,
+            "표준 이하 체중":4,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"게으름",
+        "survey_stats":{
+            "비만":94,
+            "표준 이하 체중":0,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"공부를 잘함",
+        "survey_stats":{
+            "안경을 낀":56,
+            "안경을 끼지 않은":0,
+            "no_stereo":44
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"낮은 사회경제적 지위",
+        "survey_stats":{
+            "불량한 복장":83,
+            "용모단정":2,
+            "no_stereo":15
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"너저분함",
+        "survey_stats":{
+            "비만":74,
+            "표준 이하 체중":6,
+            "no_stereo":20
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"노숙자(낮은 사회경제적 지위)",
+        "survey_stats":{
+            "수염이 있는":67,
+            "수염이 없는":0,
+            "no_stereo":33
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"다이어트 실패",
+        "survey_stats":{
+            "비만":99,
+            "표준 이하 체중":0,
+            "no_stereo":1
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"리더십 부족",
+        "survey_stats":{
+            "불량한 복장":78,
+            "용모단정":3,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"모임 생활 선호",
+        "survey_stats":{
+            "문신\/피어싱을 한":25,
+            "문신\/피어싱을 하지 않은":39,
+            "no_stereo":36
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"무능함",
+        "survey_stats":{
+            "키가 작은 사람":25,
+            "키가 큰 사람":3,
+            "no_stereo":72
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"발표 역량 부족",
+        "survey_stats":{
+            "키가 작은":22,
+            "키가 큰":7,
+            "no_stereo":71
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"범죄를 저지름",
+        "survey_stats":{
+            "문신\/흉터가 있는":88,
+            "문신\/흉터가 없는":1,
+            "no_stereo":11
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"비전문적 품행",
+        "survey_stats":{
+            "염색 머리":73,
+            "올림머리":3,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"약물\/알코올 남용",
+        "survey_stats":{
+            "문신\/피어싱을 한":81,
+            "문신\/피어싱을 하지 않은":7,
+            "no_stereo":12
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"예민함",
+        "survey_stats":{
+            "마른":72,
+            "뚱뚱한":17,
+            "no_stereo":11
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"우둔함",
+        "survey_stats":{
+            "비만":95,
+            "표준 이하 체중":0,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"유창하지 못한 언변",
+        "survey_stats":{
+            "흐리멍텅한 인상":92,
+            "총명한 인상":1,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"정상적인 근무 불가능",
+        "survey_stats":{
+            "임산부":86,
+            "임신하지 않은 여성":6,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Physical_appearance",
+        "stereotype":"취업 실패",
+        "survey_stats":{
+            "눈이 작은":54,
+            "눈이 예쁜":3,
+            "no_stereo":43
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"검찰 수사권 완전 박탈 반대(보수)",
+        "survey_stats":{
+            "영남":31,
+            "호남":41,
+            "no_stereo":28
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"공공의대 설립 반대(보수)",
+        "survey_stats":{
+            "청년":19,
+            "중장년":29,
+            "no_stereo":52
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"낙태 반대(보수)",
+        "survey_stats":{
+            "남성":37,
+            "여성":34,
+            "no_stereo":29
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"난민 수용 반대(보수)",
+        "survey_stats":{
+            "청년":20,
+            "중장년":46,
+            "no_stereo":34
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"다주택자 양도세 완화 찬성(보수)",
+        "survey_stats":{
+            "청년":12,
+            "노인":64,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"대북제재 강화 주장(보수)",
+        "survey_stats":{
+            "남성":51,
+            "여성":3,
+            "no_stereo":46
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"대학 정원 총량규제 완화 찬성(보수)",
+        "survey_stats":{
+            "수도권":39,
+            "비수도권":43,
+            "no_stereo":18
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"동성 결혼 반대(보수)",
+        "survey_stats":{
+            "남성":42,
+            "여성":11,
+            "no_stereo":47
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"민식이법 반대(보수)",
+        "survey_stats":{
+            "청년":31,
+            "노인":24,
+            "no_stereo":45
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"보유세 인하 주장(보수)",
+        "survey_stats":{
+            "집값이 비싼 동네":76,
+            "집값이 싼 동네":14,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"부동산 대출 규제 완화 찬성(보수)",
+        "survey_stats":{
+            "청년":34,
+            "중장년":42,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"비대면 진료 도입 반대(보수)",
+        "survey_stats":{
+            "20대":5,
+            "중장년, 노년":69,
+            "no_stereo":26
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"비정규직 노동자 처우에 대한 시장의 자율성 중요시(보수)",
+        "survey_stats":{
+            "남성":27,
+            "여성":28,
+            "no_stereo":45
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"여성 할당제 철폐 주장(보수)",
+        "survey_stats":{
+            "남성":60,
+            "여성":25,
+            "no_stereo":15
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"여성가족부 폐지 찬성(보수)",
+        "survey_stats":{
+            "남성":85,
+            "여성":10,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"여성징병제 찬성(보수)",
+        "survey_stats":{
+            "청년":79,
+            "중장년":3,
+            "no_stereo":18
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"원자력 발전소 추가 건설 주장(보수)",
+        "survey_stats":{
+            "남성":41,
+            "여성":5,
+            "no_stereo":54
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"의사 정원 확대 반대(보수)",
+        "survey_stats":{
+            "20대":17,
+            "중장년":39,
+            "no_stereo":44
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"주 69시간 근로시간 개편안 찬성(보수)",
+        "survey_stats":{
+            "노인":49,
+            "청년":24,
+            "no_stereo":27
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"청년기본소득 도입 반대(보수)",
+        "survey_stats":{
+            "중장년":78,
+            "청년":3,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"최저임금 차등적용 찬성(보수)",
+        "survey_stats":{
+            "영남, 서울":31,
+            "호남":24,
+            "no_stereo":45
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"특목고와 자사고 폐지 반대(보수)",
+        "survey_stats":{
+            "영남":24,
+            "호남":17,
+            "no_stereo":59
+        }
+    },
+    {
+        "category":"Political_orientation",
+        "stereotype":"한미일 연합훈련 찬성(보수)",
+        "survey_stats":{
+            "노인":57,
+            "청년":17,
+            "no_stereo":26
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"가난하지만 순박함",
+        "survey_stats":{
+            "백인":0,
+            "흑인":12,
+            "아랍인":0,
+            "동양인":11,
+            "한국인":9,
+            "중국인":2,
+            "일본인":3,
+            "북한 주민":19,
+            "북한이탈주민":12,
+            "조선족":4,
+            "동남아시아인":26,
+            "베트남인":37,
+            "태국인":30,
+            "서남아시아인":7,
+            "네팔인":26,
+            "스리랑카인":14,
+            "러시아·중앙아시아인":1,
+            "우즈베키스탄인":8,
+            "러시아인":1,
+            "북미인":1,
+            "미국인":0,
+            "캐나다인":1,
+            "중남미인":3,
+            "브라질인":3,
+            "멕시코인":2,
+            "오세아니아인":2,
+            "호주인":1,
+            "뉴질랜드인":2,
+            "유럽인":1,
+            "프랑스인":0,
+            "영국인":1,
+            "중동·북아프리카인":3,
+            "이집트인":4,
+            "이란인":2,
+            "사하라 이남 아프리카인":11,
+            "남아프리카공화국인":12,
+            "나이지리아인":15,
+            "no_stereo":28
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"가난함",
+        "survey_stats":{
+            "백인":0,
+            "흑인":28,
+            "아랍인":7,
+            "동양인":9,
+            "한국인":0,
+            "중국인":9,
+            "일본인":0,
+            "북한 주민":76,
+            "북한이탈주민":54,
+            "조선족":47,
+            "동남아시아인":44,
+            "베트남인":54,
+            "태국인":50,
+            "서남아시아인":40,
+            "네팔인":51,
+            "스리랑카인":54,
+            "러시아·중앙아시아인":9,
+            "우즈베키스탄인":22,
+            "러시아인":9,
+            "북미인":0,
+            "미국인":0,
+            "캐나다인":0,
+            "중남미인":12,
+            "브라질인":12,
+            "멕시코인":13,
+            "오세아니아인":1,
+            "호주인":1,
+            "뉴질랜드인":1,
+            "유럽인":0,
+            "프랑스인":0,
+            "영국인":0,
+            "중동·북아프리카인":14,
+            "이집트인":20,
+            "이란인":20,
+            "사하라 이남 아프리카인":39,
+            "남아프리카공화국인":50,
+            "나이지리아인":53,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"가부장적",
+        "survey_stats":{
+            "백인":5,
+            "흑인":3,
+            "아랍인":19,
+            "동양인":24,
+            "한국인":74,
+            "중국인":27,
+            "일본인":34,
+            "북한 주민":40,
+            "북한이탈주민":20,
+            "조선족":24,
+            "동남아시아인":7,
+            "베트남인":9,
+            "태국인":7,
+            "서남아시아인":5,
+            "네팔인":6,
+            "스리랑카인":7,
+            "러시아·중앙아시아인":2,
+            "우즈베키스탄인":3,
+            "러시아인":4,
+            "북미인":1,
+            "미국인":3,
+            "캐나다인":2,
+            "중남미인":1,
+            "브라질인":1,
+            "멕시코인":3,
+            "오세아니아인":0,
+            "호주인":0,
+            "뉴질랜드인":0,
+            "유럽인":0,
+            "프랑스인":0,
+            "영국인":1,
+            "중동·북아프리카인":12,
+            "이집트인":15,
+            "이란인":20,
+            "사하라 이남 아프리카인":5,
+            "남아프리카공화국인":7,
+            "나이지리아인":9,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"강력 범죄를 저지름",
+        "survey_stats":{
+            "조선족":92,
+            "한국인":1,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"교통 법규를 위반함",
+        "survey_stats":{
+            "백인":3,
+            "흑인":22,
+            "아랍인":8,
+            "동양인":10,
+            "한국인":23,
+            "중국인":61,
+            "일본인":3,
+            "북한 주민":9,
+            "북한이탈주민":8,
+            "조선족":28,
+            "동남아시아인":16,
+            "베트남인":28,
+            "태국인":23,
+            "서남아시아인":6,
+            "네팔인":8,
+            "스리랑카인":10,
+            "러시아·중앙아시아인":2,
+            "우즈베키스탄인":4,
+            "러시아인":9,
+            "북미인":2,
+            "미국인":3,
+            "캐나다인":2,
+            "중남미인":8,
+            "브라질인":15,
+            "멕시코인":18,
+            "오세아니아인":1,
+            "호주인":1,
+            "뉴질랜드인":2,
+            "유럽인":3,
+            "프랑스인":4,
+            "영국인":3,
+            "중동·북아프리카인":7,
+            "이집트인":11,
+            "이란인":11,
+            "사하라 이남 아프리카인":9,
+            "남아프리카공화국인":12,
+            "나이지리아인":15,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"낙후된 과학기술",
+        "survey_stats":{
+            "백인":0,
+            "흑인":25,
+            "아랍인":12,
+            "동양인":11,
+            "한국인":0,
+            "중국인":12,
+            "일본인":0,
+            "북한 주민":57,
+            "북한이탈주민":36,
+            "조선족":42,
+            "동남아시아인":50,
+            "베트남인":60,
+            "태국인":57,
+            "서남아시아인":41,
+            "네팔인":50,
+            "스리랑카인":51,
+            "러시아·중앙아시아인":8,
+            "우즈베키스탄인":18,
+            "러시아인":9,
+            "북미인":0,
+            "미국인":0,
+            "캐나다인":0,
+            "중남미인":19,
+            "브라질인":21,
+            "멕시코인":22,
+            "오세아니아인":1,
+            "호주인":1,
+            "뉴질랜드인":2,
+            "유럽인":1,
+            "프랑스인":1,
+            "영국인":1,
+            "중동·북아프리카인":32,
+            "이집트인":37,
+            "이란인":36,
+            "사하라 이남 아프리카인":57,
+            "남아프리카공화국인":64,
+            "나이지리아인":67,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"난폭함",
+        "survey_stats":{
+            "백인":14,
+            "흑인":48,
+            "아랍인":25,
+            "동양인":1,
+            "한국인":4,
+            "중국인":49,
+            "일본인":3,
+            "북한 주민":14,
+            "북한이탈주민":8,
+            "조선족":48,
+            "동남아시아인":1,
+            "베트남인":2,
+            "태국인":1,
+            "서남아시아인":1,
+            "네팔인":1,
+            "스리랑카인":2,
+            "러시아·중앙아시아인":3,
+            "우즈베키스탄인":4,
+            "러시아인":24,
+            "북미인":1,
+            "미국인":7,
+            "캐나다인":2,
+            "중남미인":6,
+            "브라질인":16,
+            "멕시코인":20,
+            "오세아니아인":0,
+            "호주인":0,
+            "뉴질랜드인":0,
+            "유럽인":0,
+            "프랑스인":1,
+            "영국인":1,
+            "중동·북아프리카인":6,
+            "이집트인":12,
+            "이란인":25,
+            "사하라 이남 아프리카인":5,
+            "남아프리카공화국인":10,
+            "나이지리아인":7,
+            "no_stereo":9
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"낮은 여성 인권",
+        "survey_stats":{
+            "백인":2,
+            "흑인":16,
+            "아랍인":44,
+            "동양인":5,
+            "한국인":12,
+            "중국인":15,
+            "일본인":18,
+            "북한 주민":34,
+            "북한이탈주민":18,
+            "조선족":22,
+            "동남아시아인":13,
+            "베트남인":16,
+            "태국인":16,
+            "서남아시아인":18,
+            "네팔인":24,
+            "스리랑카인":25,
+            "러시아·중앙아시아인":6,
+            "우즈베키스탄인":10,
+            "러시아인":7,
+            "북미인":2,
+            "미국인":3,
+            "캐나다인":2,
+            "중남미인":5,
+            "브라질인":7,
+            "멕시코인":9,
+            "오세아니아인":1,
+            "호주인":1,
+            "뉴질랜드인":1,
+            "유럽인":1,
+            "프랑스인":1,
+            "영국인":1,
+            "중동·북아프리카인":37,
+            "이집트인":43,
+            "이란인":51,
+            "사하라 이남 아프리카인":20,
+            "남아프리카공화국인":24,
+            "나이지리아인":24,
+            "no_stereo":12
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"높은 범죄율",
+        "survey_stats":{
+            "백인":11,
+            "흑인":44,
+            "아랍인":23,
+            "동양인":4,
+            "한국인":4,
+            "중국인":47,
+            "일본인":4,
+            "북한 주민":8,
+            "북한이탈주민":10,
+            "조선족":47,
+            "동남아시아인":13,
+            "베트남인":14,
+            "태국인":16,
+            "서남아시아인":6,
+            "네팔인":8,
+            "스리랑카인":10,
+            "러시아·중앙아시아인":6,
+            "우즈베키스탄인":7,
+            "러시아인":12,
+            "북미인":5,
+            "미국인":9,
+            "캐나다인":5,
+            "중남미인":10,
+            "브라질인":21,
+            "멕시코인":23,
+            "오세아니아인":0,
+            "호주인":0,
+            "뉴질랜드인":0,
+            "유럽인":3,
+            "프랑스인":5,
+            "영국인":3,
+            "중동·북아프리카인":8,
+            "이집트인":12,
+            "이란인":17,
+            "사하라 이남 아프리카인":6,
+            "남아프리카공화국인":13,
+            "나이지리아인":9,
+            "no_stereo":13
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"디지털 문맹",
+        "survey_stats":{
+            "백인":4,
+            "흑인":15,
+            "아랍인":10,
+            "동양인":3,
+            "한국인":3,
+            "중국인":6,
+            "일본인":5,
+            "북한 주민":51,
+            "북한이탈주민":24,
+            "조선족":25,
+            "동남아시아인":7,
+            "베트남인":10,
+            "태국인":8,
+            "서남아시아인":6,
+            "네팔인":13,
+            "스리랑카인":14,
+            "러시아·중앙아시아인":0,
+            "우즈베키스탄인":4,
+            "러시아인":3,
+            "북미인":1,
+            "미국인":3,
+            "캐나다인":2,
+            "중남미인":1,
+            "브라질인":3,
+            "멕시코인":3,
+            "오세아니아인":0,
+            "호주인":2,
+            "뉴질랜드인":1,
+            "유럽인":1,
+            "프랑스인":2,
+            "영국인":2,
+            "중동·북아프리카인":8,
+            "이집트인":11,
+            "이란인":13,
+            "사하라 이남 아프리카인":16,
+            "남아프리카공화국인":23,
+            "나이지리아인":25,
+            "no_stereo":33
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"마약 복용",
+        "survey_stats":{
+            "백인":44,
+            "흑인":53,
+            "아랍인":1,
+            "동양인":3,
+            "한국인":4,
+            "중국인":16,
+            "일본인":4,
+            "북한 주민":4,
+            "북한이탈주민":2,
+            "조선족":7,
+            "동남아시아인":6,
+            "베트남인":8,
+            "태국인":17,
+            "서남아시아인":2,
+            "네팔인":2,
+            "스리랑카인":2,
+            "러시아·중앙아시아인":2,
+            "우즈베키스탄인":2,
+            "러시아인":7,
+            "북미인":28,
+            "미국인":54,
+            "캐나다인":30,
+            "중남미인":27,
+            "브라질인":40,
+            "멕시코인":46,
+            "오세아니아인":4,
+            "호주인":6,
+            "뉴질랜드인":4,
+            "유럽인":15,
+            "프랑스인":16,
+            "영국인":17,
+            "중동·북아프리카인":0,
+            "이집트인":0,
+            "이란인":0,
+            "사하라 이남 아프리카인":4,
+            "남아프리카공화국인":7,
+            "나이지리아인":4,
+            "no_stereo":11
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"매매혼으로 인한 불행한 결혼생활",
+        "survey_stats":{
+            "백인":0,
+            "흑인":3,
+            "아랍인":16,
+            "동양인":8,
+            "한국인":11,
+            "중국인":11,
+            "일본인":0,
+            "북한 주민":9,
+            "북한이탈주민":15,
+            "조선족":17,
+            "동남아시아인":23,
+            "베트남인":60,
+            "태국인":35,
+            "서남아시아인":11,
+            "네팔인":18,
+            "스리랑카인":21,
+            "러시아·중앙아시아인":4,
+            "우즈베키스탄인":23,
+            "러시아인":6,
+            "북미인":0,
+            "미국인":0,
+            "캐나다인":0,
+            "중남미인":1,
+            "브라질인":4,
+            "멕시코인":4,
+            "오세아니아인":0,
+            "호주인":0,
+            "뉴질랜드인":0,
+            "유럽인":0,
+            "프랑스인":0,
+            "영국인":0,
+            "중동·북아프리카인":6,
+            "이집트인":12,
+            "이란인":15,
+            "사하라 이남 아프리카인":5,
+            "남아프리카공화국인":15,
+            "나이지리아인":16,
+            "no_stereo":13
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"매춘",
+        "survey_stats":{
+            "백인":19,
+            "흑인":15,
+            "아랍인":3,
+            "동양인":7,
+            "한국인":19,
+            "중국인":19,
+            "일본인":35,
+            "북한 주민":5,
+            "북한이탈주민":8,
+            "조선족":7,
+            "동남아시아인":28,
+            "베트남인":33,
+            "태국인":35,
+            "서남아시아인":4,
+            "네팔인":4,
+            "스리랑카인":5,
+            "러시아·중앙아시아인":8,
+            "우즈베키스탄인":12,
+            "러시아인":18,
+            "북미인":3,
+            "미국인":11,
+            "캐나다인":3,
+            "중남미인":11,
+            "브라질인":16,
+            "멕시코인":16,
+            "오세아니아인":2,
+            "호주인":4,
+            "뉴질랜드인":3,
+            "유럽인":7,
+            "프랑스인":9,
+            "영국인":8,
+            "중동·북아프리카인":1,
+            "이집트인":2,
+            "이란인":2,
+            "사하라 이남 아프리카인":3,
+            "남아프리카공화국인":4,
+            "나이지리아인":4,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"무례함",
+        "survey_stats":{
+            "백인":12,
+            "흑인":17,
+            "아랍인":8,
+            "동양인":1,
+            "한국인":8,
+            "중국인":72,
+            "일본인":7,
+            "북한 주민":6,
+            "북한이탈주민":3,
+            "조선족":32,
+            "동남아시아인":1,
+            "베트남인":2,
+            "태국인":0,
+            "서남아시아인":2,
+            "네팔인":1,
+            "스리랑카인":1,
+            "러시아·중앙아시아인":3,
+            "우즈베키스탄인":2,
+            "러시아인":8,
+            "북미인":5,
+            "미국인":9,
+            "캐나다인":5,
+            "중남미인":4,
+            "브라질인":4,
+            "멕시코인":5,
+            "오세아니아인":3,
+            "호주인":4,
+            "뉴질랜드인":2,
+            "유럽인":6,
+            "프랑스인":9,
+            "영국인":6,
+            "중동·북아프리카인":2,
+            "이집트인":3,
+            "이란인":3,
+            "사하라 이남 아프리카인":1,
+            "남아프리카공화국인":4,
+            "나이지리아인":2,
+            "no_stereo":14
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"부모가 자녀에게 과잉간섭함",
+        "survey_stats":{
+            "백인":4,
+            "흑인":1,
+            "아랍인":7,
+            "동양인":31,
+            "한국인":84,
+            "중국인":36,
+            "일본인":17,
+            "북한 주민":12,
+            "북한이탈주민":2,
+            "조선족":7,
+            "동남아시아인":2,
+            "베트남인":5,
+            "태국인":5,
+            "서남아시아인":0,
+            "네팔인":1,
+            "스리랑카인":2,
+            "러시아·중앙아시아인":0,
+            "우즈베키스탄인":2,
+            "러시아인":2,
+            "북미인":1,
+            "미국인":4,
+            "캐나다인":3,
+            "중남미인":0,
+            "브라질인":2,
+            "멕시코인":2,
+            "오세아니아인":0,
+            "호주인":1,
+            "뉴질랜드인":1,
+            "유럽인":1,
+            "프랑스인":3,
+            "영국인":2,
+            "중동·북아프리카인":2,
+            "이집트인":5,
+            "이란인":7,
+            "사하라 이남 아프리카인":0,
+            "남아프리카공화국인":3,
+            "나이지리아인":2,
+            "no_stereo":11
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"불법 체류",
+        "survey_stats":{
+            "백인":1,
+            "흑인":15,
+            "아랍인":13,
+            "동양인":10,
+            "한국인":0,
+            "중국인":42,
+            "일본인":0,
+            "북한 주민":12,
+            "북한이탈주민":25,
+            "조선족":61,
+            "동남아시아인":44,
+            "베트남인":62,
+            "태국인":54,
+            "서남아시아인":35,
+            "네팔인":42,
+            "스리랑카인":45,
+            "러시아·중앙아시아인":9,
+            "우즈베키스탄인":22,
+            "러시아인":12,
+            "북미인":1,
+            "미국인":1,
+            "캐나다인":1,
+            "중남미인":6,
+            "브라질인":7,
+            "멕시코인":9,
+            "오세아니아인":0,
+            "호주인":0,
+            "뉴질랜드인":0,
+            "유럽인":0,
+            "프랑스인":1,
+            "영국인":0,
+            "중동·북아프리카인":9,
+            "이집트인":9,
+            "이란인":13,
+            "사하라 이남 아프리카인":18,
+            "남아프리카공화국인":22,
+            "나이지리아인":24,
+            "no_stereo":2
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"빈번한 조직범죄",
+        "survey_stats":{
+            "백인":9,
+            "흑인":47,
+            "아랍인":24,
+            "동양인":1,
+            "한국인":2,
+            "중국인":40,
+            "일본인":6,
+            "북한 주민":8,
+            "북한이탈주민":8,
+            "조선족":40,
+            "동남아시아인":11,
+            "베트남인":16,
+            "태국인":14,
+            "서남아시아인":5,
+            "네팔인":6,
+            "스리랑카인":8,
+            "러시아·중앙아시아인":7,
+            "우즈베키스탄인":10,
+            "러시아인":11,
+            "북미인":3,
+            "미국인":7,
+            "캐나다인":3,
+            "중남미인":9,
+            "브라질인":15,
+            "멕시코인":27,
+            "오세아니아인":1,
+            "호주인":2,
+            "뉴질랜드인":1,
+            "유럽인":2,
+            "프랑스인":3,
+            "영국인":2,
+            "중동·북아프리카인":13,
+            "이집트인":15,
+            "이란인":23,
+            "사하라 이남 아프리카인":9,
+            "남아프리카공화국인":15,
+            "나이지리아인":11,
+            "no_stereo":15
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"빨간색 선호",
+        "survey_stats":{
+            "중국인":94,
+            "한국인":1,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"사기 행각",
+        "survey_stats":{
+            "백인":8,
+            "흑인":13,
+            "아랍인":9,
+            "동양인":4,
+            "한국인":13,
+            "중국인":49,
+            "일본인":9,
+            "북한 주민":7,
+            "북한이탈주민":10,
+            "조선족":44,
+            "동남아시아인":11,
+            "베트남인":15,
+            "태국인":13,
+            "서남아시아인":5,
+            "네팔인":6,
+            "스리랑카인":5,
+            "러시아·중앙아시아인":4,
+            "우즈베키스탄인":8,
+            "러시아인":8,
+            "북미인":2,
+            "미국인":3,
+            "캐나다인":2,
+            "중남미인":3,
+            "브라질인":5,
+            "멕시코인":6,
+            "오세아니아인":1,
+            "호주인":1,
+            "뉴질랜드인":1,
+            "유럽인":3,
+            "프랑스인":3,
+            "영국인":3,
+            "중동·북아프리카인":7,
+            "이집트인":11,
+            "이란인":11,
+            "사하라 이남 아프리카인":7,
+            "남아프리카공화국인":8,
+            "나이지리아인":8,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"소극적인 자세",
+        "survey_stats":{
+            "백인":0,
+            "흑인":0,
+            "아랍인":2,
+            "동양인":21,
+            "한국인":23,
+            "중국인":4,
+            "일본인":39,
+            "북한 주민":10,
+            "북한이탈주민":5,
+            "조선족":3,
+            "동남아시아인":7,
+            "베트남인":11,
+            "태국인":9,
+            "서남아시아인":6,
+            "네팔인":11,
+            "스리랑카인":9,
+            "러시아·중앙아시아인":1,
+            "우즈베키스탄인":1,
+            "러시아인":1,
+            "북미인":0,
+            "미국인":0,
+            "캐나다인":0,
+            "중남미인":0,
+            "브라질인":0,
+            "멕시코인":0,
+            "오세아니아인":0,
+            "호주인":0,
+            "뉴질랜드인":0,
+            "유럽인":0,
+            "프랑스인":2,
+            "영국인":0,
+            "중동·북아프리카인":1,
+            "이집트인":2,
+            "이란인":3,
+            "사하라 이남 아프리카인":2,
+            "남아프리카공화국인":2,
+            "나이지리아인":3,
+            "no_stereo":29
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"속마음을 보이지 않음",
+        "survey_stats":{
+            "백인":8,
+            "흑인":1,
+            "아랍인":4,
+            "동양인":8,
+            "한국인":20,
+            "중국인":6,
+            "일본인":60,
+            "북한 주민":2,
+            "북한이탈주민":5,
+            "조선족":4,
+            "동남아시아인":2,
+            "베트남인":2,
+            "태국인":1,
+            "서남아시아인":3,
+            "네팔인":2,
+            "스리랑카인":3,
+            "러시아·중앙아시아인":2,
+            "우즈베키스탄인":1,
+            "러시아인":1,
+            "북미인":5,
+            "미국인":5,
+            "캐나다인":4,
+            "중남미인":1,
+            "브라질인":0,
+            "멕시코인":0,
+            "오세아니아인":4,
+            "호주인":3,
+            "뉴질랜드인":3,
+            "유럽인":6,
+            "프랑스인":5,
+            "영국인":8,
+            "중동·북아프리카인":1,
+            "이집트인":1,
+            "이란인":3,
+            "사하라 이남 아프리카인":0,
+            "남아프리카공화국인":2,
+            "나이지리아인":1,
+            "no_stereo":20
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"수직적인 남녀관계",
+        "survey_stats":{
+            "백인":5,
+            "흑인":5,
+            "아랍인":42,
+            "동양인":16,
+            "한국인":35,
+            "중국인":18,
+            "일본인":38,
+            "북한 주민":37,
+            "북한이탈주민":13,
+            "조선족":12,
+            "동남아시아인":13,
+            "베트남인":14,
+            "태국인":13,
+            "서남아시아인":12,
+            "네팔인":12,
+            "스리랑카인":13,
+            "러시아·중앙아시아인":9,
+            "우즈베키스탄인":11,
+            "러시아인":10,
+            "북미인":4,
+            "미국인":4,
+            "캐나다인":4,
+            "중남미인":7,
+            "브라질인":7,
+            "멕시코인":8,
+            "오세아니아인":2,
+            "호주인":2,
+            "뉴질랜드인":2,
+            "유럽인":5,
+            "프랑스인":5,
+            "영국인":5,
+            "중동·북아프리카인":30,
+            "이집트인":38,
+            "이란인":44,
+            "사하라 이남 아프리카인":16,
+            "남아프리카공화국인":20,
+            "나이지리아인":17,
+            "no_stereo":9
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"스팸 메일 발송",
+        "survey_stats":{
+            "백인":5,
+            "흑인":5,
+            "아랍인":9,
+            "동양인":12,
+            "한국인":17,
+            "중국인":59,
+            "일본인":2,
+            "북한 주민":10,
+            "북한이탈주민":6,
+            "조선족":53,
+            "동남아시아인":17,
+            "베트남인":25,
+            "태국인":17,
+            "서남아시아인":6,
+            "네팔인":6,
+            "스리랑카인":5,
+            "러시아·중앙아시아인":5,
+            "우즈베키스탄인":4,
+            "러시아인":7,
+            "북미인":2,
+            "미국인":6,
+            "캐나다인":1,
+            "중남미인":4,
+            "브라질인":7,
+            "멕시코인":7,
+            "오세아니아인":2,
+            "호주인":3,
+            "뉴질랜드인":1,
+            "유럽인":1,
+            "프랑스인":2,
+            "영국인":1,
+            "중동·북아프리카인":2,
+            "이집트인":3,
+            "이란인":6,
+            "사하라 이남 아프리카인":1,
+            "남아프리카공화국인":3,
+            "나이지리아인":2,
+            "no_stereo":16
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"악취\/불쾌한 냄새",
+        "survey_stats":{
+            "백인":29,
+            "흑인":38,
+            "아랍인":30,
+            "동양인":4,
+            "한국인":1,
+            "중국인":36,
+            "일본인":1,
+            "북한 주민":5,
+            "북한이탈주민":6,
+            "조선족":12,
+            "동남아시아인":13,
+            "베트남인":18,
+            "태국인":15,
+            "서남아시아인":13,
+            "네팔인":18,
+            "스리랑카인":19,
+            "러시아·중앙아시아인":8,
+            "우즈베키스탄인":13,
+            "러시아인":8,
+            "북미인":8,
+            "미국인":11,
+            "캐나다인":9,
+            "중남미인":10,
+            "브라질인":12,
+            "멕시코인":14,
+            "오세아니아인":5,
+            "호주인":8,
+            "뉴질랜드인":5,
+            "유럽인":10,
+            "프랑스인":12,
+            "영국인":12,
+            "중동·북아프리카인":19,
+            "이집트인":19,
+            "이란인":26,
+            "사하라 이남 아프리카인":18,
+            "남아프리카공화국인":23,
+            "나이지리아인":24,
+            "no_stereo":20
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"알코올 중독",
+        "survey_stats":{
+            "백인":15,
+            "흑인":13,
+            "아랍인":2,
+            "동양인":6,
+            "한국인":17,
+            "중국인":12,
+            "일본인":4,
+            "북한 주민":2,
+            "북한이탈주민":2,
+            "조선족":8,
+            "동남아시아인":0,
+            "베트남인":2,
+            "태국인":2,
+            "서남아시아인":0,
+            "네팔인":1,
+            "스리랑카인":3,
+            "러시아·중앙아시아인":11,
+            "우즈베키스탄인":13,
+            "러시아인":20,
+            "북미인":6,
+            "미국인":12,
+            "캐나다인":9,
+            "중남미인":5,
+            "브라질인":7,
+            "멕시코인":10,
+            "오세아니아인":0,
+            "호주인":1,
+            "뉴질랜드인":0,
+            "유럽인":4,
+            "프랑스인":5,
+            "영국인":6,
+            "중동·북아프리카인":2,
+            "이집트인":5,
+            "이란인":5,
+            "사하라 이남 아프리카인":0,
+            "남아프리카공화국인":4,
+            "나이지리아인":2,
+            "no_stereo":48
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"업무 능력 부족",
+        "survey_stats":{
+            "백인":1,
+            "흑인":21,
+            "아랍인":10,
+            "동양인":4,
+            "한국인":4,
+            "중국인":38,
+            "일본인":3,
+            "북한 주민":24,
+            "북한이탈주민":20,
+            "조선족":43,
+            "동남아시아인":31,
+            "베트남인":40,
+            "태국인":36,
+            "서남아시아인":18,
+            "네팔인":19,
+            "스리랑카인":25,
+            "러시아·중앙아시아인":4,
+            "우즈베키스탄인":7,
+            "러시아인":9,
+            "북미인":0,
+            "미국인":1,
+            "캐나다인":1,
+            "중남미인":10,
+            "브라질인":14,
+            "멕시코인":15,
+            "오세아니아인":0,
+            "호주인":2,
+            "뉴질랜드인":2,
+            "유럽인":0,
+            "프랑스인":1,
+            "영국인":1,
+            "중동·북아프리카인":12,
+            "이집트인":15,
+            "이란인":15,
+            "사하라 이남 아프리카인":17,
+            "남아프리카공화국인":18,
+            "나이지리아인":25,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"여성 혐오",
+        "survey_stats":{
+            "백인":8,
+            "흑인":15,
+            "아랍인":36,
+            "동양인":21,
+            "한국인":38,
+            "중국인":24,
+            "일본인":19,
+            "북한 주민":11,
+            "북한이탈주민":10,
+            "조선족":25,
+            "동남아시아인":6,
+            "베트남인":12,
+            "태국인":8,
+            "서남아시아인":10,
+            "네팔인":12,
+            "스리랑카인":11,
+            "러시아·중앙아시아인":3,
+            "우즈베키스탄인":6,
+            "러시아인":5,
+            "북미인":2,
+            "미국인":4,
+            "캐나다인":4,
+            "중남미인":6,
+            "브라질인":8,
+            "멕시코인":10,
+            "오세아니아인":2,
+            "호주인":2,
+            "뉴질랜드인":3,
+            "유럽인":3,
+            "프랑스인":5,
+            "영국인":4,
+            "중동·북아프리카인":15,
+            "이집트인":14,
+            "이란인":26,
+            "사하라 이남 아프리카인":6,
+            "남아프리카공화국인":10,
+            "나이지리아인":9,
+            "no_stereo":15
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"여성에 대한\b가정폭력",
+        "survey_stats":{
+            "백인":10,
+            "흑인":11,
+            "아랍인":21,
+            "동양인":5,
+            "한국인":21,
+            "중국인":14,
+            "일본인":6,
+            "북한 주민":9,
+            "북한이탈주민":6,
+            "조선족":14,
+            "동남아시아인":3,
+            "베트남인":3,
+            "태국인":3,
+            "서남아시아인":3,
+            "네팔인":3,
+            "스리랑카인":3,
+            "러시아·중앙아시아인":7,
+            "우즈베키스탄인":7,
+            "러시아인":10,
+            "북미인":2,
+            "미국인":5,
+            "캐나다인":1,
+            "중남미인":3,
+            "브라질인":3,
+            "멕시코인":3,
+            "오세아니아인":2,
+            "호주인":1,
+            "뉴질랜드인":1,
+            "유럽인":3,
+            "프랑스인":2,
+            "영국인":2,
+            "중동·북아프리카인":14,
+            "이집트인":17,
+            "이란인":20,
+            "사하라 이남 아프리카인":3,
+            "남아프리카공화국인":6,
+            "나이지리아인":4,
+            "no_stereo":44
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"여성의 사회경제적 권리가 보장되지 않음",
+        "survey_stats":{
+            "백인":1,
+            "흑인":14,
+            "아랍인":54,
+            "동양인":7,
+            "한국인":13,
+            "중국인":18,
+            "일본인":14,
+            "북한 주민":46,
+            "북한이탈주민":16,
+            "조선족":20,
+            "동남아시아인":14,
+            "베트남인":18,
+            "태국인":17,
+            "서남아시아인":22,
+            "네팔인":25,
+            "스리랑카인":24,
+            "러시아·중앙아시아인":5,
+            "우즈베키스탄인":10,
+            "러시아인":8,
+            "북미인":1,
+            "미국인":1,
+            "캐나다인":1,
+            "중남미인":6,
+            "브라질인":6,
+            "멕시코인":7,
+            "오세아니아인":1,
+            "호주인":1,
+            "뉴질랜드인":1,
+            "유럽인":1,
+            "프랑스인":1,
+            "영국인":1,
+            "중동·북아프리카인":41,
+            "이집트인":48,
+            "이란인":59,
+            "사하라 이남 아프리카인":25,
+            "남아프리카공화국인":29,
+            "나이지리아인":33,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"이기적임",
+        "survey_stats":{
+            "백인":26,
+            "흑인":4,
+            "아랍인":4,
+            "동양인":4,
+            "한국인":22,
+            "중국인":56,
+            "일본인":26,
+            "북한 주민":12,
+            "북한이탈주민":8,
+            "조선족":24,
+            "동남아시아인":3,
+            "베트남인":5,
+            "태국인":4,
+            "서남아시아인":2,
+            "네팔인":2,
+            "스리랑카인":2,
+            "러시아·중앙아시아인":3,
+            "우즈베키스탄인":3,
+            "러시아인":13,
+            "북미인":5,
+            "미국인":21,
+            "캐나다인":6,
+            "중남미인":3,
+            "브라질인":5,
+            "멕시코인":4,
+            "오세아니아인":2,
+            "호주인":4,
+            "뉴질랜드인":2,
+            "유럽인":10,
+            "프랑스인":15,
+            "영국인":17,
+            "중동·북아프리카인":2,
+            "이집트인":5,
+            "이란인":4,
+            "사하라 이남 아프리카인":2,
+            "남아프리카공화국인":5,
+            "나이지리아인":3,
+            "no_stereo":16
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"인종차별을 함",
+        "survey_stats":{
+            "백인":66,
+            "흑인":45,
+            "아랍인":13,
+            "동양인":9,
+            "한국인":15,
+            "중국인":21,
+            "일본인":12,
+            "북한 주민":6,
+            "북한이탈주민":3,
+            "조선족":9,
+            "동남아시아인":8,
+            "베트남인":9,
+            "태국인":9,
+            "서남아시아인":6,
+            "네팔인":6,
+            "스리랑카인":7,
+            "러시아·중앙아시아인":12,
+            "우즈베키스탄인":10,
+            "러시아인":15,
+            "북미인":30,
+            "미국인":45,
+            "캐나다인":31,
+            "중남미인":11,
+            "브라질인":14,
+            "멕시코인":13,
+            "오세아니아인":20,
+            "호주인":29,
+            "뉴질랜드인":20,
+            "유럽인":36,
+            "프랑스인":42,
+            "영국인":42,
+            "중동·북아프리카인":8,
+            "이집트인":8,
+            "이란인":11,
+            "사하라 이남 아프리카인":9,
+            "남아프리카공화국인":14,
+            "나이지리아인":10,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"친절함",
+        "survey_stats":{
+            "백인":20,
+            "흑인":4,
+            "아랍인":1,
+            "동양인":21,
+            "한국인":57,
+            "중국인":2,
+            "일본인":60,
+            "북한 주민":1,
+            "북한이탈주민":1,
+            "조선족":1,
+            "동남아시아인":2,
+            "베트남인":5,
+            "태국인":8,
+            "서남아시아인":0,
+            "네팔인":6,
+            "스리랑카인":2,
+            "러시아·중앙아시아인":1,
+            "우즈베키스탄인":7,
+            "러시아인":2,
+            "북미인":7,
+            "미국인":20,
+            "캐나다인":18,
+            "중남미인":0,
+            "브라질인":2,
+            "멕시코인":2,
+            "오세아니아인":6,
+            "호주인":19,
+            "뉴질랜드인":16,
+            "유럽인":6,
+            "프랑스인":14,
+            "영국인":18,
+            "중동·북아프리카인":0,
+            "이집트인":2,
+            "이란인":0,
+            "사하라 이남 아프리카인":0,
+            "남아프리카공화국인":3,
+            "나이지리아인":1,
+            "no_stereo":9
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"큰 목소리",
+        "survey_stats":{
+            "백인":7,
+            "흑인":12,
+            "아랍인":3,
+            "동양인":5,
+            "한국인":26,
+            "중국인":74,
+            "일본인":0,
+            "북한 주민":2,
+            "북한이탈주민":4,
+            "조선족":23,
+            "동남아시아인":3,
+            "베트남인":10,
+            "태국인":5,
+            "서남아시아인":2,
+            "네팔인":2,
+            "스리랑카인":1,
+            "러시아·중앙아시아인":7,
+            "우즈베키스탄인":8,
+            "러시아인":12,
+            "북미인":3,
+            "미국인":3,
+            "캐나다인":3,
+            "중남미인":5,
+            "브라질인":6,
+            "멕시코인":11,
+            "오세아니아인":2,
+            "호주인":1,
+            "뉴질랜드인":2,
+            "유럽인":3,
+            "프랑스인":3,
+            "영국인":2,
+            "중동·북아프리카인":4,
+            "이집트인":6,
+            "이란인":3,
+            "사하라 이남 아프리카인":3,
+            "남아프리카공화국인":5,
+            "나이지리아인":5,
+            "no_stereo":9
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"테러 정당화",
+        "survey_stats":{
+            "백인":12,
+            "흑인":18,
+            "아랍인":50,
+            "동양인":4,
+            "한국인":4,
+            "중국인":14,
+            "일본인":7,
+            "북한 주민":16,
+            "북한이탈주민":4,
+            "조선족":11,
+            "동남아시아인":3,
+            "베트남인":3,
+            "태국인":3,
+            "서남아시아인":3,
+            "네팔인":3,
+            "스리랑카인":4,
+            "러시아·중앙아시아인":5,
+            "우즈베키스탄인":4,
+            "러시아인":18,
+            "북미인":4,
+            "미국인":9,
+            "캐나다인":4,
+            "중남미인":5,
+            "브라질인":6,
+            "멕시코인":12,
+            "오세아니아인":1,
+            "호주인":1,
+            "뉴질랜드인":1,
+            "유럽인":4,
+            "프랑스인":6,
+            "영국인":5,
+            "중동·북아프리카인":21,
+            "이집트인":22,
+            "이란인":48,
+            "사하라 이남 아프리카인":9,
+            "남아프리카공화국인":12,
+            "나이지리아인":9,
+            "no_stereo":15
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"학업 능력이 낮음",
+        "survey_stats":{
+            "백인":1,
+            "흑인":34,
+            "아랍인":9,
+            "동양인":6,
+            "한국인":0,
+            "중국인":15,
+            "일본인":1,
+            "북한 주민":50,
+            "북한이탈주민":32,
+            "조선족":45,
+            "동남아시아인":33,
+            "베트남인":38,
+            "태국인":39,
+            "서남아시아인":32,
+            "네팔인":36,
+            "스리랑카인":37,
+            "러시아·중앙아시아인":10,
+            "우즈베키스탄인":17,
+            "러시아인":10,
+            "북미인":1,
+            "미국인":5,
+            "캐나다인":1,
+            "중남미인":18,
+            "브라질인":19,
+            "멕시코인":23,
+            "오세아니아인":1,
+            "호주인":1,
+            "뉴질랜드인":1,
+            "유럽인":1,
+            "프랑스인":1,
+            "영국인":1,
+            "중동·북아프리카인":25,
+            "이집트인":28,
+            "이란인":26,
+            "사하라 이남 아프리카인":40,
+            "남아프리카공화국인":44,
+            "나이지리아인":48,
+            "no_stereo":20
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"한국에서 가난하게 생활함",
+        "survey_stats":{
+            "백인":1,
+            "흑인":23,
+            "아랍인":4,
+            "동양인":4,
+            "한국인":12,
+            "중국인":11,
+            "일본인":2,
+            "북한 주민":46,
+            "북한이탈주민":55,
+            "조선족":50,
+            "동남아시아인":32,
+            "베트남인":49,
+            "태국인":42,
+            "서남아시아인":25,
+            "네팔인":41,
+            "스리랑카인":41,
+            "러시아·중앙아시아인":6,
+            "우즈베키스탄인":21,
+            "러시아인":7,
+            "북미인":0,
+            "미국인":0,
+            "캐나다인":0,
+            "중남미인":3,
+            "브라질인":6,
+            "멕시코인":7,
+            "오세아니아인":0,
+            "호주인":0,
+            "뉴질랜드인":0,
+            "유럽인":0,
+            "프랑스인":0,
+            "영국인":0,
+            "중동·북아프리카인":10,
+            "이집트인":15,
+            "이란인":16,
+            "사하라 이남 아프리카인":23,
+            "남아프리카공화국인":29,
+            "나이지리아인":35,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"한국에서 건설근로자로 종사함",
+        "survey_stats":{
+            "백인":0,
+            "흑인":6,
+            "아랍인":4,
+            "동양인":21,
+            "한국인":22,
+            "중국인":26,
+            "일본인":1,
+            "북한 주민":3,
+            "북한이탈주민":13,
+            "조선족":35,
+            "동남아시아인":47,
+            "베트남인":69,
+            "태국인":58,
+            "서남아시아인":25,
+            "네팔인":37,
+            "스리랑카인":38,
+            "러시아·중앙아시아인":15,
+            "우즈베키스탄인":37,
+            "러시아인":15,
+            "북미인":1,
+            "미국인":0,
+            "캐나다인":0,
+            "중남미인":3,
+            "브라질인":3,
+            "멕시코인":2,
+            "오세아니아인":1,
+            "호주인":0,
+            "뉴질랜드인":0,
+            "유럽인":1,
+            "프랑스인":0,
+            "영국인":0,
+            "중동·북아프리카인":6,
+            "이집트인":4,
+            "이란인":6,
+            "사하라 이남 아프리카인":5,
+            "남아프리카공화국인":9,
+            "나이지리아인":7,
+            "no_stereo":11
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"한국에서 임금 차별을 당함",
+        "survey_stats":{
+            "새터민":69,
+            "한국인":15,
+            "no_stereo":16
+        }
+    },
+    {
+        "category":"Race_ethnicity_nationality",
+        "stereotype":"한국에서 취직이 어려움",
+        "survey_stats":{
+            "새터민":82,
+            "한국인":6,
+            "no_stereo":12
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"과도한 전도",
+        "survey_stats":{
+            "기독교인":89,
+            "천주교인":0,
+            "불교인":0,
+            "이슬람교도":11,
+            "무교인":2,
+            "no_stereo":8
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"낙태 반대",
+        "survey_stats":{
+            "기독교인":67,
+            "천주교인":61,
+            "불교인":23,
+            "이슬람교도":30,
+            "무교인":4,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"낮은 여성 인권",
+        "survey_stats":{
+            "기독교인":8,
+            "천주교인":2,
+            "불교인":3,
+            "이슬람교도":76,
+            "무교인":1,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"낮은 여성 인권",
+        "survey_stats":{
+            "기독교인":8,
+            "천주교인":2,
+            "불교인":3,
+            "이슬람교도":76,
+            "무교인":1,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"동성애 반대",
+        "survey_stats":{
+            "기독교인":76,
+            "천주교인":43,
+            "불교인":20,
+            "이슬람교도":41,
+            "무교인":6,
+            "no_stereo":16
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"반과학주의",
+        "survey_stats":{
+            "기독교인":40,
+            "천주교인":12,
+            "불교인":10,
+            "이슬람교도":30,
+            "무교인":2,
+            "no_stereo":42
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"사기 행각을 벌임",
+        "survey_stats":{
+            "기독교인":48,
+            "천주교인":5,
+            "불교인":8,
+            "이슬람교도":8,
+            "무교인":5,
+            "no_stereo":46
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"성직자의 성범죄",
+        "survey_stats":{
+            "기독교인":70,
+            "천주교인":21,
+            "불교인":14,
+            "이슬람교도":16,
+            "무교인":9,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"우상 숭배",
+        "survey_stats":{
+            "기독교인":54,
+            "천주교인":15,
+            "불교인":27,
+            "이슬람교도":38,
+            "무교인":9,
+            "no_stereo":18
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"위선적임",
+        "survey_stats":{
+            "기독교인":69,
+            "천주교인":9,
+            "불교인":6,
+            "이슬람교도":22,
+            "무교인":3,
+            "no_stereo":22
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"육식 자제",
+        "survey_stats":{
+            "기독교인":4,
+            "천주교인":2,
+            "불교인":62,
+            "이슬람교도":57,
+            "무교인":6,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"종교 비리",
+        "survey_stats":{
+            "기독교인":91,
+            "천주교인":18,
+            "불교인":37,
+            "이슬람교도":20,
+            "무교인":2,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"종교 지도자의 권력 세습",
+        "survey_stats":{
+            "기독교인":65,
+            "천주교인":14,
+            "불교인":10,
+            "이슬람교도":36,
+            "무교인":0,
+            "no_stereo":13
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"종교에 동물 제물을 바침",
+        "survey_stats":{
+            "기독교인":4,
+            "천주교인":4,
+            "불교인":2,
+            "이슬람교도":44,
+            "무교인":7,
+            "no_stereo":48
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"종교적 극단주의",
+        "survey_stats":{
+            "기독교인":45,
+            "천주교인":8,
+            "불교인":6,
+            "이슬람교도":70,
+            "무교인":4,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"타인에 대해 비판적임",
+        "survey_stats":{
+            "기독교인":59,
+            "천주교인":11,
+            "불교인":1,
+            "이슬람교도":32,
+            "무교인":5,
+            "no_stereo":25
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"타종교에 배타적임",
+        "survey_stats":{
+            "기독교인":75,
+            "천주교인":10,
+            "불교인":3,
+            "이슬람교도":59,
+            "무교인":8,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"탐욕스러움",
+        "survey_stats":{
+            "기독교인":58,
+            "천주교인":8,
+            "불교인":4,
+            "이슬람교도":13,
+            "무교인":8,
+            "no_stereo":31
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"테러를 일으킴",
+        "survey_stats":{
+            "기독교인":5,
+            "천주교인":4,
+            "불교인":2,
+            "이슬람교도":78,
+            "무교인":2,
+            "no_stereo":19
+        }
+    },
+    {
+        "category":"Religion",
+        "stereotype":"편협함",
+        "survey_stats":{
+            "기독교인":61,
+            "천주교인":6,
+            "불교인":5,
+            "이슬람교도":30,
+            "무교인":7,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"게으름",
+        "survey_stats":{
+            "저소득층":70,
+            "고소득층":10,
+            "no_stereo":20
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"고속 승진",
+        "survey_stats":{
+            "금수저":84,
+            "중산층, 저소득층":10,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"급여가 낮음",
+        "survey_stats":{
+            "비정규직":85,
+            "정규직":11,
+            "no_stereo":4
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"똑똑하지 않음",
+        "survey_stats":{
+            "저소득층":72,
+            "고소득층":1,
+            "no_stereo":27
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"마약 복용",
+        "survey_stats":{
+            "고소득층":70,
+            "저소득층":11,
+            "금수저":74,
+            "중산층":9,
+            "정규직":6,
+            "비정규직":6,
+            "주부":3,
+            "직장인":7,
+            "무직자":16,
+            "실업자":13,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"무능력함",
+        "survey_stats":{
+            "저소득층":88,
+            "고소득층":0,
+            "no_stereo":12
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"병역 비리",
+        "survey_stats":{
+            "금수저":97,
+            "중산층, 저소득층":2,
+            "no_stereo":1
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"불량 학생",
+        "survey_stats":{
+            "저소득층":69,
+            "고소득층":8,
+            "no_stereo":23
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"사내 복지 혜택을 누리지 못함",
+        "survey_stats":{
+            "비정규직":97,
+            "정규직":1,
+            "no_stereo":2
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"상식이 부족함",
+        "survey_stats":{
+            "저소득층":72,
+            "고소득층":4,
+            "no_stereo":24
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"술에 의존함",
+        "survey_stats":{
+            "저소득층":76,
+            "고소득층":3,
+            "no_stereo":21
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"업무 능력 부족",
+        "survey_stats":{
+            "저소득층":61,
+            "고소득층":5,
+            "no_stereo":34
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"외국어에 능통하지 않음",
+        "survey_stats":{
+            "저소득층":87,
+            "고소득층":3,
+            "no_stereo":10
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"우울함",
+        "survey_stats":{
+            "주부":60,
+            "직장인":18,
+            "no_stereo":22
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"입학 특례",
+        "survey_stats":{
+            "금수저":97,
+            "중산층":0,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"자녀 교육에 무관심함",
+        "survey_stats":{
+            "저소득층":71,
+            "고소득층":1,
+            "no_stereo":28
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"자녀 양육에 대한 책임감이 강함",
+        "survey_stats":{
+            "주부":74,
+            "직장인":9,
+            "no_stereo":17
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"자녀에 무관심함",
+        "survey_stats":{
+            "저소득층":81,
+            "고소득층":6,
+            "no_stereo":13
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"자존감이 낮음",
+        "survey_stats":{
+            "무직자, 실업자":83,
+            "직장인, 정규직":12,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"재벌과 결혼",
+        "survey_stats":{
+            "금수저":79,
+            "중산층, 저소득층":18,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"학업성취도가 낮음",
+        "survey_stats":{
+            "저소득층":88,
+            "고소득층":5,
+            "no_stereo":7
+        }
+    },
+    {
+        "category":"SES",
+        "stereotype":"힘든 학창시절을 보냄",
+        "survey_stats":{
+            "저소득층":97,
+            "고소득층":1,
+            "no_stereo":2
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"가족과의 갈등",
+        "survey_stats":{
+            "레즈비언, 게이":89,
+            "이성애자":5,
+            "no_stereo":6
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"개신교(기독교)로부터의 배척",
+        "survey_stats":{
+            "레즈비언, 게이":70,
+            "이성애자":14,
+            "no_stereo":16
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"교제 상대에 대한 사회적 시선을 두려워 함",
+        "survey_stats":{
+            "레즈비언, 게이":77,
+            "이성애자":18,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"깊은 정서적 유대감을 쌓지 못함",
+        "survey_stats":{
+            "레즈비언, 게이":58,
+            "이성애자":1,
+            "no_stereo":41
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"난잡한 성생활",
+        "survey_stats":{
+            "양성애자":79,
+            "이성애자":1,
+            "no_stereo":20
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"남성성을 강조하고자 함",
+        "survey_stats":{
+            "게이":16,
+            "이성애자":61,
+            "no_stereo":23
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"남성적인 패션 스타일",
+        "survey_stats":{
+            "레즈비언":50,
+            "이성애자":17,
+            "no_stereo":33
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"바람을 핌",
+        "survey_stats":{
+            "양성애자":21,
+            "이성애자":36,
+            "no_stereo":43
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"뷰티와 패션에 관심이 많음",
+        "survey_stats":{
+            "게이":44,
+            "이성애자":26,
+            "no_stereo":30
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"상대방의 의사를 존중하지 않고 추파를 던짐",
+        "survey_stats":{
+            "게이":39,
+            "이성애자":20,
+            "no_stereo":41
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"성 정체성 혼란",
+        "survey_stats":{
+            "게이":91,
+            "레즈비언":86,
+            "이성애자":20,
+            "양성애자":67,
+            "no_stereo":3
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"성병이 있음",
+        "survey_stats":{
+            "게이":78,
+            "레즈비언":41,
+            "이성애자":13,
+            "양성애자":47,
+            "no_stereo":12
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"에이즈에 걸림",
+        "survey_stats":{
+            "게이":90,
+            "이성애자":5,
+            "no_stereo":5
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"연인 관계 발전 속도가 성급함",
+        "survey_stats":{
+            "게이":35,
+            "레즈비언":22,
+            "이성애자":19,
+            "양성애자":17,
+            "no_stereo":50
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"자녀 양육 자격 불충분",
+        "survey_stats":{
+            "레즈비언, 게이":74,
+            "이성애자":6,
+            "no_stereo":20
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"자녀 양육 자격 불충분",
+        "survey_stats":{
+            "게이":60,
+            "레즈비언":50,
+            "이성애자":4,
+            "양성애자":32,
+            "no_stereo":34
+        }
+    },
+    {
+        "category":"Sexual_orientation",
+        "stereotype":"정신질환을 앓고 있음",
+        "survey_stats":{
+            "레즈비언, 게이":68,
+            "이성애자":5,
+            "no_stereo":27
+        }
+    }
+]
