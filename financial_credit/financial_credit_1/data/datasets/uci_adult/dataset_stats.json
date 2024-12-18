@@ -1,0 +1,176 @@
+{
+    "feature_names": [
+        "age",
+        "workclass",
+        "fnlwgt",
+        "education",
+        "education-num",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "capital-gain",
+        "capital-loss",
+        "hours-per-week",
+        "native-country",
+        "income"
+    ],
+    "mean_std": {
+        "age": [
+            38.58164675532078,
+            13.640432553581341
+        ],
+        "capital-gain": [
+            1077.6488437087312,
+            7385.292084840338
+        ],
+        "capital-loss": [
+            87.303829734959,
+            402.9602186489998
+        ],
+        "education-num": [
+            10.0806793403151,
+            2.5727203320673877
+        ],
+        "fnlwgt": [
+            189778.36651208502,
+            105549.97769702224
+        ],
+        "hours-per-week": [
+            40.437455852092995,
+            12.347428681731843
+        ]
+    },
+    "sensitive_column_names": [
+        "sex",
+        "race"
+    ],
+    "sensitive_column_values": [
+        "Female",
+        "Black"
+    ],
+    "target_column_name": "income",
+    "target_column_positive_value": ">50K",
+    "vocabulary": {
+        "education": [
+            "Doctorate",
+            "Some-college",
+            "10th",
+            "Masters",
+            "Bachelors",
+            "12th",
+            "11th",
+            "7th-8th",
+            "1st-4th",
+            "Assoc-voc",
+            "Prof-school",
+            "HS-grad",
+            "Assoc-acdm",
+            "Preschool",
+            "5th-6th",
+            "9th"
+        ],
+        "income": [
+            "<=50K",
+            ">50K"
+        ],
+        "marital-status": [
+            "Married-civ-spouse",
+            "Separated",
+            "Widowed",
+            "Divorced",
+            "Married-spouse-absent",
+            "Married-AF-spouse",
+            "Never-married"
+        ],
+        "native-country": [
+            "Holand-Netherlands",
+            "Poland",
+            "Hong",
+            "Jamaica",
+            "France",
+            "Peru",
+            "England",
+            "Cambodia",
+            "Greece",
+            "Iran",
+            "Ireland",
+            "Italy",
+            "Canada",
+            "China",
+            "Nicaragua",
+            "Laos",
+            "Portugal",
+            "United-States",
+            "Outlying-US(Guam-USVI-etc)",
+            "Haiti",
+            "Thailand",
+            "Germany",
+            "India",
+            "Dominican-Republic",
+            "Puerto-Rico",
+            "Mexico",
+            "Ecuador",
+            "Japan",
+            "Philippines",
+            "Scotland",
+            "Taiwan",
+            "Trinadad&Tobago",
+            "Columbia",
+            "Hungary",
+            "Guatemala",
+            "Vietnam",
+            "Yugoslavia",
+            "Honduras",
+            "South",
+            "El-Salvador",
+            "Cuba"
+        ],
+        "occupation": [
+            "Farming-fishing",
+            "Tech-support",
+            "Protective-serv",
+            "Handlers-cleaners",
+            "Sales",
+            "Armed-Forces",
+            "Transport-moving",
+            "Machine-op-inspct",
+            "Craft-repair",
+            "Prof-specialty",
+            "Exec-managerial",
+            "Priv-house-serv",
+            "Other-service",
+            "Adm-clerical"
+        ],
+        "race": [
+            "Black",
+            "White",
+            "Other",
+            "Asian-Pac-Islander",
+            "Amer-Indian-Eskimo"
+        ],
+        "relationship": [
+            "Other-relative",
+            "Wife",
+            "Not-in-family",
+            "Husband",
+            "Unmarried",
+            "Own-child"
+        ],
+        "sex": [
+            "Male",
+            "Female"
+        ],
+        "workclass": [
+            "Never-worked",
+            "Private",
+            "Without-pay",
+            "Self-emp-inc",
+            "Self-emp-not-inc",
+            "Local-gov",
+            "Federal-gov",
+            "State-gov"
+        ]
+    }
+}
