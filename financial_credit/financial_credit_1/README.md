@@ -39,6 +39,10 @@ conda activate faircreditscoring
 pip install -r requirements.txt
 ```
 
+## Model Load
+
+You can download and use the pre-trained model from [the link](https://drive.google.com/file/d/1OXfML8upciTZzj_sxJ1KaaDVtGx9sCEC/view?usp=sharing).
+
 ## Usage
 
 ```
