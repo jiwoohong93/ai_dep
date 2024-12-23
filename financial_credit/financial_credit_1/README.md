@@ -1,4 +1,4 @@
-# Credit Scoring
+# Credit Scoring with FairLogitNet V1.0
 
 This study developed an AI model for credit scoring using the UCI Adult dataset. The model achieved high accuracy (81.00%) and DEO (0.069), demonstrating its potential for fair and reliable credit scoring AI.
 
