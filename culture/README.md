@@ -81,5 +81,5 @@ python test.py --dataset_path {dataset_path} \
 
 
 ## 평가 지표
-- **CharF1**: 문자 기반 평가 지표로, 91.8의 성능 달성
-- **Entity F1**: 개체(entity) 기반 평가 지표로, 92.7의 성능 달성
+- **Char F1**: 문자 기반 평가 지표로, 92.7의 성능 달성
+- **Entity F1**: 개체(entity) 기반 평가 지표로, 91.8의 성능 달성
