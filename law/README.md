@@ -55,4 +55,4 @@
 
   - 구축방식: 종합법률정보사이트 https://glaw.scourt.go.kr/ 에서 추출
 
-  - Download Link: http://milabfile.snu.ac.kr:16000/detecting-incongruity/한국종합법률정보 데이터셋 v1.0.zip
+  - Download Link: http://milabfile.snu.ac.kr:16000/detecting-incongruity/한국종합법률정보데이터셋_v1.0.zip
