@@ -2,7 +2,7 @@
 
 ## 프로젝트 개요
 본 프로젝트는 한국어 문화 데이터셋을 활용하여 텍스트 편향성을 검출하기 위한 **Named Entity Recognition (NER)** 태스크를 수행합니다.  
-사전 학습된 언어 모델 **KoELECTRA v3**를 활용해 높은 성능을 달성하였으며, 모델의 성능은 **Char F1** 92.7, **Entity F1** 91.8로 측정되었습니다.
+사전 학습된 언어 모델 **KoELECTRA v3** 및 **Kobert** 를 활용해 높은 성능을 달성하였으며, 모델의 성능은 **Char F1** 94.0, **Entity F1** 91.8로 측정되었습니다.
 
 
 
@@ -81,5 +81,6 @@ python test.py --dataset_path {dataset_path} \
 
 
 ## 평가 지표
-- **Char F1**: 문자 기반 평가 지표로, 92.7의 성능 달성
+- **Char F1**: 문자 기반 평가 지표로, 94.0의 성능 달성
 - **Entity F1**: 개체(entity) 기반 평가 지표로, 91.8의 성능 달성
+- **trained weight(kobert)**: https://drive.google.com/file/d/1aESa-Qr-ijjpEgFX3A8qqlMy-NZOXr9O/view?usp=sharing

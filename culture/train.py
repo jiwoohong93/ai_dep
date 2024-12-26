@@ -6,11 +6,13 @@ from tqdm import tqdm
 import torch
 from torch.utils.data import DataLoader
 from torch.optim import AdamW
-from transformers import BertForTokenClassification,ElectraForTokenClassification
+from transformers import BertForTokenClassification,ElectraForTokenClassification, AutoModelForTokenClassification
 import numpy as np
 from seqeval.metrics import precision_score, recall_score, f1_score, classification_report
 from dataset import get_dataset
 from models import get_model
+from torch.optim.lr_scheduler import CosineAnnealingLR
+from transformers import AutoModel, AutoTokenizer
 
 import wandb
 
@@ -97,7 +99,7 @@ def evaluate(dataloader_valid, model, tokenizer, id2label, echo_num=40):
 
 def main(args):
 
-    args.wandb_name = f"KLUE-{args.model_name}-lr{args.lr}-bs{args.bs}-ep{args.epoch}"
+    args.wandb_name = f"KLUE-{args.model_name}-lr{args.lr}-wd{args.wd}-bs{args.bs}-ep{args.epoch}"
     args.save_path = os.path.join(args.save_path, args.wandb_name)
     if not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
@@ -105,7 +107,7 @@ def main(args):
     ModelConfig, Tokenizer, Model, pretrain_name = get_model(model_name=args.model_name)
 
     # get tokenizer
-    tokenizer = Tokenizer.from_pretrained(pretrain_name, do_lower_case=False)
+    tokenizer = Tokenizer.from_pretrained(pretrain_name, do_lower_case=False, trust_remote_code=True)
 
     # get dataset
     dataset_train, dataset_valid = get_dataset(args.dataset_path, tokenizer, args.max_seq_len)
@@ -120,7 +122,8 @@ def main(args):
 
     config    = ModelConfig.from_pretrained(pretrain_name, num_labels=len(labels), id2label=id2label, label2id=label2id)
     model     = Model.from_pretrained(pretrain_name, config=config)
-
+    # model = AutoModel.from_pretrained("monologg/distilkobert")
+    # tokenizer = AutoTokenizer.from_pretrained("monologg/distilkobert", trust_remote_code=True)
     model.cuda()
 
     if Model == BertForTokenClassification:
@@ -133,10 +136,16 @@ def main(args):
             {'params': model.electra.parameters(), 'lr': args.lr / 100 },
             {'params': model.classifier.parameters(), 'lr': args.lr }
         ]
+    elif Model == AutoModelForTokenClassification:
+        optimizer_grouped_parameters = [
+            {'params': model.bert.parameters(), 'lr': args.lr / 100 },
+            {'params': model.classifier.parameters(), 'lr': args.lr }
+        ]
     else:
         assert False, f"{Model} is not supported"
 
-    optimizer = AdamW(optimizer_grouped_parameters, lr=args.lr, betas=(0.9, 0.999), eps=1e-8)
+    optimizer = AdamW(optimizer_grouped_parameters, lr=args.lr, weight_decay=args.wd, betas=(0.9, 0.999), eps=1e-8)
+    #scheduler = CosineAnnealingLR(optimizer, T_max=len(dataloader_train) * args.epoch, eta_min=1e-6)
 
     echo_loss = 0.0
     best_f1score_e = 0.0
@@ -176,7 +185,7 @@ def main(args):
                 torch.nn.utils.clip_grad_norm_(model.parameters(), args.max_grad_norm)
 
                 optimizer.step()
-
+                #scheduler.step()
                 total_loss += loss.mean().item()
                 echo_loss += loss.mean().item()
 
@@ -220,11 +229,12 @@ if __name__ == '__main__':
     parser.add_argument('--dataset_path', required=True)
     parser.add_argument('--save_path', type=str, default='results')
 
-    parser.add_argument('--model_name', default='koelectra', choices=["koelectra-v3", "koelectra", "kcbert"])
+    parser.add_argument('--model_name', default='koelectra', choices=["koelectra-v3", "koelectra", "kcbert", "kobert"])
     parser.add_argument('--max_seq_len', default=50, type=int)
     parser.add_argument('--epoch', default=300, type=int)
     parser.add_argument('--bs', default=128, type=int)
-    parser.add_argument('--lr', default=1e-3, type=float)
+    parser.add_argument('--wd', default=1e-2, type=float)
+    parser.add_argument('--lr', default=5e-4, type=float)
     parser.add_argument('--max_grad_norm', default=1.0, type=float)
 
     parser.add_argument('--no_wandb', action='store_true', help='Disable WandB logging')
