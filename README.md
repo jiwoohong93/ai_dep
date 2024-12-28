@@ -3,42 +3,21 @@ Development and Study of AI Technologies to Inexpensively Conform to Evolving Po
 
 AI Development in Evolving Policy [AI DEP]
 
-음성 speech_recognition 유창동 교수님 연구실
 
-언어 language 오혜연 교수님 연구실
+본 저장소는 과학기술정보통신부의 '사람중심인공지능핵심원천기술개발' 사업 중 “점차 강화되는 윤리 정책에 유연하게 대응하며 진화하는 인공지능 기술 개발 연구(2022~2026)” 과제에서 연구 및 개발된 공정한 인공지능 모델과 학습법을 모아 놓은 공간입니다.
 
-금융/신용 1 financial_credit 1 유창동 교수님 연구실
+이 저장소의 인공지능 시스템은 신용, 채용, 의료, 법률 등 다양한 분야에서 윤리 정책을 반영하면서 성능 저하를 최소화하도록 설계되었습니다. 
+또한, 변화하는 정책 반영 시 필요한 자원을 최소화하는 학습 기술을 제공하며, 실제 데이터에서의 학습과 활용을 최종 목표로 하고 있습니다.
 
-금융/신용 2 financial_credit 2 신진우 교수님 연구실
-
-금융/신용 3 financial_credit 3 최재식 교수님 연구실
-
-금융/신용 4 financial_credit 4 김용대 교수님 연구실
-
-추천시스템 1 recommendation 1 윤철희 교수님 연구실
-
-추천시스템 2 recommendation 2 김용대 교수님 연구실
-
-추천시스템 3 recommendation 3 코난테크놀로지
-
-의료 1 medical 1 유창동 교수님 연구실
-
-의료 2 medical 2 유창동 교수님 연구실
-
-의료 3 medical 3 신진우 교수님 연구실
-
-의료 4 medical 4 정교민 교수님 연구실
-
-채용 1 recruitment 1 김준영 교수님 연구실
-
-채용 2 recruitment 2 신진우 교수님 연구실
-
-치안 public_safety 김용대 교수님 연구실
-
-광고 advertising 정교민 교수님 연구실
-
-법률 law 정교민 교수님 연구실
-
-문화 culture 김준모 교수님 연구실
-
-방송 broadcast 이주호 교수님 연구실
+포함된 인공지능 모델:
+채용 보조 시스템: 2종
+추천 시스템: 3종
+금융/신용평가 시스템: 3종
+의료 보조 시스템: 3종
+음성인식 시스템
+언어 처리 시스템
+치안 보조 자원 배분 시스템
+광고 유형 분류 시스템
+법률 검색 시스템
+방송 편향성 검출 시스템
+문화 콘텐츠 편향성 검출 시스템
