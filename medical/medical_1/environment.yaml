@@ -1,4 +1,4 @@
-name: XGBoost
+name: medisurveyboost
 channels:
   - pytorch
   - nvidia/label/cuda-12.1.0
