@@ -1,0 +1,2 @@
+tau,status,selected_count,objective_mean_model,obj_mean_posterior,obj_std_posterior,max_gap_mean_posterior,max_gap_std_posterior,result_file,selected_SA01,selected_SA02,selected_SA03
+0.0398,OPTIMAL,25,35.26956920933003,35.26957110602749,1.533738032544309,0.05308450034576802,0.009901301000339814,/home/idea/2026-region/results/region_ipm_k25_tau0p0398_mean.npz,8.554,13.849999999999998,0.7880000000000001

@@ -1,0 +1,24 @@
+{
+  "data": "data_new.csv",
+  "sensitive_columns": [
+    "SA01",
+    "SA02",
+    "SA03"
+  ],
+  "covariate_columns": [
+    "XF_X01_SA01",
+    "XF_X01_SA02",
+    "XF_X01_SA03",
+    "XF_X02_SA01",
+    "XF_X02_SA02",
+    "XF_X02_SA03",
+    "SA01",
+    "SA02",
+    "SA03"
+  ],
+  "n": 345,
+  "n_treated": 125,
+  "n_control": 220,
+  "weight_sum": 1.9999999706051312,
+  "last_max_ipm_loss": 0.00026618363335728645
+}

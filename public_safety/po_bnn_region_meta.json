@@ -1,0 +1,38 @@
+{
+  "data": "/home/idea/2026-region/data_new.csv",
+  "weights": "/home/idea/2026-region/w_IPM_region.npy",
+  "sensitive_columns": [
+    "SA01",
+    "SA02",
+    "SA03"
+  ],
+  "x_columns": [
+    "X01",
+    "X02"
+  ],
+  "feature_columns": [
+    "XF_X01_SA01",
+    "XF_X01_SA02",
+    "XF_X01_SA03",
+    "XF_X02_SA01",
+    "XF_X02_SA02",
+    "XF_X02_SA03",
+    "TF_SA01",
+    "TF_SA02",
+    "TF_SA03",
+    "SA01",
+    "SA02",
+    "SA03"
+  ],
+  "n": 345,
+  "n_features": 12,
+  "w_mean_shape": [
+    1,
+    12
+  ],
+  "w_samples_shape": [
+    50,
+    1,
+    12
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "source": "data.csv",
+  "n": 345,
+  "sim": 5,
+  "sensitive_columns": [
+    "SA01",
+    "SA02",
+    "SA03"
+  ],
+  "x_columns": [
+    "X01",
+    "X02"
+  ],
+  "xf_columns": [
+    "XF_X01_SA01",
+    "XF_X01_SA02",
+    "XF_X01_SA03",
+    "XF_X02_SA01",
+    "XF_X02_SA02",
+    "XF_X02_SA03"
+  ],
+  "tf_columns": [
+    "TF_SA01",
+    "TF_SA02",
+    "TF_SA03"
+  ],
+  "neighbor_columns": [
+    "neigh0",
+    "neigh1",
+    "neigh2",
+    "neigh3",
+    "neigh4",
+    "neigh5"
+  ],
+  "similarity_columns": [
+    "sim0",
+    "sim1",
+    "sim2",
+    "sim3",
+    "sim4",
+    "sim5"
+  ]
+}
