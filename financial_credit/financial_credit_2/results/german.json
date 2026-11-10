@@ -1,0 +1,499 @@
+{
+  "dataset": "german",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "deo_cap": 4.0,
+  "summary": {
+    "macro_acc": 68.83,
+    "macro_acc_std": 4.59,
+    "pooled_acc": 68.83,
+    "deo_x100": 0.39,
+    "deo_x100_std": 0.69,
+    "policy_drop": 1.98,
+    "per_dataset_acc": {
+      "german": 68.83
+    },
+    "per_dataset_deo": {
+      "german": 0.39
+    },
+    "metrics_orig": {
+      "accuracy": 0.5867,
+      "Balanced accuracy": 0.6311,
+      "equal_opportunity_difference": -0.2029,
+      "average_odds_difference": -0.1586,
+      "statistical_parity_difference": -0.1964,
+      "disparate_impact": 0.6154
+    },
+    "metrics_transf": {
+      "accuracy": 0.6883,
+      "Balanced accuracy": 0.5037,
+      "equal_opportunity_difference": -0.0013,
+      "average_odds_difference": -0.0221,
+      "statistical_parity_difference": -0.0173,
+      "disparate_impact": 0.9806
+    }
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "metrics_orig": {
+        "true_negative_rate": 0.7804878048780488,
+        "true_positive_rate": 0.5871559633027523,
+        "false_positive_rate": 0.21951219512195122,
+        "false_negative_rate": 0.41284403669724773,
+        "precision": 0.8767123287671232,
+        "false_discovery_rate": 0.1232876712328767,
+        "false_omission_rate": 0.5844155844155844,
+        "accuracy": 0.64,
+        "Balanced accuracy": 0.6838218840904006,
+        "error_rate": 0.36,
+        "average_odds_difference": 0.030644907898354376,
+        "average_abs_odds_difference": 0.030644907898354376,
+        "selection_rate": 0.4866666666666667,
+        "disparate_impact": 0.9423076923076923,
+        "statistical_parity_difference": -0.02857142857142858,
+        "generalized_entropy_index": 0.2617728531855956,
+        "theil_index": 0.3838811373691201,
+        "equal_opportunity_difference": 0.05645889792231262
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.0,
+        "true_positive_rate": 1.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 0.7266666666666667,
+        "false_discovery_rate": 0.2733333333333333,
+        "false_omission_rate": 0.0,
+        "accuracy": 0.7266666666666667,
+        "Balanced accuracy": 0.5,
+        "error_rate": 0.2733333333333333,
+        "average_odds_difference": 0.0,
+        "average_abs_odds_difference": 0.0,
+        "selection_rate": 1.0,
+        "disparate_impact": 1.0,
+        "statistical_parity_difference": 0.0,
+        "generalized_entropy_index": 0.06125106219675988,
+        "theil_index": 0.055943378122481895,
+        "equal_opportunity_difference": 0.0
+      },
+      "per_dataset_acc": {
+        "german": 72.66666666666667
+      },
+      "macro_acc": 72.66666666666667,
+      "pooled_acc": 72.66666666666667,
+      "pooled_acc_unconstrained": 74.66666666666667,
+      "deo_x100": 0.0,
+      "per_dataset_deo": {
+        "german": 0.0
+      },
+      "policy_drop": 2.6785714285714284,
+      "threshold": 0.2
+    },
+    {
+      "seed": 2,
+      "metrics_orig": {
+        "true_negative_rate": 0.7777777777777778,
+        "true_positive_rate": 0.43859649122807015,
+        "false_positive_rate": 0.2222222222222222,
+        "false_negative_rate": 0.5614035087719298,
+        "precision": 0.8620689655172413,
+        "false_discovery_rate": 0.13793103448275862,
+        "false_omission_rate": 0.6956521739130435,
+        "accuracy": 0.52,
+        "Balanced accuracy": 0.6081871345029239,
+        "error_rate": 0.48,
+        "average_odds_difference": -0.14101170568561872,
+        "average_abs_odds_difference": 0.14101170568561872,
+        "selection_rate": 0.38666666666666666,
+        "disparate_impact": 0.6384379113646336,
+        "statistical_parity_difference": -0.16028010114763663,
+        "generalized_entropy_index": 0.4336803983703033,
+        "theil_index": 0.5853230106449658,
+        "equal_opportunity_difference": -0.175
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.0,
+        "true_positive_rate": 1.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 0.76,
+        "false_discovery_rate": 0.24,
+        "false_omission_rate": 0.0,
+        "accuracy": 0.76,
+        "Balanced accuracy": 0.5,
+        "error_rate": 0.24,
+        "average_odds_difference": 0.0,
+        "average_abs_odds_difference": 0.0,
+        "selection_rate": 1.0,
+        "disparate_impact": 1.0,
+        "statistical_parity_difference": 0.0,
+        "generalized_entropy_index": 0.05931321540062445,
+        "theil_index": 0.053203658019162436,
+        "equal_opportunity_difference": 0.0
+      },
+      "per_dataset_acc": {
+        "german": 76.0
+      },
+      "macro_acc": 76.0,
+      "pooled_acc": 76.0,
+      "pooled_acc_unconstrained": 76.0,
+      "deo_x100": 0.0,
+      "per_dataset_deo": {
+        "german": 0.0
+      },
+      "policy_drop": 0.0,
+      "threshold": 0.2
+    },
+    {
+      "seed": 3,
+      "metrics_orig": {
+        "true_negative_rate": 0.6923076923076923,
+        "true_positive_rate": 0.6122448979591837,
+        "false_positive_rate": 0.3076923076923077,
+        "false_negative_rate": 0.3877551020408163,
+        "precision": 0.7894736842105263,
+        "false_discovery_rate": 0.21052631578947367,
+        "false_omission_rate": 0.5135135135135135,
+        "accuracy": 0.64,
+        "Balanced accuracy": 0.652276295133438,
+        "error_rate": 0.36,
+        "average_odds_difference": -0.1763795045045045,
+        "average_abs_odds_difference": 0.1763795045045045,
+        "selection_rate": 0.5066666666666667,
+        "disparate_impact": 0.5923994038748137,
+        "statistical_parity_difference": -0.23456260720411665,
+        "generalized_entropy_index": 0.232421875,
+        "theil_index": 0.33189182531662487,
+        "equal_opportunity_difference": -0.259009009009009
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.0,
+        "true_positive_rate": 1.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 0.6533333333333333,
+        "false_discovery_rate": 0.3466666666666667,
+        "false_omission_rate": 0.0,
+        "accuracy": 0.6533333333333333,
+        "Balanced accuracy": 0.5,
+        "error_rate": 0.3466666666666667,
+        "average_odds_difference": 0.0,
+        "average_abs_odds_difference": 0.0,
+        "selection_rate": 1.0,
+        "disparate_impact": 1.0,
+        "statistical_parity_difference": 0.0,
+        "generalized_entropy_index": 0.0624448583472208,
+        "theil_index": 0.05923545203284456,
+        "equal_opportunity_difference": 0.0
+      },
+      "per_dataset_acc": {
+        "german": 65.33333333333333
+      },
+      "macro_acc": 65.33333333333333,
+      "pooled_acc": 65.33333333333333,
+      "pooled_acc_unconstrained": 72.66666666666667,
+      "deo_x100": 0.0,
+      "per_dataset_deo": {
+        "german": 0.0
+      },
+      "policy_drop": 10.091743119266068,
+      "threshold": 0.2
+    },
+    {
+      "seed": 4,
+      "metrics_orig": {
+        "true_negative_rate": 0.7837837837837838,
+        "true_positive_rate": 0.5132743362831859,
+        "false_positive_rate": 0.21621621621621623,
+        "false_negative_rate": 0.48672566371681414,
+        "precision": 0.8787878787878788,
+        "false_discovery_rate": 0.12121212121212122,
+        "false_omission_rate": 0.6547619047619048,
+        "accuracy": 0.58,
+        "Balanced accuracy": 0.6485290600334848,
+        "error_rate": 0.42000000000000004,
+        "average_odds_difference": -0.1458326776816155,
+        "average_abs_odds_difference": 0.1458326776816155,
+        "selection_rate": 0.44,
+        "disparate_impact": 0.61035541904344,
+        "statistical_parity_difference": -0.1930015214083895,
+        "generalized_entropy_index": 0.3412668489018757,
+        "theil_index": 0.4835796543031162,
+        "equal_opportunity_difference": -0.21833202202989765
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.0,
+        "true_positive_rate": 0.9823008849557522,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.017699115044247787,
+        "precision": 0.75,
+        "false_discovery_rate": 0.25,
+        "false_omission_rate": 1.0,
+        "accuracy": 0.74,
+        "Balanced accuracy": 0.4911504424778761,
+        "error_rate": 0.26,
+        "average_odds_difference": -0.01003147128245474,
+        "average_abs_odds_difference": 0.01003147128245474,
+        "selection_rate": 0.9866666666666667,
+        "disparate_impact": 0.9859587538394032,
+        "statistical_parity_difference": -0.013910019560965048,
+        "generalized_entropy_index": 0.06756756756756742,
+        "theil_index": 0.06753834124190898,
+        "equal_opportunity_difference": -0.02006294256490948
+      },
+      "per_dataset_acc": {
+        "german": 74.0
+      },
+      "macro_acc": 74.0,
+      "pooled_acc": 74.0,
+      "pooled_acc_unconstrained": 74.0,
+      "deo_x100": 2.006294256490948,
+      "per_dataset_deo": {
+        "german": 2.006294256490948
+      },
+      "policy_drop": 0.0,
+      "threshold": 0.2800000000000001
+    },
+    {
+      "seed": 5,
+      "metrics_orig": {
+        "true_negative_rate": 0.6792452830188679,
+        "true_positive_rate": 0.5257731958762887,
+        "false_positive_rate": 0.32075471698113206,
+        "false_negative_rate": 0.4742268041237113,
+        "precision": 0.75,
+        "false_discovery_rate": 0.25,
+        "false_omission_rate": 0.5609756097560976,
+        "accuracy": 0.58,
+        "Balanced accuracy": 0.6025092394475783,
+        "error_rate": 0.42000000000000004,
+        "average_odds_difference": -0.2822011642666433,
+        "average_abs_odds_difference": 0.2822011642666433,
+        "selection_rate": 0.4533333333333333,
+        "disparate_impact": 0.4454545454545455,
+        "statistical_parity_difference": -0.3112244897959183,
+        "generalized_entropy_index": 0.2940031418618947,
+        "theil_index": 0.4096133777477639,
+        "equal_opportunity_difference": -0.3268656716417911
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.0,
+        "true_positive_rate": 1.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 0.6466666666666666,
+        "false_discovery_rate": 0.35333333333333333,
+        "false_omission_rate": 0.0,
+        "accuracy": 0.6466666666666666,
+        "Balanced accuracy": 0.5,
+        "error_rate": 0.3533333333333334,
+        "average_odds_difference": 0.0,
+        "average_abs_odds_difference": 0.0,
+        "selection_rate": 1.0,
+        "disparate_impact": 1.0,
+        "statistical_parity_difference": 0.0,
+        "generalized_entropy_index": 0.062377150622436824,
+        "theil_index": 0.059368236923208334,
+        "equal_opportunity_difference": 0.0
+      },
+      "per_dataset_acc": {
+        "german": 64.66666666666666
+      },
+      "macro_acc": 64.66666666666666,
+      "pooled_acc": 64.66666666666666,
+      "pooled_acc_unconstrained": 66.0,
+      "deo_x100": 0.0,
+      "per_dataset_deo": {
+        "german": 0.0
+      },
+      "policy_drop": 2.0202020202020345,
+      "threshold": 0.2
+    },
+    {
+      "seed": 6,
+      "metrics_orig": {
+        "true_negative_rate": 0.7254901960784313,
+        "true_positive_rate": 0.48484848484848486,
+        "false_positive_rate": 0.27450980392156865,
+        "false_negative_rate": 0.5151515151515151,
+        "precision": 0.7741935483870968,
+        "false_discovery_rate": 0.22580645161290322,
+        "false_omission_rate": 0.5795454545454546,
+        "accuracy": 0.5666666666666667,
+        "Balanced accuracy": 0.6051693404634582,
+        "error_rate": 0.43333333333333335,
+        "average_odds_difference": -0.2252774045877494,
+        "average_abs_odds_difference": 0.2252774045877494,
+        "selection_rate": 0.41333333333333333,
+        "disparate_impact": 0.5259574468085106,
+        "statistical_parity_difference": -0.2301177442677133,
+        "generalized_entropy_index": 0.32817761766778925,
+        "theil_index": 0.4550007590624857,
+        "equal_opportunity_difference": -0.19802955665024624
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.0,
+        "true_positive_rate": 1.0,
+        "false_positive_rate": 1.0,
+        "false_negative_rate": 0.0,
+        "precision": 0.66,
+        "false_discovery_rate": 0.34,
+        "false_omission_rate": 0.0,
+        "accuracy": 0.66,
+        "Balanced accuracy": 0.5,
+        "error_rate": 0.33999999999999997,
+        "average_odds_difference": 0.0,
+        "average_abs_odds_difference": 0.0,
+        "selection_rate": 1.0,
+        "disparate_impact": 1.0,
+        "statistical_parity_difference": 0.0,
+        "generalized_entropy_index": 0.06248607707730002,
+        "theil_index": 0.059076716470584996,
+        "equal_opportunity_difference": 0.0
+      },
+      "per_dataset_acc": {
+        "german": 66.0
+      },
+      "macro_acc": 66.0,
+      "pooled_acc": 66.0,
+      "pooled_acc_unconstrained": 66.0,
+      "deo_x100": 0.0,
+      "per_dataset_deo": {
+        "german": 0.0
+      },
+      "policy_drop": 0.0,
+      "threshold": 0.2
+    },
+    {
+      "seed": 7,
+      "metrics_orig": {
+        "true_negative_rate": 0.75,
+        "true_positive_rate": 0.46938775510204084,
+        "false_positive_rate": 0.25,
+        "false_negative_rate": 0.5306122448979592,
+        "precision": 0.7796610169491526,
+        "false_discovery_rate": 0.22033898305084745,
+        "false_omission_rate": 0.5714285714285714,
+        "accuracy": 0.5666666666666667,
+        "Balanced accuracy": 0.6096938775510204,
+        "error_rate": 0.43333333333333335,
+        "average_odds_difference": -0.15619464001816943,
+        "average_abs_odds_difference": 0.15619464001816943,
+        "selection_rate": 0.3933333333333333,
+        "disparate_impact": 0.5425584868093578,
+        "statistical_parity_difference": -0.2056388453792795,
+        "generalized_entropy_index": 0.3339420501582662,
+        "theil_index": 0.4634638918339989,
+        "equal_opportunity_difference": -0.29054054054054057
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.17307692307692307,
+        "true_positive_rate": 0.8673469387755102,
+        "false_positive_rate": 0.8269230769230769,
+        "false_negative_rate": 0.1326530612244898,
+        "precision": 0.6640625,
+        "false_discovery_rate": 0.3359375,
+        "false_omission_rate": 0.5909090909090909,
+        "accuracy": 0.6266666666666667,
+        "Balanced accuracy": 0.5202119309262166,
+        "error_rate": 0.3733333333333333,
+        "average_odds_difference": -0.1285458778105837,
+        "average_abs_odds_difference": 0.13868101294571877,
+        "selection_rate": 0.8533333333333334,
+        "disparate_impact": 0.8861788617886178,
+        "statistical_parity_difference": -0.10024614007607968,
+        "generalized_entropy_index": 0.11574074074074084,
+        "theil_index": 0.14884876280690815,
+        "equal_opportunity_difference": 0.010135135135135087
+      },
+      "per_dataset_acc": {
+        "german": 62.66666666666667
+      },
+      "macro_acc": 62.66666666666667,
+      "pooled_acc": 62.66666666666667,
+      "pooled_acc_unconstrained": 63.33333333333333,
+      "deo_x100": 1.0135135135135087,
+      "per_dataset_deo": {
+        "german": 1.0135135135135087
+      },
+      "policy_drop": 1.0526315789473535,
+      "threshold": 0.5850000000000004
+    },
+    {
+      "seed": 8,
+      "metrics_orig": {
+        "true_negative_rate": 0.717948717948718,
+        "true_positive_rate": 0.5585585585585585,
+        "false_positive_rate": 0.28205128205128205,
+        "false_negative_rate": 0.44144144144144143,
+        "precision": 0.8493150684931506,
+        "false_discovery_rate": 0.1506849315068493,
+        "false_omission_rate": 0.6363636363636364,
+        "accuracy": 0.6,
+        "Balanced accuracy": 0.6382536382536382,
+        "error_rate": 0.4,
+        "average_odds_difference": -0.17247262541380187,
+        "average_abs_odds_difference": 0.17247262541380187,
+        "selection_rate": 0.4866666666666667,
+        "disparate_impact": 0.6257288629737608,
+        "statistical_parity_difference": -0.20751667003435043,
+        "generalized_entropy_index": 0.3011798469387755,
+        "theil_index": 0.4282903332682933,
+        "equal_opportunity_difference": -0.21161191749427044
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.15384615384615385,
+        "true_positive_rate": 0.8828828828828829,
+        "false_positive_rate": 0.8461538461538461,
+        "false_negative_rate": 0.11711711711711711,
+        "precision": 0.7480916030534351,
+        "false_discovery_rate": 0.25190839694656486,
+        "false_omission_rate": 0.6842105263157895,
+        "accuracy": 0.6933333333333334,
+        "Balanced accuracy": 0.5183645183645184,
+        "error_rate": 0.30666666666666664,
+        "average_odds_difference": -0.037881970970206236,
+        "average_abs_odds_difference": 0.037881970970206236,
+        "selection_rate": 0.8733333333333333,
+        "disparate_impact": 0.9727126805778491,
+        "statistical_parity_difference": -0.0240452616690241,
+        "generalized_entropy_index": 0.11245674740484428,
+        "theil_index": 0.14394105655750217,
+        "equal_opportunity_difference": -0.0007639419404125158
+      },
+      "per_dataset_acc": {
+        "german": 69.33333333333334
+      },
+      "macro_acc": 69.33333333333334,
+      "pooled_acc": 69.33333333333334,
+      "pooled_acc_unconstrained": 69.33333333333334,
+      "deo_x100": 0.07639419404125158,
+      "per_dataset_deo": {
+        "german": 0.07639419404125158
+      },
+      "policy_drop": 0.0,
+      "threshold": 0.46500000000000025
+    }
+  ],
+  "environment": {
+    "python": "3.13.12",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.9.0",
+      "lightgbm": "4.6.0",
+      "aif360": "0.6.1",
+      "pyarrow": "25.0.0",
+      "xlrd": "2.0.2"
+    },
+    "data_files": {}
+  }
+}

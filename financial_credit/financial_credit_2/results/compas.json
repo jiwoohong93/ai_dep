@@ -1,0 +1,499 @@
+{
+  "dataset": "compas",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "deo_cap": 4.0,
+  "summary": {
+    "macro_acc": 61.98,
+    "macro_acc_std": 3.65,
+    "pooled_acc": 61.98,
+    "deo_x100": 7.01,
+    "deo_x100_std": 5.23,
+    "policy_drop": 5.49,
+    "per_dataset_acc": {
+      "compas": 61.98
+    },
+    "per_dataset_deo": {
+      "compas": 7.01
+    },
+    "metrics_orig": {
+      "accuracy": 0.6569,
+      "Balanced accuracy": 0.6562,
+      "equal_opportunity_difference": -0.2196,
+      "average_odds_difference": -0.2608,
+      "statistical_parity_difference": -0.2943,
+      "disparate_impact": 0.6099
+    },
+    "metrics_transf": {
+      "accuracy": 0.6198,
+      "Balanced accuracy": 0.6079,
+      "equal_opportunity_difference": -0.0701,
+      "average_odds_difference": -0.0986,
+      "statistical_parity_difference": -0.1219,
+      "disparate_impact": 0.8408
+    }
+  },
+  "runs": [
+    {
+      "seed": 1,
+      "metrics_orig": {
+        "true_negative_rate": 0.5869565217391305,
+        "true_positive_rate": 0.716931216931217,
+        "false_positive_rate": 0.41304347826086957,
+        "false_negative_rate": 0.2830687830687831,
+        "precision": 0.6131221719457014,
+        "false_discovery_rate": 0.38687782805429866,
+        "false_omission_rate": 0.3057142857142857,
+        "accuracy": 0.648989898989899,
+        "Balanced accuracy": 0.6519438693351738,
+        "error_rate": 0.351010101010101,
+        "average_odds_difference": -0.18130299331962998,
+        "average_abs_odds_difference": 0.18130299331962998,
+        "selection_rate": 0.5580808080808081,
+        "disparate_impact": 0.6927935989893141,
+        "statistical_parity_difference": -0.2266583812334938,
+        "generalized_entropy_index": 0.1474473753166213,
+        "theil_index": 0.19922598734499816,
+        "equal_opportunity_difference": -0.1673381294964028
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.6328502415458938,
+        "true_positive_rate": 0.6164021164021164,
+        "false_positive_rate": 0.3671497584541063,
+        "false_negative_rate": 0.3835978835978836,
+        "precision": 0.6051948051948052,
+        "false_discovery_rate": 0.3948051948051948,
+        "false_omission_rate": 0.35626535626535627,
+        "accuracy": 0.625,
+        "Balanced accuracy": 0.6246261789740051,
+        "error_rate": 0.375,
+        "average_odds_difference": -0.10768274665981498,
+        "average_abs_odds_difference": 0.10768274665981498,
+        "selection_rate": 0.4861111111111111,
+        "disparate_impact": 0.7544232130219392,
+        "statistical_parity_difference": -0.14824452384651232,
+        "generalized_entropy_index": 0.18419065759608774,
+        "theil_index": 0.2549260316429239,
+        "equal_opportunity_difference": -0.11366906474820138
+      },
+      "per_dataset_acc": {
+        "compas": 62.5
+      },
+      "macro_acc": 62.5,
+      "pooled_acc": 62.5,
+      "pooled_acc_unconstrained": 63.005050505050505,
+      "deo_x100": 11.366906474820137,
+      "per_dataset_deo": {
+        "compas": 11.366906474820137
+      },
+      "policy_drop": 0.8016032064128259,
+      "threshold": 0.5800000000000003
+    },
+    {
+      "seed": 2,
+      "metrics_orig": {
+        "true_negative_rate": 0.5824175824175825,
+        "true_positive_rate": 0.7289719626168224,
+        "false_positive_rate": 0.4175824175824176,
+        "false_negative_rate": 0.27102803738317754,
+        "precision": 0.6724137931034483,
+        "false_discovery_rate": 0.3275862068965517,
+        "false_omission_rate": 0.35365853658536583,
+        "accuracy": 0.6616161616161617,
+        "Balanced accuracy": 0.6556947725172024,
+        "error_rate": 0.33838383838383834,
+        "average_odds_difference": -0.22853658900078416,
+        "average_abs_odds_difference": 0.22853658900078416,
+        "selection_rate": 0.5858585858585859,
+        "disparate_impact": 0.6685193530619398,
+        "statistical_parity_difference": -0.26434532603921257,
+        "generalized_entropy_index": 0.15385423230413783,
+        "theil_index": 0.21003705734489495,
+        "equal_opportunity_difference": -0.2474593963955667
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.34065934065934067,
+        "true_positive_rate": 0.8691588785046729,
+        "false_positive_rate": 0.6593406593406593,
+        "false_negative_rate": 0.1308411214953271,
+        "precision": 0.6078431372549019,
+        "false_discovery_rate": 0.39215686274509803,
+        "false_omission_rate": 0.3111111111111111,
+        "accuracy": 0.6262626262626263,
+        "Balanced accuracy": 0.6049091095820067,
+        "error_rate": 0.3737373737373737,
+        "average_odds_difference": -0.11091227134217801,
+        "average_abs_odds_difference": 0.11091227134217801,
+        "selection_rate": 0.7727272727272727,
+        "disparate_impact": 0.8559868330818818,
+        "statistical_parity_difference": -0.1257836521183564,
+        "generalized_entropy_index": 0.10528083848427842,
+        "theil_index": 0.13199086141442126,
+        "equal_opportunity_difference": -0.07822909950569523
+      },
+      "per_dataset_acc": {
+        "compas": 62.62626262626263
+      },
+      "macro_acc": 62.62626262626263,
+      "pooled_acc": 62.62626262626263,
+      "pooled_acc_unconstrained": 65.53030303030303,
+      "deo_x100": 7.822909950569523,
+      "per_dataset_deo": {
+        "compas": 7.822909950569523
+      },
+      "policy_drop": 4.4315992292870865,
+      "threshold": 0.2900000000000001
+    },
+    {
+      "seed": 3,
+      "metrics_orig": {
+        "true_negative_rate": 0.7358490566037735,
+        "true_positive_rate": 0.5439429928741093,
+        "false_positive_rate": 0.2641509433962264,
+        "false_negative_rate": 0.45605700712589076,
+        "precision": 0.7003058103975535,
+        "false_discovery_rate": 0.2996941896024465,
+        "false_omission_rate": 0.4129032258064516,
+        "accuracy": 0.6338383838383839,
+        "Balanced accuracy": 0.6398960247389414,
+        "error_rate": 0.36616161616161613,
+        "average_odds_difference": -0.31125605190236005,
+        "average_abs_odds_difference": 0.31125605190236005,
+        "selection_rate": 0.4128787878787879,
+        "disparate_impact": 0.5103448275862069,
+        "statistical_parity_difference": -0.3338557993730407,
+        "generalized_entropy_index": 0.22664428042462698,
+        "theil_index": 0.32097960622934457,
+        "equal_opportunity_difference": -0.24829826732673266
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.31266846361185985,
+        "true_positive_rate": 0.8931116389548693,
+        "false_positive_rate": 0.6873315363881402,
+        "false_negative_rate": 0.10688836104513064,
+        "precision": 0.595879556259905,
+        "false_discovery_rate": 0.4041204437400951,
+        "false_omission_rate": 0.2795031055900621,
+        "accuracy": 0.6212121212121212,
+        "Balanced accuracy": 0.6028900512833646,
+        "error_rate": 0.3787878787878788,
+        "average_odds_difference": -0.10154187293729378,
+        "average_abs_odds_difference": 0.10154187293729378,
+        "selection_rate": 0.7967171717171717,
+        "disparate_impact": 0.870375031462371,
+        "statistical_parity_difference": -0.1153157187639946,
+        "generalized_entropy_index": 0.09636415791172151,
+        "theil_index": 0.11760757332886937,
+        "equal_opportunity_difference": -0.03641707920792081
+      },
+      "per_dataset_acc": {
+        "compas": 62.121212121212125
+      },
+      "macro_acc": 62.121212121212125,
+      "pooled_acc": 62.121212121212125,
+      "pooled_acc_unconstrained": 66.28787878787878,
+      "deo_x100": 3.641707920792081,
+      "per_dataset_deo": {
+        "compas": 3.641707920792081
+      },
+      "policy_drop": 6.285714285714272,
+      "threshold": 0.35500000000000015
+    },
+    {
+      "seed": 4,
+      "metrics_orig": {
+        "true_negative_rate": 0.5945205479452055,
+        "true_positive_rate": 0.7142857142857143,
+        "false_positive_rate": 0.4054794520547945,
+        "false_negative_rate": 0.2857142857142857,
+        "precision": 0.673289183222958,
+        "false_discovery_rate": 0.32671081677704195,
+        "false_omission_rate": 0.35988200589970504,
+        "accuracy": 0.6590909090909091,
+        "Balanced accuracy": 0.6544031311154599,
+        "error_rate": 0.34090909090909094,
+        "average_odds_difference": -0.23495935345426008,
+        "average_abs_odds_difference": 0.23495935345426008,
+        "selection_rate": 0.571969696969697,
+        "disparate_impact": 0.655776329223278,
+        "statistical_parity_difference": -0.27308411214953277,
+        "generalized_entropy_index": 0.15928587227479502,
+        "theil_index": 0.21852003986417723,
+        "equal_opportunity_difference": -0.22514112027789834
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.5123287671232877,
+        "true_positive_rate": 0.7798594847775175,
+        "false_positive_rate": 0.4876712328767123,
+        "false_negative_rate": 0.22014051522248243,
+        "precision": 0.6516634050880626,
+        "false_discovery_rate": 0.34833659491193736,
+        "false_omission_rate": 0.33451957295373663,
+        "accuracy": 0.6565656565656566,
+        "Balanced accuracy": 0.6460941259504026,
+        "error_rate": 0.3434343434343434,
+        "average_odds_difference": -0.17353029434610762,
+        "average_abs_odds_difference": 0.17353029434610762,
+        "selection_rate": 0.6452020202020202,
+        "disparate_impact": 0.7449823808794239,
+        "statistical_parity_difference": -0.20741433021806854,
+        "generalized_entropy_index": 0.13576656033026838,
+        "theil_index": 0.18088525096860583,
+        "equal_opportunity_difference": -0.15327833260963963
+      },
+      "per_dataset_acc": {
+        "compas": 65.65656565656566
+      },
+      "macro_acc": 65.65656565656566,
+      "pooled_acc": 65.65656565656566,
+      "pooled_acc_unconstrained": 65.65656565656566,
+      "deo_x100": 15.327833260963963,
+      "per_dataset_deo": {
+        "compas": 15.327833260963963
+      },
+      "policy_drop": 0.0,
+      "threshold": 0.4300000000000002
+    },
+    {
+      "seed": 5,
+      "metrics_orig": {
+        "true_negative_rate": 0.7157622739018088,
+        "true_positive_rate": 0.6222222222222222,
+        "false_positive_rate": 0.2842377260981912,
+        "false_negative_rate": 0.37777777777777777,
+        "precision": 0.6961325966850829,
+        "false_discovery_rate": 0.30386740331491713,
+        "false_omission_rate": 0.3558139534883721,
+        "accuracy": 0.6679292929292929,
+        "Balanced accuracy": 0.6689922480620155,
+        "error_rate": 0.33207070707070707,
+        "average_odds_difference": -0.32986123591337396,
+        "average_abs_odds_difference": 0.32986123591337396,
+        "selection_rate": 0.45707070707070707,
+        "disparate_impact": 0.5216571518357512,
+        "statistical_parity_difference": -0.35155317756649607,
+        "generalized_entropy_index": 0.18399878075083637,
+        "theil_index": 0.25941704077142264,
+        "equal_opportunity_difference": -0.2107398415537951
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.03875968992248062,
+        "true_positive_rate": 0.9950617283950617,
+        "false_positive_rate": 0.9612403100775194,
+        "false_negative_rate": 0.0049382716049382715,
+        "precision": 0.52,
+        "false_discovery_rate": 0.48,
+        "false_omission_rate": 0.11764705882352941,
+        "accuracy": 0.5277777777777778,
+        "Balanced accuracy": 0.5169107091587711,
+        "error_rate": 0.4722222222222222,
+        "average_odds_difference": -0.026399182213135697,
+        "average_abs_odds_difference": 0.026399182213135697,
+        "selection_rate": 0.9785353535353535,
+        "disparate_impact": 0.9728434504792333,
+        "statistical_parity_difference": -0.027156549520766737,
+        "generalized_entropy_index": 0.05899230065084542,
+        "theil_index": 0.06046853386608001,
+        "equal_opportunity_difference": -0.006644518272425293
+      },
+      "per_dataset_acc": {
+        "compas": 52.77777777777778
+      },
+      "macro_acc": 52.77777777777778,
+      "pooled_acc": 52.77777777777778,
+      "pooled_acc_unconstrained": 66.16161616161617,
+      "deo_x100": 0.6644518272425293,
+      "per_dataset_deo": {
+        "compas": 0.6644518272425293
+      },
+      "policy_drop": 20.229007633587788,
+      "threshold": 0.23000000000000004
+    },
+    {
+      "seed": 6,
+      "metrics_orig": {
+        "true_negative_rate": 0.6102150537634409,
+        "true_positive_rate": 0.7642857142857142,
+        "false_positive_rate": 0.3897849462365591,
+        "false_negative_rate": 0.2357142857142857,
+        "precision": 0.6888412017167382,
+        "false_discovery_rate": 0.3111587982832618,
+        "false_omission_rate": 0.30368098159509205,
+        "accuracy": 0.6919191919191919,
+        "Balanced accuracy": 0.6872503840245776,
+        "error_rate": 0.30808080808080807,
+        "average_odds_difference": -0.23602776437573203,
+        "average_abs_odds_difference": 0.23602776437573203,
+        "selection_rate": 0.5883838383838383,
+        "disparate_impact": 0.6591702524965495,
+        "statistical_parity_difference": -0.2790852280281877,
+        "generalized_entropy_index": 0.13608660237752093,
+        "theil_index": 0.18341522732564117,
+        "equal_opportunity_difference": -0.16662315624592083
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.3118279569892473,
+        "true_positive_rate": 0.9023809523809524,
+        "false_positive_rate": 0.6881720430107527,
+        "false_negative_rate": 0.09761904761904762,
+        "precision": 0.5968503937007874,
+        "false_discovery_rate": 0.4031496062992126,
+        "false_omission_rate": 0.2611464968152866,
+        "accuracy": 0.625,
+        "Balanced accuracy": 0.6071044546850999,
+        "error_rate": 0.375,
+        "average_odds_difference": -0.06204444300052875,
+        "average_abs_odds_difference": 0.06204444300052875,
+        "selection_rate": 0.8017676767676768,
+        "disparate_impact": 0.9055810397553516,
+        "statistical_parity_difference": -0.08210344369099853,
+        "generalized_entropy_index": 0.09319026989820034,
+        "theil_index": 0.11225488484233041,
+        "equal_opportunity_difference": -0.0024148283513901747
+      },
+      "per_dataset_acc": {
+        "compas": 62.5
+      },
+      "macro_acc": 62.5,
+      "pooled_acc": 62.5,
+      "pooled_acc_unconstrained": 69.1919191919192,
+      "deo_x100": 0.24148283513901747,
+      "per_dataset_deo": {
+        "compas": 0.24148283513901747
+      },
+      "policy_drop": 9.671532846715337,
+      "threshold": 0.34500000000000014
+    },
+    {
+      "seed": 7,
+      "metrics_orig": {
+        "true_negative_rate": 0.6954177897574124,
+        "true_positive_rate": 0.5486935866983373,
+        "false_positive_rate": 0.3045822102425876,
+        "false_negative_rate": 0.4513064133016627,
+        "precision": 0.6715116279069767,
+        "false_discovery_rate": 0.32848837209302323,
+        "false_omission_rate": 0.42410714285714285,
+        "accuracy": 0.6174242424242424,
+        "Balanced accuracy": 0.6220556882278749,
+        "error_rate": 0.38257575757575757,
+        "average_odds_difference": -0.37060394038145505,
+        "average_abs_odds_difference": 0.37060394038145505,
+        "selection_rate": 0.43434343434343436,
+        "disparate_impact": 0.4693367983897679,
+        "statistical_parity_difference": -0.3956423869993447,
+        "generalized_entropy_index": 0.22890801506186131,
+        "theil_index": 0.32137152437433114,
+        "equal_opportunity_difference": -0.37287522603978307
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.6253369272237197,
+        "true_positive_rate": 0.6413301662707839,
+        "false_positive_rate": 0.3746630727762803,
+        "false_negative_rate": 0.3586698337292161,
+        "precision": 0.6601466992665037,
+        "false_discovery_rate": 0.33985330073349634,
+        "false_omission_rate": 0.39425587467362927,
+        "accuracy": 0.6338383838383839,
+        "Balanced accuracy": 0.6333335467472518,
+        "error_rate": 0.36616161616161613,
+        "average_odds_difference": -0.11813748986379688,
+        "average_abs_odds_difference": 0.11813748986379688,
+        "selection_rate": 0.5164141414141414,
+        "disparate_impact": 0.7656350789817135,
+        "statistical_parity_difference": -0.14838489082222878,
+        "generalized_entropy_index": 0.1886390532544378,
+        "theil_index": 0.26231223648420476,
+        "equal_opportunity_difference": -0.12257383966244717
+      },
+      "per_dataset_acc": {
+        "compas": 63.38383838383839
+      },
+      "macro_acc": 63.38383838383839,
+      "pooled_acc": 63.38383838383839,
+      "pooled_acc_unconstrained": 63.13131313131313,
+      "deo_x100": 12.257383966244717,
+      "per_dataset_deo": {
+        "compas": 12.257383966244717
+      },
+      "policy_drop": -0.40000000000001135,
+      "threshold": 0.5550000000000004
+    },
+    {
+      "seed": 8,
+      "metrics_orig": {
+        "true_negative_rate": 0.5972972972972973,
+        "true_positive_rate": 0.7417061611374408,
+        "false_positive_rate": 0.4027027027027027,
+        "false_negative_rate": 0.25829383886255924,
+        "precision": 0.6774891774891775,
+        "false_discovery_rate": 0.3225108225108225,
+        "false_omission_rate": 0.3303030303030303,
+        "accuracy": 0.6742424242424242,
+        "Balanced accuracy": 0.6695017292173691,
+        "error_rate": 0.3257575757575758,
+        "average_odds_difference": -0.1940821746981974,
+        "average_abs_odds_difference": 0.1940821746981974,
+        "selection_rate": 0.5833333333333334,
+        "disparate_impact": 0.7015364498202027,
+        "statistical_parity_difference": -0.22989759946281685,
+        "generalized_entropy_index": 0.14643814718934903,
+        "theil_index": 0.19899560941492836,
+        "equal_opportunity_difference": -0.11828752968754819
+      },
+      "metrics_transf": {
+        "true_negative_rate": 0.3891891891891892,
+        "true_positive_rate": 0.8649289099526066,
+        "false_positive_rate": 0.6108108108108108,
+        "false_negative_rate": 0.13507109004739337,
+        "precision": 0.6175972927241963,
+        "false_discovery_rate": 0.3824027072758037,
+        "false_omission_rate": 0.2835820895522388,
+        "accuracy": 0.6426767676767676,
+        "Balanced accuracy": 0.6270590495708979,
+        "error_rate": 0.3573232323232324,
+        "average_odds_difference": -0.08819227761493637,
+        "average_abs_odds_difference": 0.08819227761493637,
+        "selection_rate": 0.7462121212121212,
+        "disparate_impact": 0.8567453416149068,
+        "statistical_parity_difference": -0.12099211012254496,
+        "generalized_entropy_index": 0.10588551857510538,
+        "theil_index": 0.1326041791116622,
+        "equal_opportunity_difference": -0.04740754449276707
+      },
+      "per_dataset_acc": {
+        "compas": 64.26767676767676
+      },
+      "macro_acc": 64.26767676767676,
+      "pooled_acc": 64.26767676767676,
+      "pooled_acc_unconstrained": 66.16161616161617,
+      "deo_x100": 4.740754449276707,
+      "per_dataset_deo": {
+        "compas": 4.740754449276707
+      },
+      "policy_drop": 2.8625954198473447,
+      "threshold": 0.3250000000000001
+    }
+  ],
+  "environment": {
+    "python": "3.13.12",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.9.0",
+      "lightgbm": "4.6.0",
+      "aif360": "0.6.1",
+      "pyarrow": "25.0.0",
+      "xlrd": "2.0.2"
+    },
+    "data_files": {}
+  }
+}
