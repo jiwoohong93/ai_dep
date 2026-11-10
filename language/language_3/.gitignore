@@ -1,0 +1,16 @@
+data/raw/
+data/ext/
+data/processed/
+__pycache__/
+*.pyc
+.pytest_cache/
+configs/local/
+artifacts/
+results/logs/
+results/**/*.parquet
+results/phase0/*.log
+# pipeline outputs in the steering dir; only the selected parameter is committed
+steering/qwen2.5-7b/*
+!steering/qwen2.5-7b/alphasteer/
+steering/qwen2.5-7b/alphasteer/*
+!steering/qwen2.5-7b/alphasteer/L16_p0.3_a100.0_caa.pt
