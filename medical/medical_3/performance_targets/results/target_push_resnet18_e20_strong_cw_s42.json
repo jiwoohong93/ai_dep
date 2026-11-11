@@ -1,0 +1,55 @@
+{
+  "round": 40,
+  "tag": "resnet18_e20_strong_cw_s42",
+  "variant": "resnet18_e20_strong",
+  "config": {
+    "backbone": "resnet18",
+    "epochs": 20,
+    "aug": "strong",
+    "fix_classweight": true,
+    "tta": false,
+    "seed": 42,
+    "lr": 5e-05,
+    "batch_size": 16,
+    "num_workers": 4,
+    "smoke": false
+  },
+  "acc_fair": 0.9041095890410958,
+  "acc_nofair": 0.906392694063927,
+  "deo_fair_pct": 3.511181363530358,
+  "policy_drop_pct": 0.25188916876575224,
+  "tpr_f_fair": 0.9463087248322147,
+  "tpr_m_fair": 0.9111969111969112,
+  "fair": {
+    "acc": 0.9041095890410958,
+    "deo": 0.03511181363530358,
+    "tpr_f": 0.9463087248322147,
+    "tpr_m": 0.9111969111969112
+  },
+  "nofair": {
+    "acc": 0.906392694063927,
+    "deo": 0.022621854836619937,
+    "tpr_f": 0.9194630872483222,
+    "tpr_m": 0.9420849420849421
+  },
+  "targets": {
+    "acc": 94.0,
+    "deo": 5.0,
+    "drop": 3.0
+  },
+  "pass": {
+    "acc": false,
+    "deo": true,
+    "drop": true,
+    "overall": false
+  },
+  "test_composition": {
+    "n": 438,
+    "pos": 30,
+    "pos_F": 16,
+    "pos_M": 14,
+    "F": 165,
+    "M": 273,
+    "nofind": 408
+  }
+}

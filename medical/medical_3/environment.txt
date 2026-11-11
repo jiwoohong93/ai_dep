@@ -1,0 +1,15 @@
+# Verified environment for the reported results (Python 3.10, Linux, CUDA 12.1, RTX 2080 Ti 11GB)
+python==3.10
+torch==2.3.0+cu121
+torchvision==0.18.0+cu121
+transformers==4.44.2
+scikit-learn==1.7.2
+numpy==2.2.6
+pandas==2.3.3
+aif360==0.6.1
+Pillow==12.3.0
+tqdm==4.67.3
+requests==2.25.1
+
+# Model revision (pinned in code)
+microsoft/rad-dino @ revision 110cbc18d5133582e320b43d53bf5c44e410c936

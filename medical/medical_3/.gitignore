@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# downloaded data and caches (not redistributed)
+Sample/
+performance_targets/data/datasets/
+*_cache.npz

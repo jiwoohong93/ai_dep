@@ -1,0 +1,57 @@
+[Env] device=cuda:0 CUDA_VISIBLE_DEVICES=1 HF_HUB_OFFLINE=1 torch=2.3.0+cu121
+======================================================================
+TARGET PUSH full run: raddino_e15_strong_cw_tta_s42  (seed=42)
+======================================================================
+[Main] merged rows = 4376
+[Dataset] n=4376 dropped_missing=0 | label pneu(0)=238 nofind(1)=4138 | gender M(+1)=2611 F(-1)=1765
+[SPLIT] train=3938 test=438 test_pneu_pos=30 (F16/M14)
+
+----- MODEL B (WITH FAIRNESS: WeightedRandomSampler) -----
+[FAIR] WeightedRandomSampler groups(label,gender)->size: {'(1, 1)': 2224, '(1, -1)': 1506, '(0, -1)': 94, '(0, 1)': 114}
+/home/hmkang/.local/lib/python3.10/site-packages/torch/autograd/graph.py:744: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[FAIR] ep1/15 loss=0.1321 acc=0.5114 DEO=0.0400 (TPR_f=0.503 TPR_m=0.463)
+[FAIR] ep2/15 loss=0.0647 acc=0.8516 DEO=0.0096 (TPR_f=0.859 TPR_m=0.849)
+[FAIR] ep3/15 loss=0.0462 acc=0.8676 DEO=0.0422 (TPR_f=0.899 TPR_m=0.857)
+[FAIR] ep4/15 loss=0.0330 acc=0.9041 DEO=0.0467 (TPR_f=0.946 TPR_m=0.900)
+[FAIR] ep5/15 loss=0.0241 acc=0.9315 DEO=0.0166 (TPR_f=0.966 TPR_m=0.950)
+[FAIR] ep6/15 loss=0.0180 acc=0.9201 DEO=0.0504 (TPR_f=0.973 TPR_m=0.923)
+[FAIR] ep7/15 loss=0.0096 acc=0.9361 DEO=0.0195 (TPR_f=0.973 TPR_m=0.954)
+[FAIR] ep8/15 loss=0.0142 acc=0.9452 DEO=0.0079 (TPR_f=0.973 TPR_m=0.965)
+[FAIR] ep9/15 loss=0.0180 acc=0.9452 DEO=0.0118 (TPR_f=0.973 TPR_m=0.961)
+[FAIR] ep10/15 loss=0.0065 acc=0.9475 DEO=0.0027 (TPR_f=0.966 TPR_m=0.969)
+[FAIR] ep11/15 loss=0.0162 acc=0.9566 DEO=0.0008 (TPR_f=0.980 TPR_m=0.981)
+[FAIR] ep12/15 loss=0.0093 acc=0.9475 DEO=0.0185 (TPR_f=0.980 TPR_m=0.961)
+[FAIR] ep13/15 loss=0.0379 acc=0.9566 DEO=0.0030 (TPR_f=0.980 TPR_m=0.977)
+[FAIR] ep14/15 loss=0.0104 acc=0.9498 DEO=0.0012 (TPR_f=0.966 TPR_m=0.965)
+[FAIR] ep15/15 loss=0.0070 acc=0.9452 DEO=0.0040 (TPR_f=0.973 TPR_m=0.969)
+[FAIR] FINAL acc=0.9452 DEO=0.0040 TPR_f=0.973 TPR_m=0.969
+
+----- MODEL A (NO FAIRNESS: standard shuffle) -----
+[NOFAIR] standard shuffle
+[NOFAIR] ep1/15 loss=0.4715 acc=0.8721 DEO=0.0210 (TPR_f=0.886 TPR_m=0.865)
+[NOFAIR] ep2/15 loss=0.3520 acc=0.8858 DEO=0.0286 (TPR_f=0.913 TPR_m=0.884)
+[NOFAIR] ep3/15 loss=0.2742 acc=0.9041 DEO=0.0054 (TPR_f=0.913 TPR_m=0.907)
+[NOFAIR] ep4/15 loss=0.2080 acc=0.9429 DEO=0.0006 (TPR_f=0.953 TPR_m=0.954)
+[NOFAIR] ep5/15 loss=0.1278 acc=0.9543 DEO=0.0040 (TPR_f=0.973 TPR_m=0.969)
+[NOFAIR] ep6/15 loss=0.0919 acc=0.9406 DEO=0.0079 (TPR_f=0.973 TPR_m=0.965)
+[NOFAIR] ep7/15 loss=0.1141 acc=0.9406 DEO=0.0061 (TPR_f=0.960 TPR_m=0.954)
+[NOFAIR] ep8/15 loss=0.0801 acc=0.9452 DEO=0.0008 (TPR_f=0.980 TPR_m=0.981)
+[NOFAIR] ep9/15 loss=0.0724 acc=0.9452 DEO=0.0040 (TPR_f=0.973 TPR_m=0.969)
+[NOFAIR] ep10/15 loss=0.0618 acc=0.9406 DEO=0.0065 (TPR_f=0.966 TPR_m=0.973)
+[NOFAIR] ep11/15 loss=0.0287 acc=0.9429 DEO=0.0185 (TPR_f=0.980 TPR_m=0.961)
+[NOFAIR] ep12/15 loss=0.0414 acc=0.9566 DEO=0.0097 (TPR_f=0.987 TPR_m=0.977)
+[NOFAIR] ep13/15 loss=0.0800 acc=0.9452 DEO=0.0097 (TPR_f=0.987 TPR_m=0.977)
+[NOFAIR] ep14/15 loss=0.0163 acc=0.9475 DEO=0.0059 (TPR_f=0.987 TPR_m=0.981)
+[NOFAIR] ep15/15 loss=0.0127 acc=0.9475 DEO=0.0059 (TPR_f=0.987 TPR_m=0.981)
+[NOFAIR] FINAL acc=0.9475 DEO=0.0059 TPR_f=0.987 TPR_m=0.981
+
+======================================================================
+*** RESULTS (reported on FAIR model, original benchmark definitions) ***
+accuracy(fair)   = 94.52%   accuracy(nofair) = 94.75%
+DEO(fair)        = 0.40%   (TPR_f=0.973 TPR_m=0.969)
+policy-drop      = 0.24%
+TARGET CHECK: acc>=94? True (94.52) | DEO<=5? True (0.40) | drop<=3? True (0.24)  => PASS
+======================================================================
+[logged] {"round": 40, "round_id": 40, "arch": "raddino (target-push)", "variant": "raddino_e15_strong", "acc": 0.9452, "deo": 0.004, "tpr_f": 0.973, "tpr_m": 0.969, "notes": "R40 target-push on ORIGINAL Four-Findings merge(4376)/image-level split (train3938/test438, test_pneu_pos=30 F16/M14); recipe: backbone=raddino epochs=15 aug=strong fix_classweight=True tta=True lr=2e-05 bs=16 seed=42. TARGETS: acc>=94% -> 94.52% [PASS]; DEO<=5% -> 0.40% [PASS]; policy-drop<=3% -> 0.24% [PASS]; acc_nofair=94.75%. OVERALL=PASS. Baseline committed: acc93.38/DEO2.03/drop0.25. DEO def = train.py evaluate_DEO (TPR on label==1)."}
+[saved] /home/hmkang/ai_dep/medical/medical_3/experiments/rounds/target_push_raddino_e15_strong_cw_tta_s42.json

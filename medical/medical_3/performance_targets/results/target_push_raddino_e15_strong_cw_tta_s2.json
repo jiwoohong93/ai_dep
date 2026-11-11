@@ -1,0 +1,55 @@
+{
+  "round": 40,
+  "tag": "raddino_e15_strong_cw_tta_s2",
+  "variant": "raddino_e15_strong",
+  "config": {
+    "backbone": "raddino",
+    "epochs": 15,
+    "aug": "strong",
+    "fix_classweight": true,
+    "tta": true,
+    "seed": 2,
+    "lr": 2e-05,
+    "batch_size": 16,
+    "num_workers": 4,
+    "smoke": false
+  },
+  "acc_fair": 0.9497716894977168,
+  "acc_nofair": 0.9452054794520548,
+  "deo_fair_pct": 0.5882200513072977,
+  "policy_drop_pct": -0.4830917874396076,
+  "tpr_f_fair": 0.9865771812080537,
+  "tpr_m_fair": 0.9806949806949807,
+  "fair": {
+    "acc": 0.9497716894977168,
+    "deo": 0.005882200513072977,
+    "tpr_f": 0.9865771812080537,
+    "tpr_m": 0.9806949806949807
+  },
+  "nofair": {
+    "acc": 0.9452054794520548,
+    "deo": 0.0050529916301729205,
+    "tpr_f": 0.9664429530201343,
+    "tpr_m": 0.9613899613899614
+  },
+  "targets": {
+    "acc": 94.0,
+    "deo": 5.0,
+    "drop": 3.0
+  },
+  "pass": {
+    "acc": true,
+    "deo": true,
+    "drop": true,
+    "overall": true
+  },
+  "test_composition": {
+    "n": 438,
+    "pos": 30,
+    "pos_F": 16,
+    "pos_M": 14,
+    "F": 165,
+    "M": 273,
+    "nofind": 408
+  }
+}
