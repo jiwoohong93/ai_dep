@@ -1,0 +1,106 @@
+{
+  "version": "v3b2",
+  "rule": 1,
+  "target_layer": 10,
+  "layer_selection": {
+    "rule": "debt_span 후보 중 min(flip 양방향) 최대, 동률이면 중앙값 층",
+    "candidates": [
+      {
+        "layer": 7,
+        "position": "debt_span",
+        "probe_acc": 1.0,
+        "flip_p2f_centroid": 1.0,
+        "flip_f2p_centroid": 1.0
+      },
+      {
+        "layer": 8,
+        "position": "debt_span",
+        "probe_acc": 1.0,
+        "flip_p2f_centroid": 1.0,
+        "flip_f2p_centroid": 1.0
+      },
+      {
+        "layer": 10,
+        "position": "debt_span",
+        "probe_acc": 1.0,
+        "flip_p2f_centroid": 1.0,
+        "flip_f2p_centroid": 1.0
+      },
+      {
+        "layer": 13,
+        "position": "debt_span",
+        "probe_acc": 1.0,
+        "flip_p2f_centroid": 1.0,
+        "flip_f2p_centroid": 1.0
+      },
+      {
+        "layer": 9,
+        "position": "debt_span",
+        "probe_acc": 1.0,
+        "flip_p2f_centroid": 0.99,
+        "flip_f2p_centroid": 1.0
+      },
+      {
+        "layer": 11,
+        "position": "debt_span",
+        "probe_acc": 1.0,
+        "flip_p2f_centroid": 0.99,
+        "flip_f2p_centroid": 1.0
+      },
+      {
+        "layer": 12,
+        "position": "debt_span",
+        "probe_acc": 1.0,
+        "flip_p2f_centroid": 0.99,
+        "flip_f2p_centroid": 1.0
+      },
+      {
+        "layer": 14,
+        "position": "debt_span",
+        "probe_acc": 1.0,
+        "flip_p2f_centroid": 0.99,
+        "flip_f2p_centroid": 0.97
+      },
+      {
+        "layer": 15,
+        "position": "debt_span",
+        "probe_acc": 1.0,
+        "flip_p2f_centroid": 0.99,
+        "flip_f2p_centroid": 0.93
+      }
+    ],
+    "best_min_flip": 1.0
+  },
+  "locate_dir": "result/centroid_matched/locate_synth_v3b2",
+  "locate_data_md5": "6f4962485d4f2ddc11bddf0d90d9b823",
+  "delta_v_norm": 7.598662853240967,
+  "gate_synth_heldout_acc": 0.9916666666666667,
+  "best_alpha": 2.0,
+  "calibration": [
+    {
+      "alpha": 0.5,
+      "band_flip_rate": 0.0,
+      "safe_false_flip_rate": 0.0
+    },
+    {
+      "alpha": 1.0,
+      "band_flip_rate": 0.4462809917355372,
+      "safe_false_flip_rate": 0.0
+    },
+    {
+      "alpha": 2.0,
+      "band_flip_rate": 1.0,
+      "safe_false_flip_rate": 0.0
+    }
+  ],
+  "full_evaluation": {
+    "accuracy": 0.9853773584905661,
+    "macro_f1": 0.9846342216665154,
+    "recall_pass": 0.9968602825745683,
+    "recall_fail": 0.9782211068101578,
+    "macro_recall": 0.987540694692363,
+    "efficacy_band": 0.8944112188080017,
+    "locality_safe": 0.9968602825745683,
+    "locality_cross": 1.0
+  }
+}
