@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "model_name": "kobert",
+  "revision": "38279184ba645e8c94d709fbe92eb5bcb47312c1",
+  "decoder": "legal_bio",
+  "max_seq_len": 50,
+  "labels": [
+    "O",
+    "B-LC",
+    "I-LC",
+    "B-QT",
+    "I-QT",
+    "B-OG",
+    "I-OG",
+    "B-DT",
+    "I-DT",
+    "B-PS",
+    "I-PS",
+    "B-TI",
+    "I-TI"
+  ],
+  "files": {
+    "checkpoint": "f8bc1902f068ec09ab68bb71ac320b48871bf7a296f012099333c73f0dbf9f38",
+    "train": "34b9d3d9f9ce9e064abc6ba4c27af43b4b70f2d6cde62c076a28e8aaa17cc544",
+    "dev": "0f4d5e818f7b82d299c3a87856fc40a706f5943207580ddb252397e387050a54"
+  },
+  "target_char_f1": 0.94,
+  "reference_metrics": {
+    "argmax": {
+      "entity": {
+        "precision": 0.9223839723263189,
+        "recall": 0.9317172599548664,
+        "f1": 0.927027124904936
+      },
+      "char": {
+        "precision": 0.934936598163533,
+        "recall": 0.9404468684025334,
+        "f1": 0.9376836381177915
+      }
+    },
+    "legal_bio": {
+      "entity": {
+        "precision": 0.9302966562703997,
+        "recall": 0.9336827546043532,
+        "f1": 0.9319866298503126
+      },
+      "char": {
+        "precision": 0.9378829433389742,
+        "recall": 0.942558057705841,
+        "f1": 0.9402146889350376
+      }
+    }
+  },
+  "metric": "Repository seqeval F1 over token-string-expanded BIO labels; not raw-character macro F1.",
+  "selection_note": "Public dev used to compare candidates; selected BIO decoder requires no additional training. Original checkpoint training history was not independently audited."
+}

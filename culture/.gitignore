@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.pth
+*.ckpt
+*.safetensors
+*.log
+/results/*
+!/results/reference_metrics.json

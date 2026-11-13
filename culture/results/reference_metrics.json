@@ -1,0 +1,111 @@
+{
+  "verified_date": "2026-11-10",
+  "timezone": "Asia/Seoul",
+  "upstream_commit": "db1001e2a224ca250fd7e7dddcdd2b9f1cdd6f27",
+  "metric": "original culture/test.py token-string-expanded seqeval Char F1",
+  "max_seq_len": 50,
+  "dev_nonempty_sentences": 5000,
+  "dev_parsed_records": 5005,
+  "metrics": {
+    "argmax": {
+      "entity": {
+        "precision": 0.9223839723263189,
+        "recall": 0.9317172599548664,
+        "f1": 0.927027124904936
+      },
+      "char": {
+        "precision": 0.934936598163533,
+        "recall": 0.9404468684025334,
+        "f1": 0.9376836381177915
+      }
+    },
+    "legal_bio": {
+      "entity": {
+        "precision": 0.9302966562703997,
+        "recall": 0.9336827546043532,
+        "f1": 0.9319866298503126
+      },
+      "char": {
+        "precision": 0.9378829433389742,
+        "recall": 0.942558057705841,
+        "f1": 0.9402146889350376
+      }
+    }
+  },
+  "target_char_f1": 0.94,
+  "target_met": true,
+  "cpu_gpu_metrics_identical": true,
+  "refactor_preserves_baseline_and_bio_results": true,
+  "evaluated_from_clean_release_worktree": true,
+  "unit_tests_passed": 12,
+  "input_sha256": {
+    "checkpoint": "f8bc1902f068ec09ab68bb71ac320b48871bf7a296f012099333c73f0dbf9f38",
+    "train": "34b9d3d9f9ce9e064abc6ba4c27af43b4b70f2d6cde62c076a28e8aaa17cc544",
+    "dev": "0f4d5e818f7b82d299c3a87856fc40a706f5943207580ddb252397e387050a54"
+  },
+  "source_sha256": {
+    "test.py": "ccbcf0860b81e13ac117fbf11a369a42bc12c00d9408a3470820d6d7fe6ca631",
+    "dataset.py": "62a3ef735191b4fc15daa72f4552ca98fe2a4a8e81f839e57daa5878d0eb098d",
+    "models.py": "0f4a42e1fefe06b17282969bca39e06d29e085fb6f1ceb8b4c0a376c6dd643bd",
+    "inference.py": "64c4a2396c00de6e3ff0a7acc8a675214d0cb2396bc285e8383fe195148cfbad",
+    "legacy_decode.py": "26ff8fc9abef91914fd0109097d07cec46a90049306b7b8a69b95580c51daab5"
+  },
+  "manifest_sha256": "b2518fb378fa6aa95ddb6845e3e1dbdfa04871cd7ec0b2b6f3738ffc1b337eba",
+  "environment": {
+    "python": "3.10.20",
+    "torch": "2.5.1+cu121",
+    "transformers": "4.38.2",
+    "seqeval": "1.2.2",
+    "sentencepiece": "0.2.1",
+    "numpy": "1.26.4"
+  },
+  "evaluation_seconds": {
+    "bio_gpu": 18.620025981916115,
+    "bio_cpu": 102.39316421397962,
+    "argmax_gpu": 16.894794775987975
+  },
+  "limitations": [
+    "Preserves gold-dependent segmentation, same-type merging and truncation. Not raw-character macro F1, a hidden-test result, or an accreditation certificate.",
+    "Public dev used to compare candidates; selected BIO decoder requires no additional training. Original checkpoint training history was not independently audited.",
+    "Same existing aidep environment used for all regression checks; not a fresh dependency installation."
+  ],
+  "format_revalidation": {
+    "verified_date": "2026-11-13",
+    "device": "cuda",
+    "decoder": "legal_bio",
+    "scope": "Formatted release code: executable AST unchanged after excluding docstrings.",
+    "python_files_checked": 7,
+    "unit_tests_passed": 12,
+    "dev_nonempty_sentences": 5000,
+    "all_six_metrics_identical_to_reference": true,
+    "metrics": {
+      "entity": {
+        "precision": 0.9302966562703997,
+        "recall": 0.9336827546043532,
+        "f1": 0.9319866298503126
+      },
+      "char": {
+        "precision": 0.9378829433389742,
+        "recall": 0.942558057705841,
+        "f1": 0.9402146889350376
+      }
+    },
+    "source_sha256": {
+      "test.py": "e2ea720c8d7e4bfc3a079b90bc26d619e8a48391e0f663068752fdfbcaad43ab",
+      "dataset.py": "9b2e7f9171db95c8d05c32f07a772ea2040f4dbb162514572b6e945c45058d5a",
+      "models.py": "e81463e36cb7b70ac0eb52930e4b890928e7ecf040dd9657522bf3086e80c404",
+      "inference.py": "fc0be0f2d7aa8167aacffd2dce4452fd6001f0bf93a78b87630dd05379da13a1",
+      "legacy_decode.py": "499e9bf1504b6da4feada7778a1f503ad2e0690cf1c62c64d78f89ed605d0a0c"
+    },
+    "manifest_sha256": "b2518fb378fa6aa95ddb6845e3e1dbdfa04871cd7ec0b2b6f3738ffc1b337eba",
+    "evaluation_seconds": 19.09804809698835,
+    "environment": {
+      "python": "3.10.20",
+      "torch": "2.5.1+cu121",
+      "transformers": "4.38.2",
+      "seqeval": "1.2.2",
+      "sentencepiece": "0.2.1",
+      "numpy": "1.26.4"
+    }
+  }
+}

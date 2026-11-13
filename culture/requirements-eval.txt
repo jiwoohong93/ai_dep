@@ -1,0 +1,11 @@
+torch==2.5.1
+transformers==4.38.2
+tokenizers==0.15.2
+huggingface-hub==0.25.2
+seqeval==1.2.2
+sentencepiece==0.2.1
+numpy==1.26.4
+tqdm==4.68.3
+scikit-learn==1.7.2
+scipy==1.15.3
+safetensors==0.8.0
