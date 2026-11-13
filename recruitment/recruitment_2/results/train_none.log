@@ -1,0 +1,48 @@
+2026-11-13 20:32:37 [INFO] === Step 1: Load data_stage1.csv ===
+2026-11-13 20:32:37 [INFO] Loaded 9991 rows x 59 cols
+2026-11-13 20:32:37 [INFO] Target mode=coarse | classes=5 | distribution={'대졸': 8570, '석사': 883, '전문대': 288, '고졸': 154, '박사': 96}
+2026-11-13 20:32:37 [INFO] Majority base rate = 0.8578
+2026-11-13 20:32:37 [INFO] === Step 2: Stratified split (test_size=0.10, seed=42) ===
+2026-11-13 20:32:37 [INFO] === Step 3: Feature engineering (fit on train, apply to test) ===
+2026-11-13 20:32:37 [INFO] Features (19): 11 numeric + 8 categorical
+2026-11-13 20:32:37 [INFO] === Step 4: Fairness lever = none ===
+2026-11-13 20:32:37 [INFO] === Step 5: Train lgbm ===
+2026-11-13 20:32:42 [INFO] === Step 6: Evaluate on held-out test ===
+2026-11-13 20:32:47 [INFO] === Step 7: Save model + feature state ===
+2026-11-13 20:32:47 [INFO] Saved -> models/trained_edu_none.pkl
+
+============================================================
+ target_mode=coarse  model=lgbm  fairness=none
+============================================================
+Majority base rate : 0.8578
+Test accuracy      : 0.8620   (ABOVE 85% target)
+
+--- full metric suite ---
+accuracy             : 0.8620
+balanced_accuracy    : 0.2110
+precision_macro      : 0.3155
+recall_macro         : 0.2110
+f1_macro             : 0.2060
+f1_weighted          : 0.8038
+cohen_kappa          : 0.0637
+matthews_corrcoef    : 0.1577
+
+--- DEO (Difference of Equality of Opportunity) ---
+positive label            : '고졸'
+TPR unprotected (a=-1)    : 0.0000
+TPR protected   (a=+1)    : 0.0000
+DEO = TPR(-1)-TPR(+1)     : 0.0000
+
+=== fairlearn MetricFrame (positive = '고졸') ===
+                     TPR(recall)  selection_rate
+sensitive_feature_0                             
+protected(여자)                0.0             0.0
+unprotected                  0.0             0.0
+Equality-of-opportunity (TPR) difference : 0.0000
+
+--- per-class recall ---
+고졸               n=   15  recall=0.000
+대졸               n=  858  recall=0.999
+박사               n=    9  recall=0.000
+석사               n=   89  recall=0.056
+전문대              n=   29  recall=0.000
