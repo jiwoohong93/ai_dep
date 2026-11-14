@@ -1,0 +1,49 @@
+2026-11-13 20:32:48 [INFO] === Step 1: Load data_stage1.csv ===
+2026-11-13 20:32:48 [INFO] Loaded 9991 rows x 59 cols
+2026-11-13 20:32:48 [INFO] Target mode=coarse | classes=5 | distribution={'대졸': 8570, '석사': 883, '전문대': 288, '고졸': 154, '박사': 96}
+2026-11-13 20:32:48 [INFO] Majority base rate = 0.8578
+2026-11-13 20:32:48 [INFO] === Step 2: Stratified split (test_size=0.10, seed=42) ===
+2026-11-13 20:32:48 [INFO] === Step 3: Feature engineering (fit on train, apply to test) ===
+2026-11-13 20:32:48 [INFO] Features (19): 11 numeric + 8 categorical
+2026-11-13 20:32:48 [INFO] === Step 4: Fairness lever = minority ===
+2026-11-13 20:32:48 [INFO] Minority up-weight floor=250 | weight range [1.000, 2.874]
+2026-11-13 20:32:48 [INFO] === Step 5: Train lgbm ===
+2026-11-13 20:32:49 [INFO] === Step 6: Evaluate on held-out test ===
+2026-11-13 20:32:49 [INFO] === Step 7: Save model + feature state ===
+2026-11-13 20:32:49 [INFO] Saved -> models/trained_edu_minority.pkl
+
+============================================================
+ target_mode=coarse  model=lgbm  fairness=minority (floor=250)
+============================================================
+Majority base rate : 0.8578
+Test accuracy      : 0.8640   (ABOVE 85% target)
+
+--- full metric suite ---
+accuracy             : 0.8640
+balanced_accuracy    : 0.2508
+precision_macro      : 0.4599
+recall_macro         : 0.2508
+f1_macro             : 0.2665
+f1_weighted          : 0.8096
+cohen_kappa          : 0.1034
+matthews_corrcoef    : 0.2014
+
+--- DEO (Difference of Equality of Opportunity) ---
+positive label            : '고졸'
+TPR unprotected (a=-1)    : 0.2000
+TPR protected   (a=+1)    : 0.0000
+DEO = TPR(-1)-TPR(+1)     : 0.2000
+
+=== fairlearn MetricFrame (positive = '고졸') ===
+                     TPR(recall)  selection_rate
+sensitive_feature_0                             
+protected(여자)                0.0        0.000000
+unprotected                  0.2        0.005247
+Equality-of-opportunity (TPR) difference : 0.2000
+
+--- per-class recall ---
+고졸               n=   15  recall=0.200
+대졸               n=  858  recall=0.998
+박사               n=    9  recall=0.000
+석사               n=   89  recall=0.056
+전문대              n=   29  recall=0.000
