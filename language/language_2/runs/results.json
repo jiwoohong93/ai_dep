@@ -1,0 +1,338 @@
+{
+  "A/bert-base": {
+    "config": {
+      "task": "A",
+      "model": "klue/bert-base",
+      "lr": 5e-05,
+      "epochs": 1,
+      "dev_f1": 81.62642947903431,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 83.8413327288185,
+      "recall": 82.43229935992122,
+      "f1": 83.10673842978574,
+      "f1_std": 0.6325870394310449
+    },
+    "paper": {
+      "precision": 75.8,
+      "recall": 78.8,
+      "f1": 77.2
+    }
+  },
+  "A/roberta-base": {
+    "config": {
+      "task": "A",
+      "model": "klue/roberta-base",
+      "lr": 3e-05,
+      "epochs": 2,
+      "dev_f1": 82.15809284818067,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 83.78688650924329,
+      "recall": 83.04283604135894,
+      "f1": 83.41064247071844,
+      "f1_std": 0.3750571633610869
+    },
+    "paper": {
+      "precision": 76.8,
+      "recall": 77.6,
+      "f1": 77.2
+    }
+  },
+  "A/roberta-large": {
+    "config": {
+      "task": "A",
+      "model": "klue/roberta-large",
+      "lr": 1e-05,
+      "epochs": 2,
+      "dev_f1": 83.4700472284365,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 85.02060990130862,
+      "recall": 84.21467257508617,
+      "f1": 84.6144477163102,
+      "f1_std": 0.19416995135643556
+    },
+    "paper": {
+      "precision": 76.6,
+      "recall": 81.1,
+      "f1": 78.8
+    }
+  },
+  "B/bert-base": {
+    "config": {
+      "task": "B",
+      "model": "klue/bert-base",
+      "lr": 2e-05,
+      "epochs": 3,
+      "dev_f1": 62.3894773929575,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 63.56242371484632,
+      "recall": 61.43320482450916,
+      "f1": 62.27608668033306,
+      "f1_std": 0.47679524151547303
+    },
+    "paper": {
+      "precision": 58.5,
+      "recall": 58.5,
+      "f1": 57.6
+    }
+  },
+  "B/roberta-base": {
+    "config": {
+      "task": "B",
+      "model": "klue/roberta-base",
+      "lr": 1e-05,
+      "epochs": 4,
+      "dev_f1": 63.80908613562306,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 64.12990637111754,
+      "recall": 63.130733456820415,
+      "f1": 63.533043852862306,
+      "f1_std": 0.5382347338286944
+    },
+    "paper": {
+      "precision": 60.8,
+      "recall": 58.7,
+      "f1": 59.4
+    }
+  },
+  "B/roberta-large": {
+    "config": {
+      "task": "B",
+      "model": "klue/roberta-large",
+      "lr": 1e-05,
+      "epochs": 4,
+      "dev_f1": 65.94278480529367,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 65.36208986239758,
+      "recall": 64.85067353545615,
+      "f1": 65.06773417837098,
+      "f1_std": 0.4130414386221196
+    },
+    "paper": {
+      "precision": 63.9,
+      "recall": 62.4,
+      "f1": 62.7
+    }
+  },
+  "C/bert-base": {
+    "config": {
+      "task": "C",
+      "model": "klue/bert-base",
+      "lr": 3e-05,
+      "epochs": 5,
+      "dev_f1": 64.68362939442301,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 64.53771454118416,
+      "recall": 57.8004638314131,
+      "f1": 59.015068959062454,
+      "f1_std": 2.588242219202509
+    },
+    "paper": {
+      "precision": 56.9,
+      "recall": 57.4,
+      "f1": 55.9
+    }
+  },
+  "C/roberta-base": {
+    "config": {
+      "task": "C",
+      "model": "klue/roberta-base",
+      "lr": 5e-05,
+      "epochs": 4,
+      "dev_f1": 59.67738917937081,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 66.75434488070991,
+      "recall": 60.90726814788822,
+      "f1": 61.87093741259598,
+      "f1_std": 1.7072508000218685
+    },
+    "paper": {
+      "precision": 58.6,
+      "recall": 58.5,
+      "f1": 57.3
+    }
+  },
+  "C/roberta-large": {
+    "config": {
+      "task": "C",
+      "model": "klue/roberta-large",
+      "lr": 5e-05,
+      "epochs": 4,
+      "dev_f1": 67.52511332470904,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 65.60654089429644,
+      "recall": 62.342069190175565,
+      "f1": 63.0130579620439,
+      "f1_std": 1.5215296006712247
+    },
+    "paper": {
+      "precision": 59.1,
+      "recall": 59.6,
+      "f1": 57.5
+    }
+  },
+  "off_span/bert-base": {
+    "config": {
+      "task": "off_span",
+      "model": "klue/bert-base",
+      "lr": 2e-05,
+      "epochs": 3,
+      "dev_f1": 67.44692197776972,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 71.84594873268999,
+      "recall": 72.16019180619598,
+      "f1": 66.76376893863703,
+      "f1_std": 0.452374548821762
+    },
+    "paper": {
+      "precision": 47.7,
+      "recall": 43.4,
+      "f1": 41.9
+    },
+    "test_nonempty_gold_f1": 72.09657477622443
+  },
+  "off_span/roberta-base": {
+    "config": {
+      "task": "off_span",
+      "model": "klue/roberta-base",
+      "lr": 1e-05,
+      "epochs": 3,
+      "dev_f1": 67.80124609828012,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 72.2640819272513,
+      "recall": 72.9998707876259,
+      "f1": 67.43305103321818,
+      "f1_std": 0.43793901163159094
+    },
+    "paper": {
+      "precision": 46.4,
+      "recall": 41.8,
+      "f1": 40.6
+    },
+    "test_nonempty_gold_f1": 72.59756220624857
+  },
+  "off_span/roberta-large": {
+    "config": {
+      "task": "off_span",
+      "model": "klue/roberta-large",
+      "lr": 1e-05,
+      "epochs": 3,
+      "dev_f1": 68.94363366051833,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 73.1838155565629,
+      "recall": 74.50307453963602,
+      "f1": 68.86007685206741,
+      "f1_std": 0.32315938202675976
+    },
+    "paper": {
+      "precision": 50.8,
+      "recall": 47.8,
+      "f1": 45.4
+    },
+    "test_nonempty_gold_f1": 74.07891884825555
+  },
+  "tgt_span/bert-base": {
+    "config": {
+      "task": "tgt_span",
+      "model": "klue/bert-base",
+      "lr": 5e-05,
+      "epochs": 4,
+      "dev_f1": 76.32743208279294,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 75.18779188424683,
+      "recall": 74.7437301196533,
+      "f1": 74.52261859841352,
+      "f1_std": 0.22187269357634046
+    },
+    "paper": {
+      "precision": 60.2,
+      "recall": 67.3,
+      "f1": 61.9
+    },
+    "test_nonempty_gold_f1": 65.07144120280654
+  },
+  "tgt_span/roberta-base": {
+    "config": {
+      "task": "tgt_span",
+      "model": "klue/roberta-base",
+      "lr": 3e-05,
+      "epochs": 2,
+      "dev_f1": 76.55852143014175,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 75.60880076758954,
+      "recall": 75.26678155260133,
+      "f1": 74.96260030579853,
+      "f1_std": 0.15451830764467173
+    },
+    "paper": {
+      "precision": 60.6,
+      "recall": 68.2,
+      "f1": 62.4
+    },
+    "test_nonempty_gold_f1": 67.20237270757323
+  },
+  "tgt_span/roberta-large": {
+    "config": {
+      "task": "tgt_span",
+      "model": "klue/roberta-large",
+      "lr": 3e-05,
+      "epochs": 3,
+      "dev_f1": 78.25248365521198,
+      "n_candidates": 20
+    },
+    "n_seeds": 5,
+    "test": {
+      "precision": 76.61879219855587,
+      "recall": 76.28643329972724,
+      "f1": 76.00435240246875,
+      "f1_std": 0.34313435484786586
+    },
+    "paper": {
+      "precision": 60.8,
+      "recall": 67.8,
+      "f1": 62.5
+    },
+    "test_nonempty_gold_f1": 66.50108212553354
+  }
+}

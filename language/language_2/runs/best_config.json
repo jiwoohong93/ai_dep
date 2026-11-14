@@ -1,0 +1,122 @@
+{
+  "A/bert-base": {
+    "task": "A",
+    "model": "klue/bert-base",
+    "lr": 5e-05,
+    "epochs": 1,
+    "dev_f1": 81.62642947903431,
+    "n_candidates": 20
+  },
+  "A/roberta-base": {
+    "task": "A",
+    "model": "klue/roberta-base",
+    "lr": 3e-05,
+    "epochs": 2,
+    "dev_f1": 82.15809284818067,
+    "n_candidates": 20
+  },
+  "A/roberta-large": {
+    "task": "A",
+    "model": "klue/roberta-large",
+    "lr": 1e-05,
+    "epochs": 2,
+    "dev_f1": 83.4700472284365,
+    "n_candidates": 20
+  },
+  "B/bert-base": {
+    "task": "B",
+    "model": "klue/bert-base",
+    "lr": 2e-05,
+    "epochs": 3,
+    "dev_f1": 62.3894773929575,
+    "n_candidates": 20
+  },
+  "B/roberta-base": {
+    "task": "B",
+    "model": "klue/roberta-base",
+    "lr": 1e-05,
+    "epochs": 4,
+    "dev_f1": 63.80908613562306,
+    "n_candidates": 20
+  },
+  "B/roberta-large": {
+    "task": "B",
+    "model": "klue/roberta-large",
+    "lr": 1e-05,
+    "epochs": 4,
+    "dev_f1": 65.94278480529367,
+    "n_candidates": 20
+  },
+  "C/bert-base": {
+    "task": "C",
+    "model": "klue/bert-base",
+    "lr": 3e-05,
+    "epochs": 5,
+    "dev_f1": 64.68362939442301,
+    "n_candidates": 20
+  },
+  "C/roberta-base": {
+    "task": "C",
+    "model": "klue/roberta-base",
+    "lr": 5e-05,
+    "epochs": 4,
+    "dev_f1": 59.67738917937081,
+    "n_candidates": 20
+  },
+  "C/roberta-large": {
+    "task": "C",
+    "model": "klue/roberta-large",
+    "lr": 5e-05,
+    "epochs": 4,
+    "dev_f1": 67.52511332470904,
+    "n_candidates": 20
+  },
+  "off_span/bert-base": {
+    "task": "off_span",
+    "model": "klue/bert-base",
+    "lr": 2e-05,
+    "epochs": 3,
+    "dev_f1": 67.44692197776972,
+    "n_candidates": 20
+  },
+  "off_span/roberta-base": {
+    "task": "off_span",
+    "model": "klue/roberta-base",
+    "lr": 1e-05,
+    "epochs": 3,
+    "dev_f1": 67.80124609828012,
+    "n_candidates": 20
+  },
+  "off_span/roberta-large": {
+    "task": "off_span",
+    "model": "klue/roberta-large",
+    "lr": 1e-05,
+    "epochs": 3,
+    "dev_f1": 68.94363366051833,
+    "n_candidates": 20
+  },
+  "tgt_span/bert-base": {
+    "task": "tgt_span",
+    "model": "klue/bert-base",
+    "lr": 5e-05,
+    "epochs": 4,
+    "dev_f1": 76.32743208279294,
+    "n_candidates": 20
+  },
+  "tgt_span/roberta-base": {
+    "task": "tgt_span",
+    "model": "klue/roberta-base",
+    "lr": 3e-05,
+    "epochs": 2,
+    "dev_f1": 76.55852143014175,
+    "n_candidates": 20
+  },
+  "tgt_span/roberta-large": {
+    "task": "tgt_span",
+    "model": "klue/roberta-large",
+    "lr": 3e-05,
+    "epochs": 3,
+    "dev_f1": 78.25248365521198,
+    "n_candidates": 20
+  }
+}

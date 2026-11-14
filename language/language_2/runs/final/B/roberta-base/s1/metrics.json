@@ -1,0 +1,31 @@
+{
+  "args": {
+    "task": "B",
+    "model": "klue/roberta-base",
+    "lr": 1e-05,
+    "epochs": 4,
+    "seed": 1,
+    "train_bs": 32,
+    "eval_bs": 64,
+    "out": "/home/seogyeong/ai_dep_lang/language_2/runs/final/B/roberta-base/s1",
+    "save_model": true
+  },
+  "n": {
+    "train": 16248,
+    "dev": 2031,
+    "test": 2031
+  },
+  "train_time_sec": 249.93395495414734,
+  "dev": {
+    "precision": 64.46818639848598,
+    "recall": 64.61658372516553,
+    "f1": 64.23569837017249,
+    "accuracy": 75.52929591334318
+  },
+  "test": {
+    "precision": 64.19394362052194,
+    "recall": 63.74407374407374,
+    "f1": 63.91603193153287,
+    "accuracy": 75.726243229936
+  }
+}

@@ -1,0 +1,1130 @@
+{
+  "summary": {
+    "PASS": 99,
+    "FAIL": 0,
+    "INFO": 16,
+    "data": "/home/seogyeong/ai_dep_lang/KOLD/data/kold_v1.json"
+  },
+  "stats": {
+    "valid_samples": {
+      "valid": 40208,
+      "excluded": 221,
+      "rule_violations": {
+        "R1b 댓글 텍스트 중복 (첫 등장만 유효)": 221
+      },
+      "valid_level_a": {
+        "NOT": 19930,
+        "OFF": 20278
+      },
+      "valid_level_b": {
+        "GRP": 12392,
+        "UNT": 2593,
+        "IND": 3898,
+        "OTH": 1395
+      },
+      "duplicate_label_conflict_groups": 24
+    },
+    "total": 40429,
+    "sources": {
+      "naver_news": 22028,
+      "youtube": 18401
+    },
+    "date_min": "2020-03-31",
+    "date_max": "2022-03-31",
+    "level_a": {
+      "NOT": 20119,
+      "OFF": 20310
+    },
+    "level_b": {
+      "GRP": 12413,
+      "UNT": 2596,
+      "IND": 3899,
+      "OTH": 1402
+    },
+    "level_c_first_label": {
+      "MISC": 2624,
+      "GEN": 3049,
+      "POL": 1985,
+      "REL": 1725,
+      "RACE": 3030
+    },
+    "target_group_label_counts": {
+      "GEN/LGBTQ+": 1369,
+      "GEN/Men": 591,
+      "GEN/Others": 108,
+      "GEN/Women": 1129,
+      "MISC/Agism": 62,
+      "MISC/Disabled": 24,
+      "MISC/Diseased": 8,
+      "MISC/Feminist": 1483,
+      "MISC/Others": 971,
+      "MISC/Physical Appearance": 2,
+      "MISC/Socio-economic Status": 88,
+      "POL/Conservative": 316,
+      "POL/Others": 651,
+      "POL/Progressive": 1052,
+      "RACE/Asian": 43,
+      "RACE/Black": 175,
+      "RACE/Chinese": 475,
+      "RACE/Indian": 173,
+      "RACE/Korean-Chinese": 460,
+      "RACE/Others": 1605,
+      "RACE/Southeast Asian": 81,
+      "RACE/White": 95,
+      "REL/Buddhism": 17,
+      "REL/Catholic": 57,
+      "REL/Christian": 518,
+      "REL/Islam": 1059,
+      "REL/Others": 91
+    },
+    "target_group_label_total": 12703,
+    "grp_no_tgt_span": 6837,
+    "annotators": 3124,
+    "alpha_level_a": 0.5516
+  },
+  "checks": [
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R1a 댓글 텍스트 비어 있음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R1b 댓글 텍스트 중복 (첫 등장만 유효)",
+      "expected": 0,
+      "actual": 221,
+      "status": "INFO",
+      "note": "같은 댓글이 다른 기사/영상에 달린 경우. (title, comment) 쌍 기준 중복은 별도 검사"
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R1c Context(title) 비어 있음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R2 OFF(혐오 여부) 라벨 없음/비정상",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R3a OFF=True 인데 TGT(대상 유형) 라벨 없음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R3b TGT=group 인데 GRP(대상 집단) 라벨 없음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R3c 알 수 없는 GRP 라벨",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R3d TGT!=group 인데 GRP 라벨 존재",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R3e OFF=False 인데 TGT/GRP 라벨 존재",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R4a 어노테이터 수 != 3",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] R4b OFF 가 3인 다수결과 불일치",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "[규칙] (Context, 댓글) 쌍 중복",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "중복 댓글 중 라벨이 서로 다른 그룹 수",
+      "expected": "-",
+      "actual": 24,
+      "status": "INFO",
+      "note": "동일 텍스트라도 Context 에 따라 라벨이 달라질 수 있음"
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "유효 샘플 수 >= 40,000",
+      "expected": true,
+      "actual": true,
+      "status": "PASS",
+      "note": "유효 40,208 / 전체 40,429 (99.45%), 제외 221"
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "전체 샘플 수·라벨 분포 == 보고 수치 (전체 데이터)",
+      "expected": {
+        "total": 40429,
+        "NOT": 20119,
+        "OFF": 20310,
+        "UNT": 2596,
+        "IND": 3899,
+        "OTH": 1402,
+        "GRP": 12413
+      },
+      "actual": {
+        "total": 40429,
+        "NOT": 20119,
+        "OFF": 20310,
+        "UNT": 2596,
+        "IND": 3899,
+        "OTH": 1402,
+        "GRP": 12413
+      },
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "00. 유효 샘플 (우선 검증)",
+      "check": "유효 샘플 기준 라벨 분포",
+      "expected": "-",
+      "actual": {
+        "total": 40208,
+        "NOT": 19930,
+        "OFF": 20278,
+        "UNT": 2593,
+        "IND": 3898,
+        "OTH": 1395,
+        "GRP": 12392
+      },
+      "status": "INFO",
+      "note": "중복 제거 후 분포. 논문 수치는 중복 포함 전체 기준"
+    },
+    {
+      "section": "0. 스키마/무결성",
+      "check": "모든 샘플의 필드 구성",
+      "expected": true,
+      "actual": true,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "0. 스키마/무결성",
+      "check": "guid 중복 없음",
+      "expected": 40429,
+      "actual": 40429,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "0. 스키마/무결성",
+      "check": "빈 comment 없음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "0. 스키마/무결성",
+      "check": "빈 title(Context) 없음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "0. 스키마/무결성",
+      "check": "OFF 는 bool",
+      "expected": true,
+      "actual": true,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "0. 스키마/무결성",
+      "check": "OFF=False 이면 TGT/GRP/span 없음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "0. 스키마/무결성",
+      "check": "OFF=True 이면 TGT 값이 유효",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "0. 스키마/무결성",
+      "check": "GRP 라벨은 TGT=group 에만 존재",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "0. 스키마/무결성",
+      "check": "알 수 없는 GRP 라벨 없음",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "1. 기본 정보",
+      "check": "전체 샘플 수",
+      "expected": 40429,
+      "actual": 40429,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "1. 기본 정보",
+      "check": "데이터 출처 (NAVER 뉴스, YouTube)",
+      "expected": [
+        "naver_news",
+        "youtube"
+      ],
+      "actual": [
+        "naver_news",
+        "youtube"
+      ],
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "1. 기본 정보",
+      "check": "플랫폼별 샘플 수",
+      "expected": "논문 미제시",
+      "actual": {
+        "naver_news": 22028,
+        "youtube": 18401
+      },
+      "status": "INFO",
+      "note": ""
+    },
+    {
+      "section": "1. 기본 정보",
+      "check": "날짜 누락 없음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "1. 기본 정보",
+      "check": "콘텐츠 기간 (YYYY-MM)",
+      "expected": [
+        "2020-03",
+        "2022-03"
+      ],
+      "actual": [
+        "2020-03",
+        "2022-03"
+      ],
+      "status": "PASS",
+      "note": "실제 2020-03-31 ~ 2022-03-31"
+    },
+    {
+      "section": "1. 기본 정보",
+      "check": "한국어(한글 포함) 댓글 비율 >= 95%",
+      "expected": true,
+      "actual": true,
+      "status": "PASS",
+      "note": "한글 포함 40,077/40,429 (99.13%)"
+    },
+    {
+      "section": "2. Level A (Offensiveness)",
+      "check": "NOT 샘플 수",
+      "expected": 20119,
+      "actual": 20119,
+      "status": "PASS",
+      "note": "49.8%"
+    },
+    {
+      "section": "2. Level A (Offensiveness)",
+      "check": "OFF 샘플 수",
+      "expected": 20310,
+      "actual": 20310,
+      "status": "PASS",
+      "note": "50.2%"
+    },
+    {
+      "section": "2. Level A (Offensiveness)",
+      "check": "NOT 비율(%)",
+      "expected": 49.8,
+      "actual": 49.8,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "2. Level A (Offensiveness)",
+      "check": "OFF 비율(%)",
+      "expected": 50.2,
+      "actual": 50.2,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "2. Level A (Offensiveness)",
+      "check": "Section 3.3 본문 OFF 수치(20,130)",
+      "expected": 20130,
+      "actual": 20310,
+      "status": "INFO",
+      "note": "논문 오기. Table 2(20,310)가 데이터와 일치"
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "UNT 샘플 수",
+      "expected": 2596,
+      "actual": 2596,
+      "status": "PASS",
+      "note": "전체 대비 6.4%"
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "IND 샘플 수",
+      "expected": 3899,
+      "actual": 3899,
+      "status": "PASS",
+      "note": "전체 대비 9.6%"
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "OTH 샘플 수",
+      "expected": 1402,
+      "actual": 1402,
+      "status": "PASS",
+      "note": "전체 대비 3.5%"
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "GRP 샘플 수",
+      "expected": 12413,
+      "actual": 12413,
+      "status": "PASS",
+      "note": "전체 대비 30.7%"
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "UNT 전체 대비 비율(%)",
+      "expected": 6.4,
+      "actual": 6.4,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "IND 전체 대비 비율(%)",
+      "expected": 9.6,
+      "actual": 9.6,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "OTH 전체 대비 비율(%)",
+      "expected": 3.5,
+      "actual": 3.5,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "GRP 전체 대비 비율(%)",
+      "expected": 30.7,
+      "actual": 30.7,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "Level B 합계 == OFF",
+      "expected": 20310,
+      "actual": 20310,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "GRP (UNT 제외 기준, %)",
+      "expected": 70.1,
+      "actual": 70.1,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "IND (UNT 제외 기준, %)",
+      "expected": 22.0,
+      "actual": 22.0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "3. Level B (Target Type)",
+      "check": "OTH (UNT 제외 기준, %)",
+      "expected": 7.9,
+      "actual": 7.9,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "4. Level C (Target Group Attribute)",
+      "check": "Level C 속성 합계 == GRP",
+      "expected": 12413,
+      "actual": 12413,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "4. Level C (Target Group Attribute)",
+      "check": "Gender & Sexual Orientation 댓글 수",
+      "expected": 2986,
+      "actual": 3049,
+      "status": "INFO",
+      "note": "공개 v1 데이터 기준(첫 라벨 속성). 논문 7.4% / 데이터 7.5%. 논문 Table 2 의 속성별 수치는 v1 최종 라벨로 정확히 재현되지 않음 (Table 3 세부 수치는 재현됨)"
+    },
+    {
+      "section": "4. Level C (Target Group Attribute)",
+      "check": "Race, Ethnicity & Nationality 댓글 수",
+      "expected": 2970,
+      "actual": 3030,
+      "status": "INFO",
+      "note": "공개 v1 데이터 기준(첫 라벨 속성). 논문 7.3% / 데이터 7.5%. 논문 Table 2 의 속성별 수치는 v1 최종 라벨로 정확히 재현되지 않음 (Table 3 세부 수치는 재현됨)"
+    },
+    {
+      "section": "4. Level C (Target Group Attribute)",
+      "check": "Political Affiliation 댓글 수",
+      "expected": 1939,
+      "actual": 1985,
+      "status": "INFO",
+      "note": "공개 v1 데이터 기준(첫 라벨 속성). 논문 4.8% / 데이터 4.9%. 논문 Table 2 의 속성별 수치는 v1 최종 라벨로 정확히 재현되지 않음 (Table 3 세부 수치는 재현됨)"
+    },
+    {
+      "section": "4. Level C (Target Group Attribute)",
+      "check": "Religion 댓글 수",
+      "expected": 1699,
+      "actual": 1725,
+      "status": "INFO",
+      "note": "공개 v1 데이터 기준(첫 라벨 속성). 논문 4.2% / 데이터 4.3%. 논문 Table 2 의 속성별 수치는 v1 최종 라벨로 정확히 재현되지 않음 (Table 3 세부 수치는 재현됨)"
+    },
+    {
+      "section": "4. Level C (Target Group Attribute)",
+      "check": "Miscellaneous 댓글 수",
+      "expected": 2819,
+      "actual": 2624,
+      "status": "INFO",
+      "note": "공개 v1 데이터 기준(첫 라벨 속성). 논문 7.0% / 데이터 6.5%. 논문 Table 2 의 속성별 수치는 v1 최종 라벨로 정확히 재현되지 않음 (Table 3 세부 수치는 재현됨)"
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[GEN] LGBTQ+",
+      "expected": 1369,
+      "actual": 1369,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[GEN] Women",
+      "expected": 1129,
+      "actual": 1129,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[GEN] Men",
+      "expected": 591,
+      "actual": 591,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[GEN] Others",
+      "expected": 108,
+      "actual": 108,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[RACE] Chinese",
+      "expected": 475,
+      "actual": 475,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[RACE] Korean-Chinese",
+      "expected": 460,
+      "actual": 460,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[RACE] Black",
+      "expected": 175,
+      "actual": 175,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[RACE] Others",
+      "expected": 1605,
+      "actual": 1605,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[POL] Progressive",
+      "expected": 1052,
+      "actual": 1052,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[POL] Conservative",
+      "expected": 316,
+      "actual": 316,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[POL] Others",
+      "expected": 651,
+      "actual": 651,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[REL] Muslim",
+      "expected": 1059,
+      "actual": 1059,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[REL] Christian",
+      "expected": 518,
+      "actual": 518,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[REL] Catholic",
+      "expected": 57,
+      "actual": 57,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[REL] Others",
+      "expected": 91,
+      "actual": 91,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[MISC] Feminist",
+      "expected": 1483,
+      "actual": 1483,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[MISC] Socio-economic Status",
+      "expected": 88,
+      "actual": 88,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[MISC] Agism",
+      "expected": 62,
+      "actual": 62,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "[MISC] Others",
+      "expected": 971,
+      "actual": 971,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "Table 3 집단 라벨 총수",
+      "expected": 12981,
+      "actual": 12703,
+      "status": "INFO",
+      "note": "논문 표기 12,981 은 Table 3 행 합(12,260) 및 데이터 라벨 총수와 불일치"
+    },
+    {
+      "section": "5. Target Group (Table 3)",
+      "check": "집단 라벨 수 >= GRP 댓글 수 (복수 라벨)",
+      "expected": true,
+      "actual": true,
+      "status": "PASS",
+      "note": "라벨 12,703 / 댓글 12,413"
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Top 10 순위",
+      "expected": [
+        "Feminist",
+        "LGBTQ+",
+        "Women",
+        "Muslim",
+        "Progressive",
+        "Men",
+        "Christian",
+        "Chinese",
+        "Korean-Chinese",
+        "Conservative"
+      ],
+      "actual": [
+        "Feminist",
+        "LGBTQ+",
+        "Women",
+        "Muslim",
+        "Progressive",
+        "Men",
+        "Christian",
+        "Chinese",
+        "Korean-Chinese",
+        "Conservative"
+      ],
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Feminist 샘플 수",
+      "expected": 1483,
+      "actual": 1483,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Feminist 비율(% of 12,981)",
+      "expected": 11.42,
+      "actual": 11.42,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "LGBTQ+ 샘플 수",
+      "expected": 1369,
+      "actual": 1369,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "LGBTQ+ 비율(% of 12,981)",
+      "expected": 10.55,
+      "actual": 10.55,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Women 샘플 수",
+      "expected": 1129,
+      "actual": 1129,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Women 비율(% of 12,981)",
+      "expected": 8.7,
+      "actual": 8.7,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Muslim 샘플 수",
+      "expected": 1059,
+      "actual": 1059,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Muslim 비율(% of 12,981)",
+      "expected": 8.16,
+      "actual": 8.16,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Progressive 샘플 수",
+      "expected": 1052,
+      "actual": 1052,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Progressive 비율(% of 12,981)",
+      "expected": 8.1,
+      "actual": 8.1,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Men 샘플 수",
+      "expected": 591,
+      "actual": 591,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Men 비율(% of 12,981)",
+      "expected": 4.55,
+      "actual": 4.55,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Christian 샘플 수",
+      "expected": 518,
+      "actual": 518,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Christian 비율(% of 12,981)",
+      "expected": 3.99,
+      "actual": 3.99,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Chinese 샘플 수",
+      "expected": 475,
+      "actual": 475,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Chinese 비율(% of 12,981)",
+      "expected": 3.66,
+      "actual": 3.66,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Korean-Chinese 샘플 수",
+      "expected": 460,
+      "actual": 460,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Korean-Chinese 비율(% of 12,981)",
+      "expected": 3.54,
+      "actual": 3.54,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Conservative 샘플 수",
+      "expected": 316,
+      "actual": 316,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "6. Target Group Top 10 (Table 4)",
+      "check": "Conservative 비율(% of 12,981)",
+      "expected": 2.43,
+      "actual": 2.43,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "7. Target Group 라벨 체계 (Table 10)",
+      "check": "Gender & Sexual Orientation (3개)",
+      "expected": [
+        "LGBTQ+",
+        "Men",
+        "Women"
+      ],
+      "actual": [
+        "LGBTQ+",
+        "Men",
+        "Women"
+      ],
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "7. Target Group 라벨 체계 (Table 10)",
+      "check": "Race, Ethnicity & Nationality (7개)",
+      "expected": [
+        "Asian",
+        "Black",
+        "Chinese",
+        "Indian",
+        "Korean-Chinese",
+        "Southeast Asian",
+        "White"
+      ],
+      "actual": [
+        "Asian",
+        "Black",
+        "Chinese",
+        "Indian",
+        "Korean-Chinese",
+        "Southeast Asian",
+        "White"
+      ],
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "7. Target Group 라벨 체계 (Table 10)",
+      "check": "Political Affiliation (2개)",
+      "expected": [
+        "Conservative",
+        "Progressive"
+      ],
+      "actual": [
+        "Conservative",
+        "Progressive"
+      ],
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "7. Target Group 라벨 체계 (Table 10)",
+      "check": "Religion (4개)",
+      "expected": [
+        "Buddhism",
+        "Catholic",
+        "Christian",
+        "Islam"
+      ],
+      "actual": [
+        "Buddhism",
+        "Catholic",
+        "Christian",
+        "Islam"
+      ],
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "7. Target Group 라벨 체계 (Table 10)",
+      "check": "Miscellaneous (6개)",
+      "expected": [
+        "Agism",
+        "Disabled",
+        "Diseased",
+        "Feminist",
+        "Physical Appearance",
+        "Socio-economic Status"
+      ],
+      "actual": [
+        "Agism",
+        "Disabled",
+        "Diseased",
+        "Feminist",
+        "Physical Appearance",
+        "Socio-economic Status"
+      ],
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "7. Target Group 라벨 체계 (Table 10)",
+      "check": "세부 집단 라벨 수 (Appendix 열거 기준)",
+      "expected": 22,
+      "actual": 22,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "7. Target Group 라벨 체계 (Table 10)",
+      "check": "본문 표기 Target Group 수",
+      "expected": 21,
+      "actual": 22,
+      "status": "INFO",
+      "note": "논문 본문 21개 vs Appendix 22개 불일치"
+    },
+    {
+      "section": "7. Target Group 라벨 체계 (Table 10)",
+      "check": "대분류(Attribute) 수",
+      "expected": 5,
+      "actual": 5,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "8. Span Annotation",
+      "check": "GRP 중 Target Span 없는 비율(%)",
+      "expected": 55.1,
+      "actual": 55.1,
+      "status": "PASS",
+      "note": "6,837/12,413"
+    },
+    {
+      "section": "8. Span Annotation",
+      "check": "OFF_span 있는 댓글 수",
+      "expected": "논문 미제시",
+      "actual": "18,422 (OFF 대비 90.7%, 평균 길이 25.3자)",
+      "status": "INFO",
+      "note": ""
+    },
+    {
+      "section": "8. Span Annotation",
+      "check": "TGT_span 있는 댓글 수",
+      "expected": "논문 미제시",
+      "actual": "7,811 (OFF 대비 38.5%, 평균 길이 3.6자)",
+      "status": "INFO",
+      "note": ""
+    },
+    {
+      "section": "9. 어노테이션",
+      "check": "전체 어노테이터 수",
+      "expected": 3124,
+      "actual": 3124,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "9. 어노테이션",
+      "check": "샘플당 어노테이터 수",
+      "expected": {
+        "3": 40429
+      },
+      "actual": {
+        "3": 40429
+      },
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "9. 어노테이션",
+      "check": "Level A 최종 라벨 == 3인 다수결",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "9. 어노테이션",
+      "check": "Level A Krippendorff's alpha",
+      "expected": 0.55,
+      "actual": 0.5516,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "9. 어노테이션",
+      "check": "Level B alpha / Level C alpha / 전체 평균",
+      "expected": "0.45 / 0.65 / 0.55",
+      "actual": "미계산",
+      "status": "INFO",
+      "note": "다중 선택 라벨 구조로 논문과 동일한 계산 방식 재현 불가"
+    },
+    {
+      "section": "10. 비식별화",
+      "check": "원문 URL 노출 없음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "10. 비식별화",
+      "check": "원문 이메일 노출 없음",
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "section": "10. 비식별화",
+      "check": "치환 토큰 사용 수",
+      "expected": "-",
+      "actual": {
+        "<user>": 3,
+        "<url>": 60,
+        "<email>": 0
+      },
+      "status": "INFO",
+      "note": ""
+    }
+  ]
+}

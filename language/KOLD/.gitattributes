@@ -1,0 +1,2 @@
+kold_v1.json filter=lfs diff=lfs merge=lfs -text
+data/kold_v1.json -filter -diff -merge

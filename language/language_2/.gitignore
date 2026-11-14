@@ -1,0 +1,8 @@
+# fine-tuned checkpoints (runs/final/<task>/<model>/s1/model, ~11 GB); regenerate with train.py --save_model
+runs/**/model/
+# HF Trainer scratch dirs
+runs/**/tmp/
+__pycache__/
+*.pyc
+# 시험기관 시험(규격서 6.2) 결과
+runs/kgct_test/

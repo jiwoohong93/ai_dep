@@ -21,7 +21,7 @@ KoBBQ(한국어 편향 질의응답 벤치마크)에서 `Qwen2.5-7B-Instruct` �
 
 환경 설치:
 ```bash
-conda create -n kobbq python=3.10 -y && conda activate kobbq
+conda create -n ai_dep_lang python=3.10 -y && conda activate ai_dep_lang
 pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 pip install transformers==4.57.6 accelerate==1.15.0 datasets==5.0.1 numpy==2.2.6 pandas==2.3.3 \
             pyarrow==25.0.1 scikit-learn==1.7.2 matplotlib==3.10.9 pyyaml==6.0.3 pytest==9.1.1 \

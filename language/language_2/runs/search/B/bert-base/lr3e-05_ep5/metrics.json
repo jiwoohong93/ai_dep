@@ -1,0 +1,31 @@
+{
+  "args": {
+    "task": "B",
+    "model": "klue/bert-base",
+    "lr": 3e-05,
+    "epochs": 5,
+    "seed": 42,
+    "train_bs": 32,
+    "eval_bs": 64,
+    "out": "/home/seogyeong/ai_dep_lang/language_2/runs/search/B/bert-base/lr3e-05_ep5",
+    "save_model": false
+  },
+  "n": {
+    "train": 16248,
+    "dev": 2031,
+    "test": 2031
+  },
+  "train_time_sec": 309.81287598609924,
+  "dev": {
+    "precision": 61.216648790178205,
+    "recall": 59.72925208017875,
+    "f1": 60.43041703063449,
+    "accuracy": 72.52584933530281
+  },
+  "test": {
+    "precision": 61.46737589612782,
+    "recall": 60.88516311342398,
+    "f1": 61.144063985624065,
+    "accuracy": 74.1014278680453
+  }
+}

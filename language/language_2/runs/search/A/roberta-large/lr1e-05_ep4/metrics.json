@@ -1,0 +1,31 @@
+{
+  "args": {
+    "task": "A",
+    "model": "klue/roberta-large",
+    "lr": 1e-05,
+    "epochs": 4,
+    "seed": 42,
+    "train_bs": 32,
+    "eval_bs": 64,
+    "out": "/home/seogyeong/ai_dep_lang/language_2/runs/search/A/roberta-large/lr1e-05_ep4",
+    "save_model": false
+  },
+  "n": {
+    "train": 32343,
+    "dev": 4043,
+    "test": 4043
+  },
+  "train_time_sec": 2080.982366323471,
+  "dev": {
+    "precision": 83.57609241587141,
+    "recall": 81.93008370260955,
+    "f1": 82.74490303331675,
+    "accuracy": 82.83452881523621
+  },
+  "test": {
+    "precision": 84.10230692076229,
+    "recall": 82.57016248153619,
+    "f1": 83.32919254658385,
+    "accuracy": 83.40341330695028
+  }
+}
