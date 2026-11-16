@@ -1,0 +1,18 @@
+2026-11-13 20:32:51 [WARNING] Skipping point estimate (pickles missing or --skip-point).
+2026-11-13 20:32:51 [INFO] Robust estimate via 5-fold OOF (leakage-free, per-fold FE fit)…
+
+FAIR model = minority floor=250   |   UNFAIR = none
+data: 9991 rows | 고졸 total=154 | protected(여자) 고졸=7
+
+--- ROBUST estimate (full out-of-fold, protected 고졸 support=7) ---
+  fair acc=0.8598  unfair acc=0.8604  TPR-=0.129 TPR+=0.143
+  per-fold abs-DEO = [0.214,0.100,0.067,0.100,0.328]  (resolution ≈ 1/7=0.143 per protected person)
+
+=== ROBUST (OOF) — thresholds ===
+  분류 정확도 (%)         :  85.977   (> 85)   [PASS]
+  공정성 (DEO)            :  0.0136   (< 0.07) [PASS]
+  정책 반영 평균 하락률 (%) :   0.060   (< 5)    [PASS]
+
+============================================================
+OVERALL: ALL THRESHOLDS PASS
+============================================================

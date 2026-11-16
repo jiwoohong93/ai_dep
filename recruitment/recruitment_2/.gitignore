@@ -1,0 +1,12 @@
+# SCOUT 이력사항 DB(비공개 개인정보) 및 파생 데이터는 저장소에 올리지 않음
+scout_data/
+*.xlsx
+data_stage1.csv
+data_preprocessed.csv
+train.csv
+test.csv
+# 학습 모델(비공개 데이터로 학습, train_edu_gbm.py로 재생성)
+models/
+*.pkl
+__pycache__/
+*.pyc
