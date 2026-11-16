@@ -1,0 +1,17 @@
+name: smdart
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - cuda-version=11.8
+  - numpy=1.24.4
+  - scipy=1.10.1
+  - scikit-learn=1.3.2
+  - py-xgboost-gpu=2.1.1
+  - pip
+  - pip:
+      - matplotlib==3.7.5
+      - openpyxl==3.1.5
+      - pandas==1.5.3
+      - seaborn==0.13.2
+      - shap==0.44.1

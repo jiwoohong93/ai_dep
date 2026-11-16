@@ -1,0 +1,32 @@
+# Data, models and outputs
+data/**
+!data/raw/
+!data/raw/README.md
+!data/processed/
+!data/processed/README.md
+models/**
+!models/README.md
+outputs/**
+!outputs/README.md
+
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.pkl
+*.joblib
+*.xgb
+*.ubj
+*.tar
+*.tar.gz
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/

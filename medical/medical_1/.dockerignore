@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+
+# Keep Docker images small. Mount these when needed.
+data/raw/
+data_preprocessing/
+outputs/

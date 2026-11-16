@@ -1,0 +1,169 @@
+version: "2.3"
+
+services:
+  smdart-inference-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smdart-xgboost:gpu
+    runtime: nvidia
+    environment:
+      PROJECT_ROOT: /app
+      DATA_DIR: /app/data/processed
+      MODEL_DIR: /app/models
+      OUTPUT_DIR: /app/outputs
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      OMP_NUM_THREADS: 1
+      OPENBLAS_NUM_THREADS: 1
+      MKL_NUM_THREADS: 1
+      NUMEXPR_NUM_THREADS: 1
+      VECLIB_MAXIMUM_THREADS: 1
+    volumes:
+      - ./data/processed:/app/data/processed:ro
+      - ./models:/app/models:ro
+      - ./outputs:/app/outputs
+    command: python src/smdart/inference_test.py
+
+  smdart-inference-single:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smdart-xgboost:gpu
+    runtime: nvidia
+    environment:
+      PROJECT_ROOT: /app
+      DATA_DIR: /app/data/processed
+      MODEL_DIR: /app/models
+      OUTPUT_DIR: /app/outputs
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      OMP_NUM_THREADS: 1
+      OPENBLAS_NUM_THREADS: 1
+      MKL_NUM_THREADS: 1
+      NUMEXPR_NUM_THREADS: 1
+      VECLIB_MAXIMUM_THREADS: 1
+      SINGLE_INPUT_INDEX: ${SINGLE_INPUT_INDEX:-0}
+      SINGLE_INPUT_JSON: ${SINGLE_INPUT_JSON:-}
+      SHAP_TOP_N: ${SHAP_TOP_N:-15}
+      ENABLE_SHAP: ${ENABLE_SHAP:-1}
+    volumes:
+      - ./data/processed:/app/data/processed:ro
+      - ./models:/app/models:ro
+      - ./outputs:/app/outputs
+    command: python src/smdart/inference_single.py
+
+  smdart-train:
+    image: smdart-xgboost:gpu
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia
+    environment:
+      PROJECT_ROOT: /app
+      DATA_DIR: /app/data/processed
+      MODEL_DIR: /app/models
+      OUTPUT_DIR: /app/outputs
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      OMP_NUM_THREADS: 1
+      OPENBLAS_NUM_THREADS: 1
+      MKL_NUM_THREADS: 1
+      NUMEXPR_NUM_THREADS: 1
+      VECLIB_MAXIMUM_THREADS: 1
+    volumes:
+      - ./data/processed:/app/data/processed:ro
+      - ./models:/app/models
+      - ./outputs:/app/outputs
+    command: python src/smdart/train.py
+
+  smdart-posthoc:
+    image: smdart-xgboost:gpu
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia
+    environment:
+      PROJECT_ROOT: /app
+      DATA_DIR: /app/data/processed
+      MODEL_DIR: /app/models
+      OUTPUT_DIR: /app/outputs
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      OMP_NUM_THREADS: 1
+      OPENBLAS_NUM_THREADS: 1
+      MKL_NUM_THREADS: 1
+      NUMEXPR_NUM_THREADS: 1
+      VECLIB_MAXIMUM_THREADS: 1
+    volumes:
+      - ./data/processed:/app/data/processed:ro
+      - ./models:/app/models:ro
+      - ./outputs:/app/outputs
+    command: python src/smdart/posthoc_analysis.py
+
+  smdart-fairness:
+    image: smdart-xgboost:gpu
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia
+    environment:
+      PROJECT_ROOT: /app
+      DATA_DIR: /app/data/processed
+      MODEL_DIR: /app/models
+      OUTPUT_DIR: /app/outputs
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      OMP_NUM_THREADS: 1
+      OPENBLAS_NUM_THREADS: 1
+      MKL_NUM_THREADS: 1
+      NUMEXPR_NUM_THREADS: 1
+      VECLIB_MAXIMUM_THREADS: 1
+      FAIRNESS_SPLIT: ${FAIRNESS_SPLIT:-test}
+    volumes:
+      - ./data/processed:/app/data/processed:ro
+      - ./models:/app/models:ro
+      - ./outputs:/app/outputs
+    command: python src/smdart/fairness_eval.py
+
+  smdart-compare:
+    image: smdart-xgboost:gpu
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia
+    environment:
+      PROJECT_ROOT: /app
+      DATA_DIR: /app/data/processed
+      MODEL_DIR: /app/models
+      OUTPUT_DIR: /app/outputs
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      OMP_NUM_THREADS: 1
+      OPENBLAS_NUM_THREADS: 1
+      MKL_NUM_THREADS: 1
+      NUMEXPR_NUM_THREADS: 1
+      VECLIB_MAXIMUM_THREADS: 1
+      COMPARE_CV_REPEATS: ${COMPARE_CV_REPEATS:-0}
+      XGB_DEVICE: ${XGB_DEVICE:-cpu}
+    volumes:
+      - ./data/processed:/app/data/processed:ro
+      - ./models:/app/models:ro
+      - ./outputs:/app/outputs
+    command: python src/smdart/compare_variants.py
+
+  check-gpu:
+    image: smdart-xgboost:gpu
+    build:
+      context: .
+      dockerfile: Dockerfile
+    runtime: nvidia
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+      OMP_NUM_THREADS: 1
+      OPENBLAS_NUM_THREADS: 1
+      MKL_NUM_THREADS: 1
+      NUMEXPR_NUM_THREADS: 1
+      VECLIB_MAXIMUM_THREADS: 1
+    command: python src/smdart/check_gpu.py
