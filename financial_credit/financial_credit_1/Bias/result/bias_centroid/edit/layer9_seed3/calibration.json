@@ -1,0 +1,47 @@
+[
+  {
+    "alpha": 0.7,
+    "unmarried_flip_0to1": 0.03389830508474576,
+    "married_false_flip_1to0": 0.0
+  },
+  {
+    "alpha": 0.75,
+    "unmarried_flip_0to1": 0.0423728813559322,
+    "married_false_flip_1to0": 0.0
+  },
+  {
+    "alpha": 0.8,
+    "unmarried_flip_0to1": 0.0423728813559322,
+    "married_false_flip_1to0": 0.0
+  },
+  {
+    "alpha": 0.85,
+    "unmarried_flip_0to1": 0.059322033898305086,
+    "married_false_flip_1to0": 0.0
+  },
+  {
+    "alpha": 0.9,
+    "unmarried_flip_0to1": 0.06779661016949153,
+    "married_false_flip_1to0": 0.0
+  },
+  {
+    "alpha": 0.95,
+    "unmarried_flip_0to1": 0.06779661016949153,
+    "married_false_flip_1to0": 0.0
+  },
+  {
+    "alpha": 1.0,
+    "unmarried_flip_0to1": 0.06779661016949153,
+    "married_false_flip_1to0": 0.0
+  },
+  {
+    "alpha": 1.1,
+    "unmarried_flip_0to1": 0.0847457627118644,
+    "married_false_flip_1to0": 0.0
+  },
+  {
+    "alpha": 1.25,
+    "unmarried_flip_0to1": 0.1016949152542373,
+    "married_false_flip_1to0": 0.0
+  }
+]

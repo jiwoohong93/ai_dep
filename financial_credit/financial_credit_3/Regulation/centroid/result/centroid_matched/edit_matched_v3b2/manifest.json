@@ -1,0 +1,36 @@
+{
+  "script": "centroid_edit_matched.py",
+  "inputs": {
+    "version": "v3b2",
+    "rule": 1,
+    "alphas": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "n_cal_extract": 1000,
+    "n_cal": 150,
+    "max_safe_false_flip": 0.02,
+    "batch_size": 32,
+    "eval_batch_size": 64,
+    "gpu_id": 0,
+    "seed": 0,
+    "model_name": "/data1/jinsil/aidep/editing_centroid/xlm-roberta-large-rule",
+    "overwrite": true
+  },
+  "start_time": "2026-11-10T10:19:11.294458",
+  "end_time": "2026-11-10T10:24:14.327110",
+  "git_commit_hash": "e1350589dc1f484bcb9c1662d0cd26881b2dbbb0",
+  "git_dirty": true,
+  "report_summary": {
+    "accuracy": 0.9853773584905661,
+    "macro_f1": 0.9846342216665154,
+    "recall_pass": 0.9968602825745683,
+    "recall_fail": 0.9782211068101578,
+    "macro_recall": 0.987540694692363,
+    "efficacy_band": 0.8944112188080017,
+    "locality_safe": 0.9968602825745683,
+    "locality_cross": 1.0
+  },
+  "target_layer": 10
+}

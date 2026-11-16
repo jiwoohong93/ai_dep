@@ -1,0 +1,63 @@
+{
+  "layer": 9,
+  "positions": [
+    "marital-status",
+    "relationship"
+  ],
+  "n_deltav": 1000,
+  "n_gate": 1000,
+  "n_cal": 200,
+  "delta_v_norm": {
+    "marital-status": 8.955078125,
+    "relationship": 15.291467666625977
+  },
+  "gate_synth_heldout_acc": 1.0,
+  "gate_real_acc": 0.98,
+  "calibration": [
+    {
+      "alpha": 0.7,
+      "unmarried_flip_0to1": 0.03389830508474576,
+      "married_false_flip_1to0": 0.0
+    },
+    {
+      "alpha": 0.75,
+      "unmarried_flip_0to1": 0.0423728813559322,
+      "married_false_flip_1to0": 0.0
+    },
+    {
+      "alpha": 0.8,
+      "unmarried_flip_0to1": 0.0423728813559322,
+      "married_false_flip_1to0": 0.0
+    },
+    {
+      "alpha": 0.85,
+      "unmarried_flip_0to1": 0.059322033898305086,
+      "married_false_flip_1to0": 0.0
+    },
+    {
+      "alpha": 0.9,
+      "unmarried_flip_0to1": 0.06779661016949153,
+      "married_false_flip_1to0": 0.0
+    },
+    {
+      "alpha": 0.95,
+      "unmarried_flip_0to1": 0.06779661016949153,
+      "married_false_flip_1to0": 0.0
+    },
+    {
+      "alpha": 1.0,
+      "unmarried_flip_0to1": 0.06779661016949153,
+      "married_false_flip_1to0": 0.0
+    },
+    {
+      "alpha": 1.1,
+      "unmarried_flip_0to1": 0.0847457627118644,
+      "married_false_flip_1to0": 0.0
+    },
+    {
+      "alpha": 1.25,
+      "unmarried_flip_0to1": 0.1016949152542373,
+      "married_false_flip_1to0": 0.0
+    }
+  ]
+}

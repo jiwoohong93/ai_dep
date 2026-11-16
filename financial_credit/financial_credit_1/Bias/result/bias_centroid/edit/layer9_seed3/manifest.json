@@ -1,0 +1,21 @@
+{
+  "script": "bias_centroid_edit.py",
+  "inputs": {
+    "layer": "9",
+    "n_deltav": "1000",
+    "n_gate": "1000",
+    "n_cal": "200",
+    "alphas": "[0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1.0, 1.1, 1.25]",
+    "seed": "3",
+    "batch_size": "32",
+    "gpu_id": "0"
+  },
+  "start_time": "2026-11-10 11:04:29.899973",
+  "end_time": "2026-11-10 11:05:24.811396",
+  "git_commit_hash": "e1350589dc1f484bcb9c1662d0cd26881b2dbbb0",
+  "git_dirty": true,
+  "report_summary": {
+    "gate_synth_heldout_acc": 1.0,
+    "gate_real_acc": 0.98
+  }
+}
