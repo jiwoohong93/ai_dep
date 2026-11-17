@@ -1,34 +1,17 @@
-import torch
 import torch.nn as nn
-import torch.nn.functional as F
-
-from open_clip import create_model_from_pretrained, get_tokenizer
+from open_clip import create_model_from_pretrained
 
 
 class BiomedCLIP(nn.Module):
-    def __init__(self, *args, **kwargs) -> None:
-        super().__init__(*args, **kwargs)
+    """Image encoder (ViT-B/16) of BiomedCLIP."""
 
+    def __init__(self) -> None:
+        super().__init__()
         self.model, _ = create_model_from_pretrained(
             "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
         )
         self.feat_dim = 512
-
-    def forward_clip(self, images, text_features):
-        image_features = self.model.encode_image(images, normalize=True)
-        text_features = F.normalize(text_features, dim=-1)
-
-        logit_scale = self.model.logit_scale.exp()
-
-        logits = logit_scale * image_features @ text_features.t()
-
-        return logits
-
-    def encode_text(self, text):
-        return self.model.encode_text(text.to(next(self.model.parameters()).device), normalize=False)
+        self.mean, self.std = [0.48145466, 0.4578275, 0.40821073], [0.26862954, 0.26130258, 0.27577711]
 
     def forward(self, images):
         return self.model.visual(images)
-
-    def from_pretrained(self, path):
-        pass

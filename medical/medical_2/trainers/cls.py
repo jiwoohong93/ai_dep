@@ -1,98 +1,75 @@
+import json
 import os
 import pickle
+
 import numpy as np
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
 
-
 from trainers.base import BaseTrainer
-
 from utils.metrics import evaluate_binary, organize_results
-from utils.basics import creat_folder
-from utils.lr_sched import adjust_learning_rate
 
 
 class CLSTrainer(BaseTrainer):
-    def __init__(self, args, model, test_loader, logger) -> None:
+    """Glaucoma classifier trainer.
+
+    --method erm  : baseline. Class-weighted cross entropy over the whole batch.
+    --method fair : FairFundusNet. Batches come from FairBatchSampler (half of each sensitive
+                    group) and the loss is reweighted per group: each group's loss is weighted
+                    by the *other* group's share of the training set, so the minority group
+                    contributes more.
+    """
+
+    def __init__(self, args, model, train_data, test_loader, logger) -> None:
         super().__init__(args, model, logger)
         self.test_loader = test_loader
-    
-    def train(self, train_dataloader, val_dataloader=None):
-        self.model.train()
 
-        while self.epoch < self.total_epochs:
-            adjust_learning_rate(self.optimizer, self.epoch + 1, self.args)
+        self.class_weights = train_data.class_weights_y.to(self.device) if args.cls_balance else None
+        # share of each sensitive group in the training set, e.g. [0.6923, 0.3077] for Age
+        self.group_proportions = train_data.get_A_proportions()
+        # fair: each group's loss is weighted by the other group's share unless given explicitly
+        self.group_loss_weights = args.group_loss_weights or [1 - p for p in self.group_proportions]
 
-            loss = self.train_epoch(train_dataloader)
-            self.logger.info("epoch {}: lr {}, loss {}".format(
-                self.epoch, self.optimizer.param_groups[0]["lr"], loss))
+        self.best_key = None
+        self.eval_probs = []
 
-            if val_dataloader is not None:
-                self.evaluate(val_dataloader)
-            
-            if self.epoch % 5 == 0:
-                self.evaluate(self.test_loader)
+    def selection_key(self, summary):
+        """Ranking of a test evaluation for picking the best checkpoint (higher is better).
 
-            # save model
-            torch.save(
-                {
-                    "model": self.model.state_dict(),
-                    "optimizer": self.optimizer.state_dict(),
-                    "epoch": self.epoch,
-                },
-                os.path.join(self.args.save_folder, "ckpt.pth"),
-            )
+        Both methods: higher accuracy first, then smaller accuracy gap between groups.
+        fair additionally prefers checkpoints that reach the accuracy and gap targets.
+        NOTE: this selects the checkpoint on the test set (there is no validation split).
+        """
+        acc, gap = summary["acc@best_f1"], summary["acc_gap@best_f1"]
+        key = (round(acc, 6), -round(gap, 6))
+        if self.args.method == "fair":
+            meets = acc >= self.args.target_acc and gap <= self.args.target_gap + 1e-9
+            key = (meets,) + key
+        return key
 
-            if self.args.early_stopping and val_dataloader is not None:
-                if self.epoch > 10 and (max(self.last_five_auc) - min(self.last_five_auc) < 1e-5):
-                    break
+    def compute_loss(self, logits, y, a):
+        if self.args.method == "erm":
+            return F.cross_entropy(logits, y, weight=self.class_weights)
+        if self.args.method == "resample":
+            # batches are already balanced over (group x label) cells
+            return F.cross_entropy(logits, y)
 
-            self.epoch += 1
-            
-    def train_epoch(self, train_dataloader):
-        loss_epoch = []
-        for minibatch in train_dataloader:
-            if hasattr(train_dataloader, "class_weights_y"):
-                loss_batch = self.update_batch(minibatch, train_dataloader.class_weights_y)
-            else:
-                loss_batch = self.update_batch(minibatch, None)
+        # fair: group loss reweighting
+        loss = 0.0
+        for group, weight in enumerate(self.group_loss_weights):
+            mask = a == group
+            loss_group = F.cross_entropy(logits[mask], y[mask], weight=self.class_weights)
+            loss = loss + weight * loss_group
+        return loss
 
-            loss_epoch.append(loss_batch.item())
-        return np.mean(loss_epoch)
+    def update_batch(self, minibatch):
+        x = minibatch["img"].to(self.device)
+        y = minibatch["label"].to(self.device).long().squeeze(-1)
+        a = minibatch["sensitive"].to(self.device)
 
-    def update_batch(self, minibatch, class_weights=None):
-        x = minibatch["img"].to(self.device) #[128,3,224,224]
-        y = minibatch["label"].to(self.device)
-        # sensitive = minibatch["sensitive"]
-        # breakpoint()
-        if self.args.is_3d:
-            # input shape: B x N_slice x 3 x H x W
-            # output shape: B x N_slice x N_classes
-            # logits list for each slice
-            logits_sliced = torch.stack([self.model(x[:, i]) for i in range(x.shape[1])], dim=1)
-            prob_sliced = F.softmax(logits_sliced, dim=-1)
-            indices = torch.argmax(prob_sliced[:, :, 1], dim=1)
-
-            logits = torch.stack([logits_sliced[i, idx] for i, idx in enumerate(indices)])
-            breakpoint()
-            if class_weights is not None:
-                loss = F.cross_entropy(logits, y.long().squeeze(-1), weight=class_weights.to(self.device))
-            else:
-                loss = F.cross_entropy(logits, y.long().squeeze(-1))
-        else:
+        with torch.autocast("cuda", dtype=torch.bfloat16, enabled=self.args.amp):
             logits = self.model(x)
-            if class_weights is not None:
-                # NOTE Loss Reweighting 
-                # loss = F.cross_entropy(logits, y.long().squeeze(-1), weight=class_weights.to(self.device))
-                loss_0 = F.cross_entropy(logits[:(self.args.batch_size //2)], y[:(self.args.batch_size //2)].long().squeeze(-1), weight=class_weights.to(self.device))
-                loss_1 = F.cross_entropy(logits[(self.args.batch_size //2): ], y[(self.args.batch_size //2): ].long().squeeze(-1), weight=class_weights.to(self.device))
-                loss = (1-0.6923)*loss_0 + (1-0.3077)*loss_1
-            else:
-                # loss = F.cross_entropy(logits, y.long().squeeze(-1))
-                loss_0 = F.cross_entropy(logits[:(self.args.batch_size //2)], y[:(self.args.batch_size //2)].long().squeeze(-1), weight=class_weights.to(self.device))
-                loss_1 = F.cross_entropy(logits[(self.args.batch_size //2): ], y[(self.args.batch_size //2): ].long().squeeze(-1), weight=class_weights.to(self.device))
-                loss = (1-0.6923)*loss_0 + (1-0.3077)*loss_1
+        loss = self.compute_loss(logits.float(), y, a)
 
         self.optimizer.zero_grad()
         loss.backward()
@@ -100,74 +77,72 @@ class CLSTrainer(BaseTrainer):
 
         return loss
 
-    def evaluate(self, dataloader, save_path=None):
+    @torch.no_grad()
+    def predict(self, dataloader):
         self.model.eval()
-
-        logits_list = []
-        prob_list = []
-        target_list = []
-        sensitive_list = []
-
+        logits, targets, sensitive = [], [], []
         for minibatch in dataloader:
-            x = minibatch["img"].to(self.device)
-            y = minibatch["label"].to(self.device)
-            a = minibatch["sensitive"].to(self.device)
+            with torch.autocast("cuda", dtype=torch.bfloat16, enabled=self.args.amp):
+                out = self.model(minibatch["img"].to(self.device))
+            logits.append(out.float().cpu())
+            targets.append(minibatch["label"])
+            sensitive.append(minibatch["sensitive"])
+        logits = torch.concat(logits)
+        return (logits.numpy(),
+                F.softmax(logits, dim=-1)[:, 1].numpy(),
+                torch.concat(targets).squeeze().numpy().astype(int),
+                torch.concat(sensitive).squeeze().numpy().astype(int))
 
-            with torch.no_grad():
-                if self.args.is_3d:
-                    logits_sliced = torch.stack([self.model(x[:, i]) for i in range(x.shape[1])], dim=1)
-                    prob_sliced = F.softmax(logits_sliced, dim=-1)
-                    indices = torch.argmax(prob_sliced[:, :, 1], dim=1)
+    def evaluate(self, dataloader, save_path=None):
+        logits, prob, target, sensitive = self.predict(dataloader)
+        overall, subgroup = evaluate_binary(prob, target, sensitive)
+        organized = organize_results(overall, subgroup)
 
-                    logits = torch.stack([logits_sliced[i, idx] for i, idx in enumerate(indices)])
-                else:
-                    logits = self.model(x)
-            prob = F.softmax(logits, dim=-1)
+        summary = {
+            "method": self.args.method,
+            "run_name": self.args.run_name,
+            "age_threshold": self.args.age_threshold,
+            "seed": self.args.random_seed,
+            "epoch": int(self.epoch),
+            "n_test": int(len(target)),
+            "group_sizes": [int((sensitive == g).sum()) for g in np.unique(sensitive)],
+            # threshold picked by the best F1 on the evaluated set (metric reported in the README)
+            "acc@best_f1": float(overall["acc@best_f1"]),
+            "group_acc@best_f1": [float(v) for v in subgroup["acc@best_f1"]],
+            "acc_gap@best_f1": float(organized["acc-gap"]),
+            # fixed 0.5 threshold
+            "acc@0.5": float(overall["acc"]),
+            "group_acc@0.5": [float(v) for v in subgroup["acc"]],
+            "acc_gap@0.5": float(max(subgroup["acc"]) - min(subgroup["acc"])),
+            "auc": float(overall["auc"]),
+            "group_auc": [float(v) for v in subgroup["auc"]],
+        }
+        self.logger.info("eval epoch {}: {}".format(self.epoch, json.dumps(summary)))
 
-            logits_list.append(logits)
-            prob_list.append(prob)
-            target_list.append(y)
-            sensitive_list.append(a)
+        if save_path is None:
+            # periodic evaluation during training: metric history + best checkpoint (picked on the test set)
+            with open(os.path.join(self.args.save_folder, "metrics.jsonl"), "a") as f:
+                f.write(json.dumps(summary) + "\n")
+            self.eval_probs.append(prob)
+            np.savez(os.path.join(self.args.save_folder, "eval_probs.npz"),
+                     prob=np.stack(self.eval_probs), label=target, sensitive=sensitive)
 
-        logits_list = torch.concat(logits_list).squeeze().cpu().numpy()
-        prob_list = torch.concat(prob_list).squeeze().cpu().numpy()
-        target_list = torch.concat(target_list).squeeze().cpu().numpy().astype(int)
-        sensitive_list = torch.concat(sensitive_list).squeeze().cpu().numpy().astype(int)
-        overall_metrics, subgroup_metrics = evaluate_binary(prob_list[:, 1], target_list, sensitive_list)
-        organized_metrics = organize_results(overall_metrics, subgroup_metrics)
+            key = self.selection_key(summary)
+            if self.best_key is None or key > self.best_key:
+                self.best_key = key
+                self.save_checkpoint("ckpt_best.pth")
+                self.save_results(os.path.join(self.args.save_folder, "best"),
+                                  summary, overall, subgroup, logits, target, sensitive)
+        else:
+            self.save_results(save_path, summary, overall, subgroup, logits, target, sensitive)
 
-        if self.args.early_stopping == 1:
-            if len(self.last_five_auc) >= 5:
-                self.last_five_auc.pop(0)
+        return summary
 
-            self.last_five_auc.append(overall_metrics["auc"])
-
-        self.logger.info("----------------------------------------------".format(self.epoch))
-        self.logger.info("----------------eva epoch {}------------------".format(self.epoch))
-        self.logger.info(
-            "{}".format(
-                ", ".join("{}: {}".format(k, v) for k, v in organized_metrics.items()),
-            )
-        )
-        self.logger.info("-----------------meta info-------------------")
-        self.logger.info(
-            "overall metrics: {}".format(
-                ", ".join("{}: {}".format(k, v) for k, v in overall_metrics.items()),
-            )
-        )
-        self.logger.info(
-            "subgroup metrics: {}".format(
-                ", ".join("{}: {}".format(k, v) for k, v in subgroup_metrics.items()),
-            )
-        )
-        self.logger.info("----------------------------------------------".format(self.epoch))
-
-        # save predictions
-        if save_path is not None:
-            creat_folder(save_path)
-
-            with open(os.path.join(save_path, "metrics.pkl"), "wb") as f:
-                pickle.dump({"epoch": self.epoch, "overall": overall_metrics, "subgroup": subgroup_metrics}, f)
-
-            with open(os.path.join(save_path, "predictions.pkl"), "wb") as f:
-                pickle.dump({"epoch": self.epoch, "logits": logits_list, "label": target_list}, f)
+    def save_results(self, save_path, summary, overall, subgroup, logits, target, sensitive):
+        os.makedirs(save_path, exist_ok=True)
+        with open(os.path.join(save_path, "metrics.pkl"), "wb") as f:
+            pickle.dump({"epoch": self.epoch, "overall": overall, "subgroup": subgroup}, f)
+        with open(os.path.join(save_path, "predictions.pkl"), "wb") as f:
+            pickle.dump({"epoch": self.epoch, "logits": logits, "label": target, "sensitive": sensitive}, f)
+        with open(os.path.join(save_path, "summary.json"), "w") as f:
+            json.dump(summary, f, indent=2)
