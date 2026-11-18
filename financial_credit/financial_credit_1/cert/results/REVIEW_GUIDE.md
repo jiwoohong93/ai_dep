@@ -42,6 +42,9 @@
   - **TPR은 y=1인 행만 골라 계산**: `:102` `tpr = lambda m: float((preds[m & (y == 1)] == 1).mean())`
     → 그룹 마스크 m **AND y==1**(실제 양성)만 추려 ŷ=1 비율 = TP/(TP+FN) = TPR. `:106` 남/여 각각. **[O]**
   - (Hardt et al. 2016 Equal Opportunity 정의와 일치.)
+- **정책반영성능하락율 = (base − edited) 정확도 × 100 [%p]** — `cert/cert_credit1_bias.py:164-165`
+  `abs_pp = (report["base"]["accuracy"] − report["edited"]["accuracy"]) * 100` → `report["policy_degradation"]["abs_pp"]`.
+  `--with_base`로 편집 전(`:154`)·후(`:161`) 정확도를 모두 계산해 차이(%p) 산출, 화면 출력 `:166`. 목표 ≤ 3%. **[O]**
 - (참고) 그룹 정확도 격차 `:113` `abs(acc_male − acc_female)` — 판정에는 미사용(참고값).
 
 ---
@@ -71,15 +74,17 @@
   `logits.argmax(-1)`.
 
 ### (3) 메트릭 (규격서 산출식 일치 여부)
-- **새 정책 라벨 산출(부채비율 85%)** — `cert/cert_credit3_regulation.py:93-99` `new_policy_labels`,
+> 신용3의 **판정 지표는 응답시간 1개**이며, 아래 새 정책 라벨·정확도·재현율은 **참고 출력**이다.
+
+- (참고) **새 정책 라벨 산출(부채비율 85%)** — `cert/cert_credit3_regulation.py:93-99` `new_policy_labels`,
   `:40` `NEW_THRESHOLD = 85.0`, `:96` `band = decisive & (v > 85) & (v <= theta)`(θ=기존 200%),
-  `:98` `y.loc[band] = 0` → 85%<부채비율≤200% 밴드 기업을 탈락(0)으로 재라벨. **[O]**
+  `:98` `y.loc[band] = 0` → 85%<부채비율≤200% 밴드 기업을 탈락(0)으로 재라벨.
   - `decisive`(`:94`): 부채비율 외 8개 rule을 통과한 기업만 대상(`cc.other_rules_pass_mask`,
     `centroid_common.py:55`).
-- **정확도 = (TP+TN)/N** — `cert/cert_credit3_regulation.py:136` `accuracy_score(y_new, preds)`. **[O]**
-- **재현율 = TP/(TP+FN)** — `:137` `recall_score(y_new, preds, pos_label=1)`(통과),
-  `:138` `pos_label=0`(탈락), `:139` macro. **[O]**
-- **응답시간(1건씩, perf_counter)** — `cert/cert_credit3_regulation.py:158-162` 루프에서
+- (참고) **정확도 = (TP+TN)/N** — `cert/cert_credit3_regulation.py:136` `accuracy_score(y_new, preds)`.
+- (참고) **재현율 = TP/(TP+FN)** — `:137` `recall_score(y_new, preds, pos_label=1)`(통과),
+  `:138` `pos_label=0`(탈락), `:139` macro.
+- **[판정 지표] 응답시간(1건씩, perf_counter)** — `cert/cert_credit3_regulation.py:158-162` 루프에서
   `:159` `t = time.perf_counter()` → `:160` `judge(sample.iloc[[i]])`(**정확히 1건** 입력:
   문장생성→토큰화→편집 hook 포함 추론→argmax 판정) → `:161` `torch.cuda.synchronize()` →
   `:162` `times.append(time.perf_counter() - t)`. **[O]**
@@ -90,13 +95,15 @@
 
 ## 요약 (규격서 산출식 대조)
 
-| 항목 | 규격서 산출식 | 코드 위치 | 일치 |
-|---|---|---|---|
-| 신용1 정확도 | (TP+TN)/N | cert_credit1_bias.py:103,106 | O |
-| 신용1 DEO | \|TPR_남−TPR_여\|, TPR=P(ŷ=1\|y=1) | cert_credit1_bias.py:102,112 | O |
-| 신용3 정확도 | (TP+TN)/N | cert_credit3_regulation.py:136 | O |
-| 신용3 재현율 | TP/(TP+FN) | cert_credit3_regulation.py:137-138 | O |
-| 신용3 새 정책 라벨 | 85%<부채비율≤200% 밴드→탈락 | cert_credit3_regulation.py:40,96,98 | O |
-| 신용3 응답시간 | 1건 perf_counter, 평균 | cert_credit3_regulation.py:159-162,164 | O |
+| 항목 | 지표구분 | 규격서 산출식 | 코드 위치 | 일치 |
+|---|---|---|---|---|
+| 신용1 정확도 | 판정 | (TP+TN)/N | cert_credit1_bias.py:103,106 | O |
+| 신용1 DEO | 판정 | \|TPR_남−TPR_여\|, TPR=P(ŷ=1\|y=1) | cert_credit1_bias.py:102,112 | O |
+| 신용1 정책반영성능하락율 | 판정 | (base−edited)정확도×100 [%p], ≤3% | cert_credit1_bias.py:164-165 | O |
+| 신용3 응답시간 | **판정** | 1건 perf_counter, 평균 (≤0.5초) | cert_credit3_regulation.py:159-162,164 | O |
+| 신용3 정확도 | 참고 | (TP+TN)/N | cert_credit3_regulation.py:136 | O |
+| 신용3 재현율 | 참고 | TP/(TP+FN) | cert_credit3_regulation.py:137-138 | O |
+| 신용3 새 정책 라벨 | 참고 | 85%<부채비율≤200% 밴드→탈락 | cert_credit3_regulation.py:40,96,98 | O |
 
-모든 항목 규격서 산출식과 일치(O). 측정 결과값은 `SUMMARY.md` 참조.
+신용1은 3개(정확도·공정성·정책반영성능하락율) 모두 판정 지표, 신용3은 **응답시간 1개가 판정 지표**이고
+정확도·재현율은 참고 출력. 모든 산출식이 규격서와 일치(O). 측정 결과값은 `SUMMARY.md` 참조.

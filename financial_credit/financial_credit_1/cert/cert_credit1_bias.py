@@ -160,6 +160,10 @@ def main():
         hk = dict(cfg=cfg, alpha=args.alpha, beta=args.beta, cfg_married=cfg_m)
         report["edited"] = metrics(df, predict(model, tokenizer, df, device, module, hk, args.batch_size))
         show(f"편집 후 (layer {cfg['layer']}, alpha={args.alpha}, beta={args.beta})", report["edited"])
+    if "base" in report and "edited" in report:  # --with_base 일 때만 (편집 전·후 모두 존재)
+        abs_pp = (report["base"]["accuracy"] - report["edited"]["accuracy"]) * 100
+        report["policy_degradation"] = {"abs_pp": abs_pp}
+        print(f"\n  정책반영성능하락율 (base−edited acc) : {abs_pp:.2f} %p   (목표 ≤ 3)")
     if args.save_json:
         Path(args.save_json).parent.mkdir(parents=True, exist_ok=True)
         json.dump(report, open(args.save_json, "w"), ensure_ascii=False, indent=2)

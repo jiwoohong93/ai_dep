@@ -31,5 +31,5 @@ else
     exit 1
 fi
 
-echo "[단계 4] 공인시험 최종 명령어 실행 — [금융/신용1] 정확도 / DEO"
-CUDA_VISIBLE_DEVICES=0 python cert/cert_credit1_bias.py --shift_config Bias/result/bias_centroid/edit/layer9_seed0/shift_config.pt --alpha 0.9 --save_json cert/results/kgct_credit1.json
+echo "[단계 4] 공인시험 최종 명령어 실행 — [금융/신용1] 정확도 / DEO / 정책반영성능하락율"
+CUDA_VISIBLE_DEVICES=0 python cert/cert_credit1_bias.py --shift_config Bias/result/bias_centroid/edit/layer9_seed0/shift_config.pt --alpha 0.9 --with_base --save_json cert/results/kgct_credit1.json
