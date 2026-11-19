@@ -1,0 +1,18 @@
+{
+  "applicants": 352893,
+  "jobs": 379506,
+  "applications_raw": 266003,
+  "applications_named": 266003,
+  "samples": 524548,
+  "samples_by_split": {
+    "train": 419638,
+    "val": 52455,
+    "test": 52455
+  },
+  "positive_samples": 262274,
+  "negative_samples": 262274,
+  "gender_counts": {
+    "0": 272888,
+    "1": 251660
+  }
+}
