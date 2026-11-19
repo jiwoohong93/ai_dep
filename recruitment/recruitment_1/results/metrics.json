@@ -1,0 +1,42 @@
+{
+  "settings": {
+    "embedding_model": "nlpai-lab/KURE-v1",
+    "neg_ratio": 1,
+    "split": "pair-level stratified 80/10/10 with random_state seed",
+    "seed": 42,
+    "batch_size": 32768,
+    "epochs_requested": 12,
+    "hidden_dim": 512,
+    "preserve_rank": 128
+  },
+  "counts": {
+    "samples": 524548,
+    "train": 419638,
+    "val": 52455,
+    "test": 52455,
+    "test_positive": 26227,
+    "test_negative": 26228
+  },
+  "base": {
+    "recruitment_accuracy": 0.9253836621866361,
+    "fairness": {
+      "pair_prediction_consistency_accuracy": 0.9989133543036889,
+      "average_probability_gap": 0.0009830751223489642,
+      "top1_company_consistency_accuracy_all_resumes": 0.9972481761167286,
+      "top1_company_consistency_accuracy_multi_company_resumes": 0.9946544007956241,
+      "top1_company_eval_resumes": 15626,
+      "top1_company_multi_company_eval_resumes": 8044
+    }
+  },
+  "alphaedit_nullspace": {
+    "recruitment_accuracy": 0.9254217901058049,
+    "fairness": {
+      "pair_prediction_consistency_accuracy": 0.9990658659803642,
+      "average_probability_gap": 0.0009718879009597003,
+      "top1_company_consistency_accuracy_all_resumes": 0.9976961474465634,
+      "top1_company_consistency_accuracy_multi_company_resumes": 0.9955246146195923,
+      "top1_company_eval_resumes": 15626,
+      "top1_company_multi_company_eval_resumes": 8044
+    }
+  }
+}
